@@ -1,9 +1,0 @@
-{
-  "adapter_sha256": "3addb2bcd9326de3cf3951a6d18d28cede4584f3d42465a0b5690898ee7c0099",
-  "epoch": 1,
-  "is_best": true,
-  "saved_at": "2026-11-08T13:05:08.731410+00:00",
-  "step": 75,
-  "train_loss": 0.10850647371262312,
-  "val_loss": 0.10186045688509274
-}

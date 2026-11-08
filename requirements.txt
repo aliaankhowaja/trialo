@@ -12,3 +12,4 @@ psutil>=5.9
 wandb>=0.17
 pillow
 timm
+dvc[gs]
