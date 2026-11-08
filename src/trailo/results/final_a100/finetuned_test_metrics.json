@@ -1,0 +1,147 @@
+{
+  "adapter": "/home/ali/trialo/src/trailo/checkpoints/final_a100_seed42/best",
+  "created_at": "2026-11-08T15:00:59.339825+00:00",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 128,
+    "num_beams": 1
+  },
+  "evidence": {
+    "exact_match_rate": 0.7427184466019418,
+    "f1": 0.5957446808510639,
+    "precision": 0.49645390070921985,
+    "recall": 0.7446808510638298,
+    "support": 94
+  },
+  "is_smoke": false,
+  "label_accuracy": 0.7475728155339806,
+  "label_accuracy_parsed": 0.7475728155339806,
+  "label_universe": [
+    "included",
+    "not applicable",
+    "not enough information",
+    "not excluded",
+    "not included"
+  ],
+  "macro_f1": 0.6213419668809782,
+  "model_id": "google/gemma-3n-E4B-it",
+  "model_revision": "c1221e9c62e34a43ab7ffacd1be0ea71f126ef10",
+  "n_examples": 206,
+  "n_parsed": 206,
+  "output_path": "/home/ali/trialo/src/trailo/results/final_a100/finetuned_test_predictions.jsonl",
+  "parse_failures": 0,
+  "parse_success_rate": 1.0,
+  "per_criterion": {
+    "exclusion": {
+      "labels": [
+        "not applicable",
+        "not enough information",
+        "not excluded"
+      ],
+      "macro_f1": 0.39524334375538905,
+      "micro_support": 131,
+      "per_label": {
+        "not applicable": {
+          "f1": 0.2857142857142857,
+          "precision": 1.0,
+          "predicted": 2,
+          "recall": 0.16666666666666666,
+          "support": 12
+        },
+        "not enough information": {
+          "f1": 0.0689655172413793,
+          "precision": 1.0,
+          "predicted": 1,
+          "recall": 0.03571428571428571,
+          "support": 28
+        },
+        "not excluded": {
+          "f1": 0.8310502283105022,
+          "precision": 0.7109375,
+          "predicted": 128,
+          "recall": 1.0,
+          "support": 91
+        }
+      }
+    },
+    "inclusion": {
+      "labels": [
+        "included",
+        "not applicable",
+        "not enough information",
+        "not included"
+      ],
+      "macro_f1": 0.6834156785243741,
+      "micro_support": 75,
+      "per_label": {
+        "included": {
+          "f1": 0.8260869565217391,
+          "precision": 1.0,
+          "predicted": 19,
+          "recall": 0.7037037037037037,
+          "support": 27
+        },
+        "not applicable": {
+          "f1": 0.6666666666666666,
+          "precision": 0.6666666666666666,
+          "predicted": 3,
+          "recall": 0.6666666666666666,
+          "support": 3
+        },
+        "not enough information": {
+          "f1": 0.8409090909090909,
+          "precision": 0.74,
+          "predicted": 50,
+          "recall": 0.9736842105263158,
+          "support": 38
+        },
+        "not included": {
+          "f1": 0.4,
+          "precision": 0.6666666666666666,
+          "predicted": 3,
+          "recall": 0.2857142857142857,
+          "support": 7
+        }
+      }
+    }
+  },
+  "per_label": {
+    "included": {
+      "f1": 0.8260869565217391,
+      "precision": 1.0,
+      "predicted": 19,
+      "recall": 0.7037037037037037,
+      "support": 27
+    },
+    "not applicable": {
+      "f1": 0.4,
+      "precision": 0.8,
+      "predicted": 5,
+      "recall": 0.26666666666666666,
+      "support": 15
+    },
+    "not enough information": {
+      "f1": 0.6495726495726497,
+      "precision": 0.7450980392156863,
+      "predicted": 51,
+      "recall": 0.5757575757575758,
+      "support": 66
+    },
+    "not excluded": {
+      "f1": 0.8310502283105022,
+      "precision": 0.7109375,
+      "predicted": 128,
+      "recall": 1.0,
+      "support": 91
+    },
+    "not included": {
+      "f1": 0.4,
+      "precision": 0.6666666666666666,
+      "predicted": 3,
+      "recall": 0.2857142857142857,
+      "support": 7
+    }
+  },
+  "run_name": "final_a100",
+  "split": "test"
+}
