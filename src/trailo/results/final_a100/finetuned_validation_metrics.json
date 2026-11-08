@@ -1,0 +1,163 @@
+{
+  "adapter": "/home/ali/trialo/src/trailo/checkpoints/final_a100_seed42/best",
+  "created_at": "2026-11-08T14:12:23.851512+00:00",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 128,
+    "num_beams": 1
+  },
+  "evidence": {
+    "exact_match_rate": 0.6893203883495146,
+    "f1": 0.6134453781512604,
+    "precision": 0.5934959349593496,
+    "recall": 0.6347826086956522,
+    "support": 115
+  },
+  "is_smoke": false,
+  "label_accuracy": 0.7330097087378641,
+  "label_accuracy_parsed": 0.7330097087378641,
+  "label_universe": [
+    "excluded",
+    "included",
+    "not applicable",
+    "not enough information",
+    "not excluded",
+    "not included"
+  ],
+  "macro_f1": 0.4202773458813802,
+  "model_id": "google/gemma-3n-E4B-it",
+  "model_revision": "c1221e9c62e34a43ab7ffacd1be0ea71f126ef10",
+  "n_examples": 206,
+  "n_parsed": 206,
+  "output_path": "/home/ali/trialo/src/trailo/results/final_a100/finetuned_validation_predictions.jsonl",
+  "parse_failures": 0,
+  "parse_success_rate": 1.0,
+  "per_criterion": {
+    "exclusion": {
+      "labels": [
+        "excluded",
+        "not applicable",
+        "not enough information",
+        "not excluded"
+      ],
+      "macro_f1": 0.319327731092437,
+      "micro_support": 140,
+      "per_label": {
+        "excluded": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 2
+        },
+        "not applicable": {
+          "f1": 0.42857142857142855,
+          "precision": 1.0,
+          "predicted": 3,
+          "recall": 0.2727272727272727,
+          "support": 11
+        },
+        "not enough information": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 26
+        },
+        "not excluded": {
+          "f1": 0.8487394957983194,
+          "precision": 0.7372262773722628,
+          "predicted": 137,
+          "recall": 1.0,
+          "support": 101
+        }
+      }
+    },
+    "inclusion": {
+      "labels": [
+        "included",
+        "not applicable",
+        "not enough information",
+        "not included"
+      ],
+      "macro_f1": 0.36730911786508524,
+      "micro_support": 66,
+      "per_label": {
+        "included": {
+          "f1": 0.7368421052631579,
+          "precision": 0.9545454545454546,
+          "predicted": 22,
+          "recall": 0.6,
+          "support": 35
+        },
+        "not applicable": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 1
+        },
+        "not enough information": {
+          "f1": 0.732394366197183,
+          "precision": 0.5909090909090909,
+          "predicted": 44,
+          "recall": 0.9629629629629629,
+          "support": 27
+        },
+        "not included": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 3
+        }
+      }
+    }
+  },
+  "per_label": {
+    "excluded": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "included": {
+      "f1": 0.7368421052631579,
+      "precision": 0.9545454545454546,
+      "predicted": 22,
+      "recall": 0.6,
+      "support": 35
+    },
+    "not applicable": {
+      "f1": 0.4,
+      "precision": 1.0,
+      "predicted": 3,
+      "recall": 0.25,
+      "support": 12
+    },
+    "not enough information": {
+      "f1": 0.5360824742268041,
+      "precision": 0.5909090909090909,
+      "predicted": 44,
+      "recall": 0.49056603773584906,
+      "support": 53
+    },
+    "not excluded": {
+      "f1": 0.8487394957983194,
+      "precision": 0.7372262773722628,
+      "predicted": 137,
+      "recall": 1.0,
+      "support": 101
+    },
+    "not included": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "support": 3
+    }
+  },
+  "run_name": "final_a100",
+  "split": "validation"
+}

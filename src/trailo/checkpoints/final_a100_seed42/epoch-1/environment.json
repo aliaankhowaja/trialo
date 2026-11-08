@@ -1,0 +1,87 @@
+{
+  "attention_backend": "sdpa",
+  "config": {
+    "data": {
+      "allow_truncated_eval": false,
+      "include_test": false,
+      "manifest_path": "data/splits/split_manifest.json",
+      "max_length": 1024,
+      "prepare_subset_size": null,
+      "processed_dir": "data/processed/final_a100"
+    },
+    "eval": {
+      "batch_size": 1,
+      "do_sample": false,
+      "max_new_tokens": 128,
+      "num_beams": 1,
+      "subset_size": null
+    },
+    "lora": {
+      "alpha": 32,
+      "dropout": 0.1,
+      "rank": 16,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ]
+    },
+    "model": {
+      "allow_cpu_oversize": false,
+      "attn_implementation": "sdpa",
+      "model_id": "google/gemma-3n-E4B-it",
+      "revision": "c1221e9c62e34a43ab7ffacd1be0ea71f126ef10"
+    },
+    "run_id": "final_a100_seed42",
+    "run_name": "final_a100",
+    "seed": 42,
+    "train": {
+      "batch_size": 2,
+      "device": "cuda",
+      "early_stopping_patience": 6,
+      "epochs": 4,
+      "eval_every_steps": 25,
+      "gradient_accumulation": 4,
+      "gradient_checkpointing": true,
+      "learning_rate": 0.0001,
+      "logging_steps": 5,
+      "max_grad_norm": 1.0,
+      "max_steps": -1,
+      "precision": "bf16",
+      "subset_size": null,
+      "warmup_ratio": 0.03,
+      "weight_decay": 0.01
+    },
+    "wandb": {
+      "enabled": true,
+      "entity": "murgi",
+      "log_gradients": false,
+      "mode": "online",
+      "project": "trialo"
+    }
+  },
+  "cpu_bf16_supported": true,
+  "cuda_available": true,
+  "cuda_version": "13.0",
+  "datasets": "5.1.0",
+  "device": "cuda",
+  "flash_attention_available": true,
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_memory_gb": 39.4925537109375,
+  "memory": {
+    "available_gb": 79.02872085571289,
+    "total_gb": 83.46445083618164,
+    "used_gb": 4.43572998046875
+  },
+  "numpy": "2.2.6",
+  "peft": "0.21.2",
+  "platform": "Linux-6.8.0-1070-gcp-x86_64-with-glibc2.35",
+  "precision": "bf16",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.20.2"
+}

@@ -357,6 +357,13 @@ def main(argv: list[str] | None = None) -> int:
     scheduler = torch.optim.lr_scheduler.LambdaLR(
         optimizer, lr_lambda_for(planned_steps, warmup_steps)
     )
+    # Epoch-boundary evals are skipped when they land this close to a periodic
+    # eval, so near-duplicate evaluations do not consume early-stopping patience.
+    boundary_eval_gap = int(train_config.get("boundary_eval_min_steps", 5))
+    LOGGER.info(
+        "epoch-boundary eval skipped if within %d steps of a periodic eval",
+        boundary_eval_gap,
+    )
 
     curves_path = log_dir / f"{run_id}_training_curves.csv"
     events_path = log_dir / f"{run_id}_training_events.jsonl"
@@ -576,7 +583,7 @@ def main(argv: list[str] | None = None) -> int:
                     stop_training = True
                     break
 
-            if last_eval_step != global_step:
+            if global_step - last_eval_step >= boundary_eval_gap:
                 val_loss = evaluate_loss(model, validation_loader, device, dtype)
                 last_eval_step = global_step
                 last_val_loss = val_loss
@@ -631,6 +638,14 @@ def main(argv: list[str] | None = None) -> int:
                         },
                         step=global_step,
                     )
+            else:
+                LOGGER.info(
+                    "skipping epoch %d boundary eval at step %d; "
+                    "periodic eval already ran at step %d",
+                    epoch,
+                    global_step,
+                    last_eval_step,
+                )
 
             save_checkpoint(
                 model,

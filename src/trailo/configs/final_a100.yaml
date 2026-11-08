@@ -18,7 +18,7 @@ data:
 lora:
   rank: 16
   alpha: 32
-  dropout: 0.05
+  dropout: 0.1
   target_modules:
     - q_proj
     - k_proj
@@ -32,18 +32,18 @@ train:
   device: cuda
   precision: bf16
   batch_size: 2
-  gradient_accumulation: 4
-  epochs: 3
+  gradient_accumulation: 4 # effective batch 8 of 603 examples
+  epochs: 4
   max_steps: -1
   subset_size: null
-  learning_rate: 0.0002
+  learning_rate: 0.0001 # halved from 2e-4: was memorizing by epoch 3
   weight_decay: 0.01
   warmup_ratio: 0.03
   max_grad_norm: 1.0
   logging_steps: 5
-  eval_every_steps: 50
-  early_stopping_patience: 2
-  gradient_checkpointing: false
+  eval_every_steps: 25
+  early_stopping_patience: 6
+  gradient_checkpointing: true
 
 eval:
   max_new_tokens: 128
@@ -55,6 +55,6 @@ eval:
 wandb:
   enabled: true
   project: trialo
-  entity: null
+  entity: murgi
   mode: online
   log_gradients: false

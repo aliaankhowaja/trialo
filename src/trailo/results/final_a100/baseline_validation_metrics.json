@@ -1,0 +1,163 @@
+{
+  "adapter": null,
+  "created_at": "2026-11-08T14:00:15.070163+00:00",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 128,
+    "num_beams": 1
+  },
+  "evidence": {
+    "exact_match_rate": 0.558252427184466,
+    "f1": 0.39183673469387753,
+    "precision": 0.36923076923076925,
+    "recall": 0.41739130434782606,
+    "support": 115
+  },
+  "is_smoke": false,
+  "label_accuracy": 0.32524271844660196,
+  "label_accuracy_parsed": 0.32524271844660196,
+  "label_universe": [
+    "excluded",
+    "included",
+    "not applicable",
+    "not enough information",
+    "not excluded",
+    "not included"
+  ],
+  "macro_f1": 0.29435647329352993,
+  "model_id": "google/gemma-3n-E4B-it",
+  "model_revision": "c1221e9c62e34a43ab7ffacd1be0ea71f126ef10",
+  "n_examples": 206,
+  "n_parsed": 206,
+  "output_path": "/home/ali/trialo/src/trailo/results/final_a100/baseline_validation_predictions.jsonl",
+  "parse_failures": 0,
+  "parse_success_rate": 1.0,
+  "per_criterion": {
+    "exclusion": {
+      "labels": [
+        "excluded",
+        "not applicable",
+        "not enough information",
+        "not excluded"
+      ],
+      "macro_f1": 0.22850550686371582,
+      "micro_support": 140,
+      "per_label": {
+        "excluded": {
+          "f1": 0.18181818181818182,
+          "precision": 0.1,
+          "predicted": 20,
+          "recall": 1.0,
+          "support": 2
+        },
+        "not applicable": {
+          "f1": 0.2,
+          "precision": 0.11594202898550725,
+          "predicted": 69,
+          "recall": 0.7272727272727273,
+          "support": 11
+        },
+        "not enough information": {
+          "f1": 0.38805970149253727,
+          "precision": 0.3170731707317073,
+          "predicted": 41,
+          "recall": 0.5,
+          "support": 26
+        },
+        "not excluded": {
+          "f1": 0.14414414414414414,
+          "precision": 0.8,
+          "predicted": 10,
+          "recall": 0.07920792079207921,
+          "support": 101
+        }
+      }
+    },
+    "inclusion": {
+      "labels": [
+        "included",
+        "not applicable",
+        "not enough information",
+        "not included"
+      ],
+      "macro_f1": 0.321547619047619,
+      "micro_support": 66,
+      "per_label": {
+        "included": {
+          "f1": 0.6933333333333334,
+          "precision": 0.65,
+          "predicted": 40,
+          "recall": 0.7428571428571429,
+          "support": 35
+        },
+        "not applicable": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 2,
+          "recall": 0.0,
+          "support": 1
+        },
+        "not enough information": {
+          "f1": 0.45,
+          "precision": 0.6923076923076923,
+          "predicted": 13,
+          "recall": 0.3333333333333333,
+          "support": 27
+        },
+        "not included": {
+          "f1": 0.14285714285714288,
+          "precision": 0.09090909090909091,
+          "predicted": 11,
+          "recall": 0.3333333333333333,
+          "support": 3
+        }
+      }
+    }
+  },
+  "per_label": {
+    "excluded": {
+      "f1": 0.18181818181818182,
+      "precision": 0.1,
+      "predicted": 20,
+      "recall": 1.0,
+      "support": 2
+    },
+    "included": {
+      "f1": 0.6933333333333334,
+      "precision": 0.65,
+      "predicted": 40,
+      "recall": 0.7428571428571429,
+      "support": 35
+    },
+    "not applicable": {
+      "f1": 0.1927710843373494,
+      "precision": 0.11267605633802817,
+      "predicted": 71,
+      "recall": 0.6666666666666666,
+      "support": 12
+    },
+    "not enough information": {
+      "f1": 0.4112149532710281,
+      "precision": 0.4074074074074074,
+      "predicted": 54,
+      "recall": 0.41509433962264153,
+      "support": 53
+    },
+    "not excluded": {
+      "f1": 0.14414414414414414,
+      "precision": 0.8,
+      "predicted": 10,
+      "recall": 0.07920792079207921,
+      "support": 101
+    },
+    "not included": {
+      "f1": 0.14285714285714288,
+      "precision": 0.09090909090909091,
+      "predicted": 11,
+      "recall": 0.3333333333333333,
+      "support": 3
+    }
+  },
+  "run_name": "final_a100",
+  "split": "validation"
+}
