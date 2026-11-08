@@ -1,4 +1,5 @@
 [core]
     remote = gcsremote
+    autostage = true
 ['remote "gcsremote"']
     url = gs://trialo/trailo

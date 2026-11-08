@@ -53,6 +53,7 @@ def run_records(
                 "max_new_tokens": int(decoding_config["max_new_tokens"]),
                 "do_sample": False,
                 "num_beams": 1,
+                "decoding_impl": str(decoding_config.get("decoding_impl", "generate")),
             },
             "output_path": str(output),
         }

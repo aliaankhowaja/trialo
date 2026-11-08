@@ -23,6 +23,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--config", required=True)
     parser.add_argument("--adapter", default=None)
     parser.add_argument("--no-adapter", action="store_true")
+    parser.add_argument(
+        "--decoding-impl",
+        choices=["generate", "cache", "recompute"],
+        default=None,
+        help="Override the eval.decoding_impl value for this invocation.",
+    )
     args = parser.parse_args(argv)
 
     config = load_config(args.config)
@@ -65,6 +71,9 @@ def main(argv: list[str] | None = None) -> int:
         "num_beams": 1,
         "label_sets": label_sets,
     }
+    if args.decoding_impl is not None:
+        decoding_config["decoding_impl"] = args.decoding_impl
+    print(f"decoding_impl={decoding_config.get('decoding_impl', eval_config.get('decoding_impl', 'generate'))}")
     for split, example in examples.items():
         result = generate_prediction(model, tokenizer, example, decoding_config)
         print(

@@ -1,0 +1,446 @@
+{
+  "created_at": "2026-11-08T16:07:55.388302+00:00",
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-1070-gcp-x86_64-with-glibc2.35",
+    "torch": "2.14.1+cu130",
+    "cpu_count_physical": 6,
+    "device": "cuda",
+    "precision": "fp32",
+    "configured_backend": "sdpa",
+    "model_id": "google/gemma-3n-E4B-it",
+    "revision": "c1221e9c62e34a43ab7ffacd1be0ea71f126ef10",
+    "threads_torch": 6
+  },
+  "agreement": [
+    {
+      "backend": "sdpa",
+      "prompt_label": "real_validation[0]",
+      "prompt_tokens": 338,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.570505,
+        "median": 21.072872
+      },
+      "recompute_min_margin": {
+        "min": 0.570541,
+        "median": 21.072884
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "real_validation[1]",
+      "prompt_tokens": 319,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.349165,
+        "median": 20.53537
+      },
+      "recompute_min_margin": {
+        "min": 0.349161,
+        "median": 20.535368
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "real_validation[2]",
+      "prompt_tokens": 325,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.226496,
+        "median": 18.620564
+      },
+      "recompute_min_margin": {
+        "min": 0.226478,
+        "median": 18.620594
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "real_validation[3]",
+      "prompt_tokens": 341,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 9.120564,
+        "median": 21.319807
+      },
+      "recompute_min_margin": {
+        "min": 9.120592,
+        "median": 21.319828
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "real_validation[4]",
+      "prompt_tokens": 327,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 4.745714,
+        "median": 21.40239
+      },
+      "recompute_min_margin": {
+        "min": 4.745699,
+        "median": 21.402395
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "real_validation[5]",
+      "prompt_tokens": 330,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 1.996454,
+        "median": 20.516773
+      },
+      "recompute_min_margin": {
+        "min": 1.996476,
+        "median": 20.516768
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "synthetic_64",
+      "prompt_tokens": 64,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.14061,
+        "median": 4.055389
+      },
+      "recompute_min_margin": {
+        "min": 0.140593,
+        "median": 4.055389
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "synthetic_256",
+      "prompt_tokens": 256,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 24,
+      "secondary_len": 24,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 24,
+      "recompute_len": 24,
+      "cached_min_margin": {
+        "min": 0.232375,
+        "median": 10.465801
+      },
+      "recompute_min_margin": {
+        "min": 0.232386,
+        "median": 10.465793
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "synthetic_1024",
+      "prompt_tokens": 1024,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.262539,
+        "median": 17.941753
+      },
+      "recompute_min_margin": {
+        "min": 0.262524,
+        "median": 17.941727
+      }
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "real_validation[0] vs generate",
+      "prompt_tokens": 338,
+      "max_new_tokens": 32,
+      "cached_vs_generate_agreement": true,
+      "recompute_vs_generate_agreement": true
+    },
+    {
+      "backend": "sdpa",
+      "prompt_label": "synthetic_1024 vs generate",
+      "prompt_tokens": 1024,
+      "max_new_tokens": 32,
+      "cached_vs_generate_agreement": true,
+      "recompute_vs_generate_agreement": true
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "real_validation[0]",
+      "prompt_tokens": 338,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.570602,
+        "median": 21.072874
+      },
+      "recompute_min_margin": {
+        "min": 0.570519,
+        "median": 21.072889
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "real_validation[1]",
+      "prompt_tokens": 319,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.349134,
+        "median": 20.535368
+      },
+      "recompute_min_margin": {
+        "min": 0.349047,
+        "median": 20.535381
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "real_validation[2]",
+      "prompt_tokens": 325,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.226465,
+        "median": 18.620562
+      },
+      "recompute_min_margin": {
+        "min": 0.226475,
+        "median": 18.620592
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "real_validation[3]",
+      "prompt_tokens": 341,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 9.120563,
+        "median": 21.319822
+      },
+      "recompute_min_margin": {
+        "min": 9.120581,
+        "median": 21.319839
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "real_validation[4]",
+      "prompt_tokens": 327,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 4.745676,
+        "median": 21.40238
+      },
+      "recompute_min_margin": {
+        "min": 4.745674,
+        "median": 21.402359
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "real_validation[5]",
+      "prompt_tokens": 330,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 1.996283,
+        "median": 20.51676
+      },
+      "recompute_min_margin": {
+        "min": 1.99619,
+        "median": 20.516775
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "synthetic_64",
+      "prompt_tokens": 64,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.14061,
+        "median": 4.055384
+      },
+      "recompute_min_margin": {
+        "min": 0.140587,
+        "median": 4.055382
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "synthetic_256",
+      "prompt_tokens": 256,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 24,
+      "secondary_len": 24,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 24,
+      "recompute_len": 24,
+      "cached_min_margin": {
+        "min": 0.23238,
+        "median": 10.465803
+      },
+      "recompute_min_margin": {
+        "min": 0.23236,
+        "median": 10.465759
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "synthetic_1024",
+      "prompt_tokens": 1024,
+      "max_new_tokens": 32,
+      "agreement": true,
+      "first_divergence": null,
+      "primary_len": 32,
+      "secondary_len": 32,
+      "cached_margin": null,
+      "recompute_margin": null,
+      "cached_len": 32,
+      "recompute_len": 32,
+      "cached_min_margin": {
+        "min": 0.262514,
+        "median": 17.941755
+      },
+      "recompute_min_margin": {
+        "min": 0.262539,
+        "median": 17.941746
+      }
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "real_validation[0] vs generate",
+      "prompt_tokens": 338,
+      "max_new_tokens": 32,
+      "cached_vs_generate_agreement": true,
+      "recompute_vs_generate_agreement": true
+    },
+    {
+      "backend": "eager",
+      "prompt_label": "synthetic_1024 vs generate",
+      "prompt_tokens": 1024,
+      "max_new_tokens": 32,
+      "cached_vs_generate_agreement": true,
+      "recompute_vs_generate_agreement": true
+    }
+  ],
+  "timing": []
+}

@@ -107,6 +107,47 @@ the same invocation so both models see identical data and decoding. Test
 metrics must not be fed back into prompt, threshold, checkpoint, or
 hyperparameter choices.
 
+## Task 3: KV-cache decoding protocol
+
+`src/trailo/eval/decoding.py` implements two greedy decode paths with shared
+stopping and selection semantics: an explicit prefill + incremental KV-cache
+loop (`greedy_generate_cached`) and a no-cache reference that re-forwards the
+whole prefix each step (`greedy_generate_recompute`). `model.generate` is used
+only as a cross-check. Token-level agreement between the custom paths, and
+against `generate`, is asserted on every fixed benchmark prompt. The eval
+pipeline exposes `decoding_impl: generate|cache|recompute` and keeps
+`generate` as the default so recorded results are unchanged.
+
+- Greedy selection casts last-position logits to fp32 (as `generate` does)
+  before argmax; the decode loop records the log-probability margin between
+  the argmax token and the runner-up, which is what makes an occasional
+  numerical flip distinguishable from a structural bug.
+- Positions derive from the attention mask via cumulative attended count
+  (`generate`'s convention, not a bare arange over cache length), so left
+  padding is handled correctly; RoPE is applied to Q and the new K inside each
+  forward, and cached K/V are already rotated, so nothing cached is
+  re-rotated. Gemma-3's hybrid attention (local layers theta 10k, global theta
+  1M, sliding window 512 on the 270m and E4B text stacks) is handled by the
+  model itself; the loop feeds identical position ids to both paths.
+- Masks: the loop keeps one 2D mask and appends a column per step; the model
+  builds the causal/sliding-window masks over cache length + 1 keys. Since
+  both paths use the same mask semantics, mask construction cannot cause
+  divergence.
+- Cache growth: per layer the cache appends one K/V write per step. In
+  transformers >= 5.20 sliding-window cache layers keep only the last
+  `sliding_window - 1` stored keys (memory plateaus once the window is full)
+  while full-attention layers grow linearly with total sequence length; the
+  benchmark reports measured (logical element count and retained storage)
+  against the theoretical `2 x layers x kv_heads x head_dim x seq x dtype`
+  size.
+- Numerical differences: the recompute path reproduces the same function but
+  inside different kernel shapes (matmul tiling over longer sequences), so
+  rounding differs slightly. Given fp32 this is too small to flip an argmax
+  between the paths, and the benchmark measures agreement and margins rather
+  than assuming it; under bf16, benign near-tie flips become possible and the
+  margin-at-divergence diagnostics distinguish rounding from a structural bug
+  (which would diverge with a healthy margin).
+
 ## Reproducibility
 
 - Seeds cover Python, NumPy, torch, and CUDA. Deterministic algorithms are

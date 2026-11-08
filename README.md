@@ -162,7 +162,6 @@ python -m trailo.scripts.generate_task2_report \
   --config src/trailo/configs/final_a100.yaml
 python -m unittest tests.test_analysis -v
 ```
-
 Outputs under `src/trailo/results/final_a100/task2/`:
 
 - `task2_analysis.json` — full numbers per model (`baseline`, `finetuned`) and
@@ -193,6 +192,52 @@ Design rules implemented by the analysis:
   criterion and cited-sentence text, missing-information failures, and
   not-applicable mishandling) are selected by deterministic severity-ranked
   heuristics, so the report is reproducible.
+
+## Task 3: KV-cached autoregressive generation
+
+Task 3 implements and validates explicit KV-cache decoding instead of relying
+on a library switch. `src/trailo/eval/decoding.py` contains the custom paths:
+
+- `greedy_generate_cached`: one full-prompt prefill forward with
+  `use_cache=True`, then a loop that forwards only the newest token each step
+  and reuses/updates the `DynamicCache`;
+- `greedy_generate_recompute`: the reference path with no cache reuse — every
+  step re-forwards the entire sequence so far with `use_cache=False`.
+
+Both manage `position_ids` and the attention mask explicitly and reproduce
+`generate` greedy conventions (fp32 argmax, eos appended then generation
+stops without feeding the eos token back). The eval pipeline selects a path
+with `eval.decoding_impl: generate|cache|recompute` (default `generate`, so
+existing eval artifacts are unchanged).
+
+Validation and benchmarks:
+
+```bash
+PYTHONPATH=src python -m unittest tests.test_decoding -v
+PYTHONPATH=src HF_HUB_OFFLINE=1 python -m trailo.scripts.benchmark_kv_cache \
+  --config src/trailo/configs/smoke_cpu.yaml \
+  --prompts-dir data/processed/final_a100
+python -m unittest tests.test_splits tests.test_parsing tests.test_analysis tests.test_decoding -v
+```
+
+Outputs under `src/trailo/results/<run_name>/task3/`:
+`kv_cache_benchmark.json` (all raw timings, agreement diagnostics, margins)
+and `report.md` (tables and the positional-handling / masking / cache-growth /
+numerical-differences discussion). The local benchmark runs on the 270m smoke
+checkpoint; the same script runs unchanged on the A100 config for E4B.
+
+Details that the implementation deliberately gets right (and that the report
+documents empirically):
+
+- Positions come from the attention mask (cumulative attended count), matching
+  the `generate` convention rather than a naive arange over cache length.
+- Cached keys/values are stored after RoPE is applied, so nothing cached is
+  ever re-rotated; a decode step's position equals the cache logical length
+  even when sliding-window cache layers have trimmed stored keys.
+- In this transformers version, sliding-window cache layers cap their stored
+  K/V at `sliding_window - 1` tokens (memory plateaus) while full-attention
+  layers grow linearly; both facts are verified against the measured cache
+  sizes in the report.
 
 ## Outputs
 
