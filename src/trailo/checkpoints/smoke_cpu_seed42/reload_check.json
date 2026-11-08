@@ -1,0 +1,12 @@
+{
+  "annotation_id": 0,
+  "max_abs_difference": 0.0,
+  "passed": true,
+  "performed": true,
+  "reference_shape": [
+    262144
+  ],
+  "reloaded_shape": [
+    262144
+  ]
+}

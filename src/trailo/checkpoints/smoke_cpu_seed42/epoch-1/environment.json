@@ -1,0 +1,85 @@
+{
+  "attention_backend": "sdpa",
+  "config": {
+    "data": {
+      "allow_truncated_eval": false,
+      "include_test": false,
+      "manifest_path": "data/splits/split_manifest.json",
+      "max_length": 1024,
+      "prepare_subset_size": 8,
+      "processed_dir": "data/processed/smoke_cpu"
+    },
+    "eval": {
+      "batch_size": 1,
+      "do_sample": false,
+      "max_new_tokens": 128,
+      "num_beams": 1,
+      "subset_size": 8
+    },
+    "lora": {
+      "alpha": 32,
+      "dropout": 0.05,
+      "rank": 16,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ]
+    },
+    "model": {
+      "allow_cpu_oversize": false,
+      "attn_implementation": "sdpa",
+      "model_id": "google/gemma-3-270m-it",
+      "revision": "ac82b4e820549b854eebf28ce6dedaf9fdfa17b3"
+    },
+    "run_id": "smoke_cpu_seed42",
+    "run_name": "smoke_cpu",
+    "seed": 42,
+    "train": {
+      "batch_size": 1,
+      "device": "cpu",
+      "early_stopping_patience": 2,
+      "epochs": 1,
+      "eval_every_steps": 3,
+      "gradient_accumulation": 2,
+      "gradient_checkpointing": false,
+      "learning_rate": 0.0002,
+      "logging_steps": 1,
+      "max_grad_norm": 1.0,
+      "max_steps": 3,
+      "precision": "fp32",
+      "subset_size": 8,
+      "warmup_ratio": 0.03,
+      "weight_decay": 0.01
+    },
+    "wandb": {
+      "enabled": true,
+      "entity": null,
+      "log_gradients": false,
+      "mode": "offline",
+      "project": "trialo-smoke"
+    }
+  },
+  "cpu_bf16_supported": true,
+  "cuda_available": false,
+  "cuda_version": null,
+  "datasets": "5.1.0",
+  "device": "cpu",
+  "flash_attention_available": false,
+  "memory": {
+    "available_gb": 3.3068084716796875,
+    "total_gb": 7.1283721923828125,
+    "used_gb": 3.821563720703125
+  },
+  "numpy": "2.5.3",
+  "peft": "0.21.2",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "precision": "fp32",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "torch": "2.14.0+cpu",
+  "transformers": "5.22.1"
+}
