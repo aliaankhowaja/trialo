@@ -1,0 +1,3917 @@
+{
+  "analysis": {
+    "baseline/test": {
+      "classification": {
+        "exclusion": {
+          "accuracy": 0.1297709923664122,
+          "accuracy_parsed": 0.1297709923664122,
+          "counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              2,
+              0
+            ],
+            [
+              2,
+              18,
+              7,
+              1
+            ],
+            [
+              7,
+              62,
+              22,
+              0
+            ]
+          ],
+          "labels": [
+            "excluded",
+            "not applicable",
+            "not enough information",
+            "not excluded"
+          ],
+          "macro_f1": 0.10834164174144234,
+          "macro_f1_observed": 0.10834164174144234,
+          "n_records": 131,
+          "n_unparsed": 0,
+          "per_class": {
+            "excluded": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 9,
+              "recall": 0.0,
+              "support": 0
+            },
+            "not applicable": {
+              "f1": 0.19607843137254902,
+              "precision": 0.1111111111111111,
+              "predicted": 90,
+              "recall": 0.8333333333333334,
+              "support": 12
+            },
+            "not enough information": {
+              "f1": 0.23728813559322032,
+              "precision": 0.22580645161290322,
+              "predicted": 31,
+              "recall": 0.25,
+              "support": 28
+            },
+            "not excluded": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 1,
+              "recall": 0.0,
+              "support": 91
+            }
+          },
+          "row_normalized": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.8333333333333334,
+              0.16666666666666666,
+              0.0
+            ],
+            [
+              0.07142857142857142,
+              0.6428571428571429,
+              0.25,
+              0.03571428571428571
+            ],
+            [
+              0.07692307692307693,
+              0.6813186813186813,
+              0.24175824175824176,
+              0.0
+            ]
+          ]
+        },
+        "inclusion": {
+          "accuracy": 0.6933333333333334,
+          "accuracy_parsed": 0.6933333333333334,
+          "counts": [
+            [
+              25,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              7,
+              2,
+              22,
+              7
+            ],
+            [
+              1,
+              2,
+              1,
+              3
+            ]
+          ],
+          "labels": [
+            "included",
+            "not applicable",
+            "not enough information",
+            "not included"
+          ],
+          "macro_f1": 0.5773809523809523,
+          "macro_f1_observed": 0.5773809523809523,
+          "n_records": 75,
+          "n_unparsed": 0,
+          "per_class": {
+            "included": {
+              "f1": 0.8333333333333334,
+              "precision": 0.7575757575757576,
+              "predicted": 33,
+              "recall": 0.9259259259259259,
+              "support": 27
+            },
+            "not applicable": {
+              "f1": 0.4444444444444444,
+              "precision": 0.3333333333333333,
+              "predicted": 6,
+              "recall": 0.6666666666666666,
+              "support": 3
+            },
+            "not enough information": {
+              "f1": 0.6984126984126985,
+              "precision": 0.88,
+              "predicted": 25,
+              "recall": 0.5789473684210527,
+              "support": 38
+            },
+            "not included": {
+              "f1": 0.33333333333333326,
+              "precision": 0.2727272727272727,
+              "predicted": 11,
+              "recall": 0.42857142857142855,
+              "support": 7
+            }
+          },
+          "row_normalized": [
+            [
+              0.9259259259259259,
+              0.0,
+              0.07407407407407407,
+              0.0
+            ],
+            [
+              0.0,
+              0.6666666666666666,
+              0.0,
+              0.3333333333333333
+            ],
+            [
+              0.18421052631578946,
+              0.05263157894736842,
+              0.5789473684210527,
+              0.18421052631578946
+            ],
+            [
+              0.14285714285714285,
+              0.2857142857142857,
+              0.14285714285714285,
+              0.42857142857142855
+            ]
+          ]
+        },
+        "overall": {
+          "accuracy": 0.33495145631067963,
+          "accuracy_parsed": 0.33495145631067963,
+          "counts": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              25,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              7,
+              20,
+              29,
+              1,
+              7
+            ],
+            [
+              7,
+              0,
+              62,
+              22,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              1,
+              0,
+              3
+            ]
+          ],
+          "labels": [
+            "excluded",
+            "included",
+            "not applicable",
+            "not enough information",
+            "not excluded",
+            "not included"
+          ],
+          "macro_f1": 0.30971545315807614,
+          "macro_f1_observed": 0.30971545315807614,
+          "n_records": 206,
+          "n_unparsed": 0,
+          "per_class": {
+            "excluded": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 9,
+              "recall": 0.0,
+              "support": 0
+            },
+            "included": {
+              "f1": 0.8333333333333334,
+              "precision": 0.7575757575757576,
+              "predicted": 33,
+              "recall": 0.9259259259259259,
+              "support": 27
+            },
+            "not applicable": {
+              "f1": 0.21621621621621623,
+              "precision": 0.125,
+              "predicted": 96,
+              "recall": 0.8,
+              "support": 15
+            },
+            "not enough information": {
+              "f1": 0.47540983606557385,
+              "precision": 0.5178571428571429,
+              "predicted": 56,
+              "recall": 0.4393939393939394,
+              "support": 66
+            },
+            "not excluded": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 1,
+              "recall": 0.0,
+              "support": 91
+            },
+            "not included": {
+              "f1": 0.33333333333333326,
+              "precision": 0.2727272727272727,
+              "predicted": 11,
+              "recall": 0.42857142857142855,
+              "support": 7
+            }
+          },
+          "row_normalized": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9259259259259259,
+              0.0,
+              0.07407407407407407,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.8,
+              0.13333333333333333,
+              0.0,
+              0.06666666666666667
+            ],
+            [
+              0.030303030303030304,
+              0.10606060606060606,
+              0.30303030303030304,
+              0.4393939393939394,
+              0.015151515151515152,
+              0.10606060606060606
+            ],
+            [
+              0.07692307692307693,
+              0.0,
+              0.6813186813186813,
+              0.24175824175824176,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.14285714285714285,
+              0.2857142857142857,
+              0.14285714285714285,
+              0.0,
+              0.42857142857142855
+            ]
+          ]
+        }
+      },
+      "contradictions": {
+        "conclusive_predictions": 54,
+        "conclusive_without_evidence": 5,
+        "conclusive_without_evidence_rate": 0.09259259259259259,
+        "flag_counts": {
+          "duplicate_evidence_ids": 1,
+          "eligible_with_negated_evidence": 9,
+          "not excluded_without_evidence": 1,
+          "not included_without_evidence": 4
+        },
+        "flagged": [
+          {
+            "annotation_id": 390,
+            "criterion": "Oral treatment with corticosteroids (>15 mg/day prednisolone or equivalent) or changes in corticosteroid dosing within 30 days prior to the first dose of study medication. This also includes intraarticular steroid injections or topical treatment for SLE symptoms. Inhaled or topical steroids may be given for reasons other than SLE disease activity (such as asthma, contact dermatitis) as clinically indicated.",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "The patient note does not mention any current or recent use of corticosteroids or other excluded treatments.",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not enough information",
+            "patient_id": "sigir-201421",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 160,
+            "criterion": "Patient willing to give full informed consent for participation",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The note states the patient 'will provide informed consent'.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [
+              3
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 178,
+            "criterion": "Signed informed consent.",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The note states the patient 'will provide informed consent'.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [
+              3
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 191,
+            "criterion": "bilateral pulmonary infiltrates or a chest radiograph consistent with edema;",
+            "criterion_type": "inclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "The patient's chest status is not mentioned in the provided note. There is no information about pulmonary infiltrates or edema.",
+            "flag": "not included_without_evidence",
+            "gold_label": "not enough information",
+            "patient_id": "sigir-201411",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 195,
+            "criterion": "Reported pain greater than or equal to 3 out of 10",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The patient reports 'excruciating pain' in her right arm, indicating pain greater than or equal to 3 out of 10.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201411",
+            "predicted_evidence_ids": [
+              0
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 305,
+            "criterion": "Standard analytical parameters, defined by: Leukocytes \u2265 3000 Neutrophils \u2265 1500 Platelets \u2265 100,000 Aspartate aminotransferase (AST) / Alanine aminotransferase (ALT) \u2264 1.5 standard range institution creatinine \u2264 1.5 mg / dl",
+            "criterion_type": "inclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "The patient has acute abdominal pain, fever, dehydration, and a ruptured liver abscess. While the note mentions a physical examination and lab findings (hepatomegaly, free intraperitoneal fluid), it does not provide the specific values for leukocytes, neutrophils, platelets, AST, ALT, and creatinine required to determine eligibility based on the standard analytical parameters.",
+            "flag": "not included_without_evidence",
+            "gold_label": "not enough information",
+            "patient_id": "sigir-201417",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 308,
+            "criterion": "Patients give their written informed consent for participation in the study and provide sufficient guarantees adherence to protocol according to the opinion of the investigator in charge of the patient care.",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "Sentence 5 states the patient will provide informed consent and comply with the trial protocol.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201417",
+            "predicted_evidence_ids": [
+              5
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 381,
+            "criterion": "Age > 18 years at the time of signing the informed consent form",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The patient is 21 years old, which is greater than 18 years old, and will provide informed consent.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201421",
+            "predicted_evidence_ids": [
+              4
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 382,
+            "criterion": "Fulfil at least 4 criteria for SLE as defined by the American College of Rheumatology (ACR)",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The patient has a positive ANA and anti-dsDNA, proteinuria and RBC casts in urine, and is being evaluated for SLE, suggesting potential fulfillment of multiple ACR criteria.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201421",
+            "predicted_evidence_ids": [
+              2,
+              3,
+              4
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 386,
+            "criterion": "Ability to sign and date a written informed consent prior to entering the study",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The note states the patient 'will provide informed consent' and 'will comply with the trial protocol'.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201421",
+            "predicted_evidence_ids": [
+              4
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          }
+        ]
+      },
+      "errors": {
+        "confusion_pairs": [
+          {
+            "count": 62,
+            "examples": [
+              {
+                "annotation_id": 167,
+                "criterion": "Previous history of upper limb deep vein thrombosis",
+                "criterion_type": "exclusion",
+                "explanation": "The note mentions a history of cardiac catheterization via the right femoral artery, but no mention of deep vein thrombosis in either limb.",
+                "gold_label": "not excluded",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 168,
+                "criterion": "Patients on glibenclamide or nicorandil (these medications may interfere with RIPC)",
+                "criterion_type": "exclusion",
+                "explanation": "The patient note does not mention whether the patient is taking glibenclamide or nicorandil.",
+                "gold_label": "not excluded",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not excluded",
+            "predicted": "not applicable"
+          },
+          {
+            "count": 22,
+            "examples": [
+              {
+                "annotation_id": 388,
+                "criterion": "Active severe SLE flare with central nervous system (CNS) manifestations, active renal lupus, systemic vasculitis, active pericarditis, active pleuritis, active peritonitis or other SLE manifestations requiring treatment not allowed by the study protocol.",
+                "criterion_type": "exclusion",
+                "explanation": "The patient has thrombocytopenia, positive ANA and anti-dsDNA, proteinuria and RBC casts, which are suggestive of lupus nephritis, but the note does not explicitly state active renal lupus or other severe SLE manifestations requiring treatment not allowed by the study protocol.",
+                "gold_label": "not excluded",
+                "note": "0. A 21-year-old female is evaluated for progressive arthralgias and malaise.\n1. On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.\n2. Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.\n3. Her urine is positive for protein and RBC casts.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201421",
+                "predicted_evidence_ids": [
+                  2,
+                  3
+                ],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+                  "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+                  "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+                  "3": "Her urine is positive for protein and RBC casts.",
+                  "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 402,
+                "criterion": "Current severe infection",
+                "criterion_type": "exclusion",
+                "explanation": "The patient note does not mention any current infection.",
+                "gold_label": "not excluded",
+                "note": "0. A 21-year-old female is evaluated for progressive arthralgias and malaise.\n1. On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.\n2. Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.\n3. Her urine is positive for protein and RBC casts.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201421",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+                  "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+                  "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+                  "3": "Her urine is positive for protein and RBC casts.",
+                  "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not excluded",
+            "predicted": "not enough information"
+          },
+          {
+            "count": 20,
+            "examples": [
+              {
+                "annotation_id": 174,
+                "criterion": "Patients with previous axillary surgery",
+                "criterion_type": "exclusion",
+                "explanation": "The patient note does not mention any previous axillary surgery.",
+                "gold_label": "not enough information",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 315,
+                "criterion": "BMI> 40 kg/m2.",
+                "criterion_type": "exclusion",
+                "explanation": "The patient's BMI is not mentioned in the provided clinical note.",
+                "gold_label": "not enough information",
+                "note": "0. A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.\n1. The physical examination is remarkable for tenderness and positive Murphy sign.\n2. Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.\n3. Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.\n4. After surgery, the patient is taken to the ICU.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201417",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+                  "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+                  "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+                  "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+                  "4": "After surgery, the patient is taken to the ICU.",
+                  "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not enough information",
+            "predicted": "not applicable"
+          },
+          {
+            "count": 7,
+            "examples": [
+              {
+                "annotation_id": 166,
+                "criterion": "Significant upper limb peripheral arterial disease",
+                "criterion_type": "exclusion",
+                "explanation": "The patient has a pulsatile mass in her right groin with loss of distal pulses and a bruit over the femoral artery entry site, suggesting significant arterial compromise.",
+                "gold_label": "not excluded",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [
+                  2
+                ],
+                "predicted_label": "excluded",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 173,
+                "criterion": "Patients previously enrolled in the trial representing for a further procedure",
+                "criterion_type": "exclusion",
+                "explanation": "The patient underwent cardiac catheterization via the right femoral artery earlier in the morning, and now has a pulsatile mass, loss of distal pulses, and a bruit at the entry site, suggesting a potential complication related to the previous procedure, which is a criterion for exclusion.",
+                "gold_label": "not excluded",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [
+                  2
+                ],
+                "predicted_label": "excluded",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not excluded",
+            "predicted": "excluded"
+          },
+          {
+            "count": 7,
+            "examples": [
+              {
+                "annotation_id": 175,
+                "criterion": "Chronic renal failure requiring hemodialysis.",
+                "criterion_type": "inclusion",
+                "explanation": "The patient's presentation is consistent with a potential vascular complication following femoral artery catheterization, but there is no mention of chronic renal failure or hemodialysis.",
+                "gold_label": "not enough information",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [
+                  2
+                ],
+                "predicted_label": "not included",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 191,
+                "criterion": "bilateral pulmonary infiltrates or a chest radiograph consistent with edema;",
+                "criterion_type": "inclusion",
+                "explanation": "The patient's chest status is not mentioned in the provided note. There is no information about pulmonary infiltrates or edema.",
+                "gold_label": "not enough information",
+                "note": "0. A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.\n1. She denies trauma.\n2. On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.\n3. Her body temperature is normal and her blood pressure is 80/60.\n4. Her right arm has no discoloration or movement limitation.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201411",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not included",
+                "sentences": {
+                  "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+                  "1": "She denies trauma.",
+                  "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+                  "3": "Her body temperature is normal and her blood pressure is 80/60.",
+                  "4": "Her right arm has no discoloration or movement limitation.",
+                  "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not enough information",
+            "predicted": "not included"
+          }
+        ],
+        "missing_information": {
+          "gold_nei_mispredicted": [
+            {
+              "annotation_id": 174,
+              "criterion": "Patients with previous axillary surgery",
+              "criterion_type": "exclusion",
+              "explanation": "The patient note does not mention any previous axillary surgery.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201410",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not applicable",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 175,
+              "criterion": "Chronic renal failure requiring hemodialysis.",
+              "criterion_type": "inclusion",
+              "explanation": "The patient's presentation is consistent with a potential vascular complication following femoral artery catheterization, but there is no mention of chronic renal failure or hemodialysis.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201410",
+              "predicted_evidence_ids": [
+                2
+              ],
+              "predicted_label": "not included",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 189,
+              "criterion": "at least 1 of 3 signs of hypoperfusion (urine output < 0.5mL/kg of body weight per hour for 1 hour or more; neurologic dysfunction defined by confusion, psychosis, or a Glasgow coma scale score of \u2264 6; plasma lactate higher than the upper limit of the normal value).",
+              "criterion_type": "inclusion",
+              "explanation": "The patient's blood pressure is 80/60, which is low and suggests hypoperfusion.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201411",
+              "predicted_evidence_ids": [
+                3
+              ],
+              "predicted_label": "included",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 191,
+              "criterion": "bilateral pulmonary infiltrates or a chest radiograph consistent with edema;",
+              "criterion_type": "inclusion",
+              "explanation": "The patient's chest status is not mentioned in the provided note. There is no information about pulmonary infiltrates or edema.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201411",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not included",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 193,
+              "criterion": "Patients were moribund.",
+              "criterion_type": "exclusion",
+              "explanation": "The patient's blood pressure is 80/60, which is indicative of a potentially moribund state.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201411",
+              "predicted_evidence_ids": [
+                3
+              ],
+              "predicted_label": "excluded",
+              "sentences": {}
+            }
+          ],
+          "gold_nei_mispredicted_count": 37,
+          "gold_nei_total": 66,
+          "predicted_nei_when_not_gold": [
+            {
+              "annotation_id": 185,
+              "criterion": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+              "criterion_type": "inclusion",
+              "explanation": "The note mentions the patient is tachypneic and tachycardic with a low blood pressure (80/60), which could indicate shock. However, there is no definitive diagnosis of shock or ARDS stated in the note.",
+              "gold_label": "included",
+              "note": "",
+              "patient_id": "sigir-201411",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 188,
+              "criterion": "The use of vasopressors to maintain a systolic blood pressure of at least 90mmHg despite fluid resuscitation, low dose of dopamine (\u2264 5 \u03bcg/kg per minute), or dobutamine;",
+              "criterion_type": "inclusion",
+              "explanation": "The patient's blood pressure is 80/60, which is below the required 90mmHg systolic blood pressure for vasopressor use. However, the note does not state whether vasopressors have been used or if fluid resuscitation has occurred.",
+              "gold_label": "not included",
+              "note": "",
+              "patient_id": "sigir-201411",
+              "predicted_evidence_ids": [
+                3
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 385,
+              "criterion": "Ability to take and retain oral medication",
+              "criterion_type": "inclusion",
+              "explanation": "The note does not mention whether the patient is able to take and retain oral medication.",
+              "gold_label": "included",
+              "note": "",
+              "patient_id": "sigir-201421",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 388,
+              "criterion": "Active severe SLE flare with central nervous system (CNS) manifestations, active renal lupus, systemic vasculitis, active pericarditis, active pleuritis, active peritonitis or other SLE manifestations requiring treatment not allowed by the study protocol.",
+              "criterion_type": "exclusion",
+              "explanation": "The patient has thrombocytopenia, positive ANA and anti-dsDNA, proteinuria and RBC casts, which are suggestive of lupus nephritis, but the note does not explicitly state active renal lupus or other severe SLE manifestations requiring treatment not allowed by the study protocol.",
+              "gold_label": "not excluded",
+              "note": "",
+              "patient_id": "sigir-201421",
+              "predicted_evidence_ids": [
+                2,
+                3
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 402,
+              "criterion": "Current severe infection",
+              "criterion_type": "exclusion",
+              "explanation": "The patient note does not mention any current infection.",
+              "gold_label": "not excluded",
+              "note": "",
+              "patient_id": "sigir-201421",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            }
+          ],
+          "predicted_nei_when_not_gold_count": 27
+        },
+        "not_applicable": {
+          "gold_na_total": 15,
+          "mispredicted": [
+            {
+              "annotation_id": 693,
+              "criterion": "Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome)",
+              "criterion_type": "exclusion",
+              "explanation": "The note mentions nighttime snoring, pauses in breathing, and restlessness, which are suggestive of OSA, but does not explicitly state a suspected diagnosis of another sleep disorder. Therefore, it's not possible to definitively apply the exclusion criterion.",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-20158",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 745,
+              "criterion": "female patients have adequate birth-control method",
+              "criterion_type": "inclusion",
+              "explanation": "The patient is a 5-year-old boy, not a female, so the inclusion criterion regarding female patients and birth control is not applicable.",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201513",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not included",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 767,
+              "criterion": "Symptoms that collectively suggest nonstreptococcal T/P (eg, laryngitis, coryza, conjunctivitis, diarrhea, cough)",
+              "criterion_type": "exclusion",
+              "explanation": "The note mentions dysphagia, drooling, fever, and vocal changes, but does not provide enough information to determine if these symptoms collectively suggest nonstreptococcal T/P.",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201513",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            }
+          ],
+          "mispredicted_count": 3
+        }
+      },
+      "evidence": {
+        "gold_present": {
+          "exact_match_rate": 0.3770491803278688,
+          "f1": 0.5199999999999999,
+          "n_records": 61,
+          "precision": 0.6964285714285714,
+          "recall": 0.4148936170212766
+        },
+        "no_gold_evidence": {
+          "cited_without_gold_rate": 0.14482758620689656,
+          "empty_prediction_rate": 0.8551724137931035,
+          "n_records": 145
+        },
+        "per_record": {
+          "macro_f1": 0.46869633099141295,
+          "n_records": 61
+        },
+        "policy": "Evidence is scored in three views. (1) Pooled: micro-aggregated true/false-positive/negative counts over every parsed record, identical to the headline metric in eval/metrics.py. Records with no annotated gold evidence cannot add recall and any cited sentence on such a record counts as a false positive. (2) Gold-present: the same scoring restricted to records whose gold evidence set is non-empty; the primary comparable retrieval number. (3) Per-record: every gold-present record contributes one P/R/F1 triple and the macro average is reported. Records with empty gold evidence are reported separately as a consistency rate (predicted evidence also empty); they never earn credit toward evidence quality. Empty predicted evidence is always measured, never treated as proof of eligibility or ineligibility, by the analysis or the report.",
+        "pooled": {
+          "exact_match_rate": 0.7135922330097088,
+          "f1": 0.4431818181818182,
+          "n_records": 206,
+          "precision": 0.47560975609756095,
+          "recall": 0.4148936170212766
+        }
+      },
+      "n_examples": 206,
+      "n_parsed": 206,
+      "parse_success_rate": 1.0
+    },
+    "baseline/validation": {
+      "classification": {
+        "exclusion": {
+          "accuracy": 0.22142857142857142,
+          "accuracy_parsed": 0.22142857142857142,
+          "counts": [
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              8,
+              0,
+              1
+            ],
+            [
+              4,
+              8,
+              13,
+              1
+            ],
+            [
+              12,
+              53,
+              28,
+              8
+            ]
+          ],
+          "labels": [
+            "excluded",
+            "not applicable",
+            "not enough information",
+            "not excluded"
+          ],
+          "macro_f1": 0.22850550686371582,
+          "macro_f1_observed": 0.22850550686371582,
+          "n_records": 140,
+          "n_unparsed": 0,
+          "per_class": {
+            "excluded": {
+              "f1": 0.18181818181818182,
+              "precision": 0.1,
+              "predicted": 20,
+              "recall": 1.0,
+              "support": 2
+            },
+            "not applicable": {
+              "f1": 0.2,
+              "precision": 0.11594202898550725,
+              "predicted": 69,
+              "recall": 0.7272727272727273,
+              "support": 11
+            },
+            "not enough information": {
+              "f1": 0.38805970149253727,
+              "precision": 0.3170731707317073,
+              "predicted": 41,
+              "recall": 0.5,
+              "support": 26
+            },
+            "not excluded": {
+              "f1": 0.14414414414414414,
+              "precision": 0.8,
+              "predicted": 10,
+              "recall": 0.07920792079207921,
+              "support": 101
+            }
+          },
+          "row_normalized": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.18181818181818182,
+              0.7272727272727273,
+              0.0,
+              0.09090909090909091
+            ],
+            [
+              0.15384615384615385,
+              0.3076923076923077,
+              0.5,
+              0.038461538461538464
+            ],
+            [
+              0.1188118811881188,
+              0.5247524752475248,
+              0.27722772277227725,
+              0.07920792079207921
+            ]
+          ]
+        },
+        "inclusion": {
+          "accuracy": 0.5454545454545454,
+          "accuracy_parsed": 0.5454545454545454,
+          "counts": [
+            [
+              26,
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              12,
+              0,
+              9,
+              6
+            ],
+            [
+              2,
+              0,
+              0,
+              1
+            ]
+          ],
+          "labels": [
+            "included",
+            "not applicable",
+            "not enough information",
+            "not included"
+          ],
+          "macro_f1": 0.321547619047619,
+          "macro_f1_observed": 0.321547619047619,
+          "n_records": 66,
+          "n_unparsed": 0,
+          "per_class": {
+            "included": {
+              "f1": 0.6933333333333334,
+              "precision": 0.65,
+              "predicted": 40,
+              "recall": 0.7428571428571429,
+              "support": 35
+            },
+            "not applicable": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 2,
+              "recall": 0.0,
+              "support": 1
+            },
+            "not enough information": {
+              "f1": 0.45,
+              "precision": 0.6923076923076923,
+              "predicted": 13,
+              "recall": 0.3333333333333333,
+              "support": 27
+            },
+            "not included": {
+              "f1": 0.14285714285714288,
+              "precision": 0.09090909090909091,
+              "predicted": 11,
+              "recall": 0.3333333333333333,
+              "support": 3
+            }
+          },
+          "row_normalized": [
+            [
+              0.7428571428571429,
+              0.05714285714285714,
+              0.08571428571428572,
+              0.11428571428571428
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.4444444444444444,
+              0.0,
+              0.3333333333333333,
+              0.2222222222222222
+            ],
+            [
+              0.6666666666666666,
+              0.0,
+              0.0,
+              0.3333333333333333
+            ]
+          ]
+        },
+        "overall": {
+          "accuracy": 0.32524271844660196,
+          "accuracy_parsed": 0.32524271844660196,
+          "counts": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              26,
+              2,
+              3,
+              0,
+              4
+            ],
+            [
+              2,
+              0,
+              8,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              12,
+              8,
+              22,
+              1,
+              6
+            ],
+            [
+              12,
+              0,
+              53,
+              28,
+              8,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "labels": [
+            "excluded",
+            "included",
+            "not applicable",
+            "not enough information",
+            "not excluded",
+            "not included"
+          ],
+          "macro_f1": 0.29435647329352993,
+          "macro_f1_observed": 0.29435647329352993,
+          "n_records": 206,
+          "n_unparsed": 0,
+          "per_class": {
+            "excluded": {
+              "f1": 0.18181818181818182,
+              "precision": 0.1,
+              "predicted": 20,
+              "recall": 1.0,
+              "support": 2
+            },
+            "included": {
+              "f1": 0.6933333333333334,
+              "precision": 0.65,
+              "predicted": 40,
+              "recall": 0.7428571428571429,
+              "support": 35
+            },
+            "not applicable": {
+              "f1": 0.1927710843373494,
+              "precision": 0.11267605633802817,
+              "predicted": 71,
+              "recall": 0.6666666666666666,
+              "support": 12
+            },
+            "not enough information": {
+              "f1": 0.4112149532710281,
+              "precision": 0.4074074074074074,
+              "predicted": 54,
+              "recall": 0.41509433962264153,
+              "support": 53
+            },
+            "not excluded": {
+              "f1": 0.14414414414414414,
+              "precision": 0.8,
+              "predicted": 10,
+              "recall": 0.07920792079207921,
+              "support": 101
+            },
+            "not included": {
+              "f1": 0.14285714285714288,
+              "precision": 0.09090909090909091,
+              "predicted": 11,
+              "recall": 0.3333333333333333,
+              "support": 3
+            }
+          },
+          "row_normalized": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.7428571428571429,
+              0.05714285714285714,
+              0.08571428571428572,
+              0.0,
+              0.11428571428571428
+            ],
+            [
+              0.16666666666666666,
+              0.0,
+              0.6666666666666666,
+              0.08333333333333333,
+              0.08333333333333333,
+              0.0
+            ],
+            [
+              0.07547169811320754,
+              0.22641509433962265,
+              0.1509433962264151,
+              0.41509433962264153,
+              0.018867924528301886,
+              0.11320754716981132
+            ],
+            [
+              0.1188118811881188,
+              0.0,
+              0.5247524752475248,
+              0.27722772277227725,
+              0.07920792079207921,
+              0.0
+            ],
+            [
+              0.0,
+              0.6666666666666666,
+              0.0,
+              0.0,
+              0.0,
+              0.3333333333333333
+            ]
+          ]
+        }
+      },
+      "contradictions": {
+        "conclusive_predictions": 81,
+        "conclusive_without_evidence": 6,
+        "conclusive_without_evidence_rate": 0.07407407407407407,
+        "flag_counts": {
+          "eligible_with_negated_evidence": 23,
+          "included_without_evidence": 1,
+          "not included_without_evidence": 5
+        },
+        "flagged": [
+          {
+            "annotation_id": 944,
+            "criterion": "The patient is 18 years of age or older.",
+            "criterion_type": "inclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "The patient is 65 years of age, which is older than 18 years of age.",
+            "flag": "included_without_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201522",
+            "predicted_evidence_ids": [],
+            "predicted_label": "included",
+            "severity": 3
+          },
+          {
+            "annotation_id": 1,
+            "criterion": "Male and female",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The patient note states the patient is a female.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [
+              1
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 3,
+            "criterion": "Patient must understand and be willing, able and likely to comply with all study procedures and restrictions and comprehends the diary cards.",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "Sentence 8 states the patient will provide informed consent and comply with the trial protocol.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [
+              8
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 4,
+            "criterion": "Patient must be able to give voluntary written informed consent.",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "Sentence 8 states that the patient will provide informed consent.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [
+              8
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 235,
+            "criterion": "Menorrhagia and/or bulk symptoms associated with uterine fibroids",
+            "criterion_type": "inclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "The patient presents with amenorrhea, vaginal spotting, lower abdominal tenderness, nausea and vomiting, and an enlarged uterus with cystic areas. While there are bulk symptoms, the differential diagnosis includes vesicular mole vs fibroid degeneration, and the note does not explicitly state uterine fibroids as the diagnosis.",
+            "flag": "not included_without_evidence",
+            "gold_label": "not enough information",
+            "patient_id": "sigir-201415",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 246,
+            "criterion": "4. Able and willing to give consent and able to attend all study visits",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The note states the patient will provide informed consent and comply with the trial protocol.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-201415",
+            "predicted_evidence_ids": [
+              6
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 249,
+            "criterion": "7. Tumor(s) are clearly visible on non-contrast MRI.",
+            "criterion_type": "inclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "The note mentions an ultrasound, not an MRI, and the criterion requires a non-contrast MRI.",
+            "flag": "not included_without_evidence",
+            "gold_label": "not enough information",
+            "patient_id": "sigir-201415",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 251,
+            "criterion": "1. Patient is pregnant as confirmed by pregnancy test at time of screening",
+            "criterion_type": "exclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The patient's point of care pregnancy test is negative.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201415",
+            "predicted_evidence_ids": [
+              3
+            ],
+            "predicted_label": "not excluded",
+            "severity": 2
+          },
+          {
+            "annotation_id": 31,
+            "criterion": "patients have fever more than one week",
+            "criterion_type": "inclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "The patient has a fever, but the note does not state that the fever has been present for more than one week.",
+            "flag": "not included_without_evidence",
+            "gold_label": "not included",
+            "patient_id": "sigir-20142",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not included",
+            "severity": 2
+          },
+          {
+            "annotation_id": 37,
+            "criterion": "Patient and/or parents/guardian signed informed consent",
+            "criterion_type": "inclusion",
+            "detail": "Eligibility predicted while cited sentences contain negation cues.",
+            "explanation": "The note states that the patient will provide informed consent and comply with the trial protocol.",
+            "flag": "eligible_with_negated_evidence",
+            "gold_label": "included",
+            "patient_id": "sigir-20142",
+            "predicted_evidence_ids": [
+              6
+            ],
+            "predicted_label": "included",
+            "severity": 2
+          }
+        ]
+      },
+      "errors": {
+        "confusion_pairs": [
+          {
+            "count": 53,
+            "examples": [
+              {
+                "annotation_id": 13,
+                "criterion": "IDDM (Type-1 diabetes mellitus)",
+                "criterion_type": "exclusion",
+                "explanation": "The patient denies a family history of heart disease, diabetes, or hypercholesterolemia, but the note does not explicitly state whether or not she has IDDM.",
+                "gold_label": "not excluded",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 16,
+                "criterion": "Known hypersensitivity to nicorandil",
+                "criterion_type": "exclusion",
+                "explanation": "The patient note does not mention any known hypersensitivity to nicorandil.",
+                "gold_label": "not excluded",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not excluded",
+            "predicted": "not applicable"
+          },
+          {
+            "count": 28,
+            "examples": [
+              {
+                "annotation_id": 6,
+                "criterion": "Valvular heart disease and cardiomyopathy",
+                "criterion_type": "exclusion",
+                "explanation": "The note does not mention any valvular heart disease or cardiomyopathy, but it also does not explicitly exclude these conditions. Therefore, there is not enough information to determine if the patient meets the exclusion criterion.",
+                "gold_label": "not excluded",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 7,
+                "criterion": "Myocardial infarction in < 6 months",
+                "criterion_type": "exclusion",
+                "explanation": "The note does not state whether the patient has had a myocardial infarction in the past 6 months.",
+                "gold_label": "not excluded",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not excluded",
+            "predicted": "not enough information"
+          },
+          {
+            "count": 12,
+            "examples": [
+              {
+                "annotation_id": 5,
+                "criterion": "Hypertension of > 170/100 mm of Hg",
+                "criterion_type": "exclusion",
+                "explanation": "The patient is known to have hypertension.",
+                "gold_label": "not excluded",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [
+                  3
+                ],
+                "predicted_label": "excluded",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 25,
+                "criterion": "Severe/malignant/secondary hypertensive patients",
+                "criterion_type": "exclusion",
+                "explanation": "The patient is known to have hypertension, which is considered a severe/malignant/secondary hypertensive condition according to the exclusion criterion.",
+                "gold_label": "not excluded",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [
+                  3
+                ],
+                "predicted_label": "excluded",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not excluded",
+            "predicted": "excluded"
+          },
+          {
+            "count": 12,
+            "examples": [
+              {
+                "annotation_id": 375,
+                "criterion": "Trauma patients undergoing DC/OA management for traumatic injury",
+                "criterion_type": "inclusion",
+                "explanation": "The patient sustained multiple injuries including fractures from a car accident, and has a tender abdomen with guarding and rebound, indicating trauma.",
+                "gold_label": "not enough information",
+                "note": "0. A 32-year-old woman is admitted to the ER following a car accident.\n1. She has sustained multiple injuries including upper and lower extremity fractures.\n2. She is fully awake and alert, and she reports that she was not wearing a seat belt.\n3. Her blood pressure is 134/74 mm Hg, and her pulse is 87/min.\n4. Physical examination reveals a tender abdomen with guarding and rebound in all four quadrants.\n5. She has no bowel sounds.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201420",
+                "predicted_evidence_ids": [
+                  1,
+                  4
+                ],
+                "predicted_label": "included",
+                "sentences": {
+                  "0": "A 32-year-old woman is admitted to the ER following a car accident.",
+                  "1": "She has sustained multiple injuries including upper and lower extremity fractures.",
+                  "2": "She is fully awake and alert, and she reports that she was not wearing a seat belt.",
+                  "3": "Her blood pressure is 134/74 mm Hg, and her pulse is 87/min.",
+                  "4": "Physical examination reveals a tender abdomen with guarding and rebound in all four quadrants.",
+                  "5": "She has no bowel sounds.",
+                  "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 502,
+                "criterion": "WHO performance status \u22641",
+                "criterion_type": "inclusion",
+                "explanation": "The note states the patient will comply with the trial protocol without any practical issues, implying they are eligible.",
+                "gold_label": "not enough information",
+                "note": "0. A 21-year-old college student undergoes colonoscopy due to family history of multiple polyps in his older siblings.\n1. His brother underwent total proctocolectomy at age 22, and his sister underwent a total proctocolectomy at age 28, after both were found to have hundreds of colonic adenomas on colonoscopy.\n2. Both siblings are currently well without any findings of neoplasms.\n3. The patient undergoes sigmoidoscopy and is found to have dozens of small colonic polyps within rectosigmoid.\n4. Several of these are biopsied and are all benign adenomas.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201427",
+                "predicted_evidence_ids": [
+                  5
+                ],
+                "predicted_label": "included",
+                "sentences": {
+                  "0": "A 21-year-old college student undergoes colonoscopy due to family history of multiple polyps in his older siblings.",
+                  "1": "His brother underwent total proctocolectomy at age 22, and his sister underwent a total proctocolectomy at age 28, after both were found to have hundreds of colonic adenomas on colonoscopy.",
+                  "2": "Both siblings are currently well without any findings of neoplasms.",
+                  "3": "The patient undergoes sigmoidoscopy and is found to have dozens of small colonic polyps within rectosigmoid.",
+                  "4": "Several of these are biopsied and are all benign adenomas.",
+                  "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not enough information",
+            "predicted": "included"
+          },
+          {
+            "count": 8,
+            "examples": [
+              {
+                "annotation_id": 15,
+                "criterion": "Pregnant and nursing women",
+                "criterion_type": "exclusion",
+                "explanation": "The patient's pregnancy status is not mentioned in the provided clinical note.",
+                "gold_label": "not enough information",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 19,
+                "criterion": "Patients in whom beta blockers are contraindicated",
+                "criterion_type": "exclusion",
+                "explanation": "The patient is currently taking no medications, so beta blockers are not a factor.",
+                "gold_label": "not enough information",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not enough information",
+            "predicted": "not applicable"
+          }
+        ],
+        "missing_information": {
+          "gold_nei_mispredicted": [
+            {
+              "annotation_id": 8,
+              "criterion": "Unstable angina",
+              "criterion_type": "exclusion",
+              "explanation": "The patient presents with acute chest pain, which is a concern for unstable angina, and is being evaluated in the ER. Therefore, she is excluded from the trial.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [
+                8
+              ],
+              "predicted_label": "excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 15,
+              "criterion": "Pregnant and nursing women",
+              "criterion_type": "exclusion",
+              "explanation": "The patient's pregnancy status is not mentioned in the provided clinical note.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not applicable",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 19,
+              "criterion": "Patients in whom beta blockers are contraindicated",
+              "criterion_type": "exclusion",
+              "explanation": "The patient is currently taking no medications, so beta blockers are not a factor.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not applicable",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 26,
+              "criterion": "Pregnant women and women of childbearing potential",
+              "criterion_type": "exclusion",
+              "explanation": "The patient's pregnancy status is not mentioned in the provided clinical note.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not applicable",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 35,
+              "criterion": "we find that the patient selected does not meet the selection criteria within the observation period",
+              "criterion_type": "exclusion",
+              "explanation": "The patient had loose stools prior to the onset of fever and cough, which is a reason for exclusion.",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20142",
+              "predicted_evidence_ids": [
+                2
+              ],
+              "predicted_label": "excluded",
+              "sentences": {}
+            }
+          ],
+          "gold_nei_mispredicted_count": 31,
+          "gold_nei_total": 53,
+          "predicted_nei_when_not_gold": [
+            {
+              "annotation_id": 6,
+              "criterion": "Valvular heart disease and cardiomyopathy",
+              "criterion_type": "exclusion",
+              "explanation": "The note does not mention any valvular heart disease or cardiomyopathy, but it also does not explicitly exclude these conditions. Therefore, there is not enough information to determine if the patient meets the exclusion criterion.",
+              "gold_label": "not excluded",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 7,
+              "criterion": "Myocardial infarction in < 6 months",
+              "criterion_type": "exclusion",
+              "explanation": "The note does not state whether the patient has had a myocardial infarction in the past 6 months.",
+              "gold_label": "not excluded",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 9,
+              "criterion": "Congestive cardiac failure",
+              "criterion_type": "exclusion",
+              "explanation": "The note does not mention congestive cardiac failure, so it cannot be excluded. However, there is no information to confirm its absence.",
+              "gold_label": "not excluded",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 10,
+              "criterion": "Severe anemia (Hb 7G/dl)",
+              "criterion_type": "exclusion",
+              "explanation": "The patient's hemoglobin level is not provided in the note, so it is not possible to determine if she meets the exclusion criterion for severe anemia.",
+              "gold_label": "not excluded",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 11,
+              "criterion": "Cardiac arrhythmias or II or III degree AV block",
+              "criterion_type": "exclusion",
+              "explanation": "The note mentions nonspecific EKG changes, but does not explicitly state the presence of cardiac arrhythmias or AV block, so it is not possible to determine if the patient meets the exclusion criterion.",
+              "gold_label": "not excluded",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            }
+          ],
+          "predicted_nei_when_not_gold_count": 32
+        },
+        "not_applicable": {
+          "gold_na_total": 12,
+          "mispredicted": [
+            {
+              "annotation_id": 33,
+              "criterion": "full of physical examination and laboratory examination have been carried out after one week\uff0cbut still cannot make a definite diagnosis",
+              "criterion_type": "inclusion",
+              "explanation": "The note mentions a chest x-ray and physical examination, but doesn't state that a full week has passed or that a definite diagnosis hasn't been made. Therefore, the inclusion criterion is not met.",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-20142",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 558,
+              "criterion": "Inability to provide informed consent.",
+              "criterion_type": "exclusion",
+              "explanation": "The note states the patient 'will provide informed consent.'",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201430",
+              "predicted_evidence_ids": [
+                8
+              ],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 801,
+              "criterion": "Definite small-vessel etiology by history or imaging",
+              "criterion_type": "exclusion",
+              "explanation": "The transesophageal echocardiogram and magnetic resonance angiogram of brain and great vessels found no evidence of abnormalities, suggesting a definite small-vessel etiology is not present.",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201515",
+              "predicted_evidence_ids": [
+                2
+              ],
+              "predicted_label": "excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 817,
+              "criterion": "Subjects who have a non-vascular origin of the neurological symptoms after brain imaging (CT scan or MRI)",
+              "criterion_type": "exclusion",
+              "explanation": "The transesophageal echocardiogram and magnetic resonance angiogram of brain and great vessels found no evidence of abnormalities, suggesting a non-vascular origin of the neurological symptoms.",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201515",
+              "predicted_evidence_ids": [
+                2
+              ],
+              "predicted_label": "excluded",
+              "sentences": {}
+            }
+          ],
+          "mispredicted_count": 4
+        }
+      },
+      "evidence": {
+        "gold_present": {
+          "exact_match_rate": 0.36666666666666664,
+          "f1": 0.4873096446700508,
+          "n_records": 90,
+          "precision": 0.5853658536585366,
+          "recall": 0.41739130434782606
+        },
+        "no_gold_evidence": {
+          "cited_without_gold_rate": 0.29310344827586204,
+          "empty_prediction_rate": 0.7068965517241379,
+          "n_records": 116
+        },
+        "per_record": {
+          "macro_f1": 0.46481481481481485,
+          "n_records": 90
+        },
+        "policy": "Evidence is scored in three views. (1) Pooled: micro-aggregated true/false-positive/negative counts over every parsed record, identical to the headline metric in eval/metrics.py. Records with no annotated gold evidence cannot add recall and any cited sentence on such a record counts as a false positive. (2) Gold-present: the same scoring restricted to records whose gold evidence set is non-empty; the primary comparable retrieval number. (3) Per-record: every gold-present record contributes one P/R/F1 triple and the macro average is reported. Records with empty gold evidence are reported separately as a consistency rate (predicted evidence also empty); they never earn credit toward evidence quality. Empty predicted evidence is always measured, never treated as proof of eligibility or ineligibility, by the analysis or the report.",
+        "pooled": {
+          "exact_match_rate": 0.558252427184466,
+          "f1": 0.39183673469387753,
+          "n_records": 206,
+          "precision": 0.36923076923076925,
+          "recall": 0.41739130434782606
+        }
+      },
+      "n_examples": 206,
+      "n_parsed": 206,
+      "parse_success_rate": 1.0
+    },
+    "finetuned/test": {
+      "classification": {
+        "exclusion": {
+          "accuracy": 0.7175572519083969,
+          "accuracy_parsed": 0.7175572519083969,
+          "counts": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              10
+            ],
+            [
+              0,
+              0,
+              1,
+              27
+            ],
+            [
+              0,
+              0,
+              0,
+              91
+            ]
+          ],
+          "labels": [
+            "excluded",
+            "not applicable",
+            "not enough information",
+            "not excluded"
+          ],
+          "macro_f1": 0.2964325078165418,
+          "macro_f1_observed": 0.39524334375538905,
+          "n_records": 131,
+          "n_unparsed": 0,
+          "per_class": {
+            "excluded": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "not applicable": {
+              "f1": 0.2857142857142857,
+              "precision": 1.0,
+              "predicted": 2,
+              "recall": 0.16666666666666666,
+              "support": 12
+            },
+            "not enough information": {
+              "f1": 0.0689655172413793,
+              "precision": 1.0,
+              "predicted": 1,
+              "recall": 0.03571428571428571,
+              "support": 28
+            },
+            "not excluded": {
+              "f1": 0.8310502283105022,
+              "precision": 0.7109375,
+              "predicted": 128,
+              "recall": 1.0,
+              "support": 91
+            }
+          },
+          "row_normalized": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.16666666666666666,
+              0.0,
+              0.8333333333333334
+            ],
+            [
+              0.0,
+              0.0,
+              0.03571428571428571,
+              0.9642857142857143
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "inclusion": {
+          "accuracy": 0.8,
+          "accuracy_parsed": 0.8,
+          "counts": [
+            [
+              19,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              37,
+              1
+            ],
+            [
+              0,
+              1,
+              4,
+              2
+            ]
+          ],
+          "labels": [
+            "included",
+            "not applicable",
+            "not enough information",
+            "not included"
+          ],
+          "macro_f1": 0.6834156785243741,
+          "macro_f1_observed": 0.6834156785243741,
+          "n_records": 75,
+          "n_unparsed": 0,
+          "per_class": {
+            "included": {
+              "f1": 0.8260869565217391,
+              "precision": 1.0,
+              "predicted": 19,
+              "recall": 0.7037037037037037,
+              "support": 27
+            },
+            "not applicable": {
+              "f1": 0.6666666666666666,
+              "precision": 0.6666666666666666,
+              "predicted": 3,
+              "recall": 0.6666666666666666,
+              "support": 3
+            },
+            "not enough information": {
+              "f1": 0.8409090909090909,
+              "precision": 0.74,
+              "predicted": 50,
+              "recall": 0.9736842105263158,
+              "support": 38
+            },
+            "not included": {
+              "f1": 0.4,
+              "precision": 0.6666666666666666,
+              "predicted": 3,
+              "recall": 0.2857142857142857,
+              "support": 7
+            }
+          },
+          "row_normalized": [
+            [
+              0.7037037037037037,
+              0.0,
+              0.2962962962962963,
+              0.0
+            ],
+            [
+              0.0,
+              0.6666666666666666,
+              0.3333333333333333,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9736842105263158,
+              0.02631578947368421
+            ],
+            [
+              0.0,
+              0.14285714285714285,
+              0.5714285714285714,
+              0.2857142857142857
+            ]
+          ]
+        },
+        "overall": {
+          "accuracy": 0.7475728155339806,
+          "accuracy_parsed": 0.7475728155339806,
+          "counts": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              19,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1,
+              10,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              38,
+              27,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              91,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              4,
+              0,
+              2
+            ]
+          ],
+          "labels": [
+            "excluded",
+            "included",
+            "not applicable",
+            "not enough information",
+            "not excluded",
+            "not included"
+          ],
+          "macro_f1": 0.5177849724008151,
+          "macro_f1_observed": 0.6213419668809782,
+          "n_records": 206,
+          "n_unparsed": 0,
+          "per_class": {
+            "excluded": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "included": {
+              "f1": 0.8260869565217391,
+              "precision": 1.0,
+              "predicted": 19,
+              "recall": 0.7037037037037037,
+              "support": 27
+            },
+            "not applicable": {
+              "f1": 0.4,
+              "precision": 0.8,
+              "predicted": 5,
+              "recall": 0.26666666666666666,
+              "support": 15
+            },
+            "not enough information": {
+              "f1": 0.6495726495726497,
+              "precision": 0.7450980392156863,
+              "predicted": 51,
+              "recall": 0.5757575757575758,
+              "support": 66
+            },
+            "not excluded": {
+              "f1": 0.8310502283105022,
+              "precision": 0.7109375,
+              "predicted": 128,
+              "recall": 1.0,
+              "support": 91
+            },
+            "not included": {
+              "f1": 0.4,
+              "precision": 0.6666666666666666,
+              "predicted": 3,
+              "recall": 0.2857142857142857,
+              "support": 7
+            }
+          },
+          "row_normalized": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.7037037037037037,
+              0.0,
+              0.2962962962962963,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.26666666666666666,
+              0.06666666666666667,
+              0.6666666666666666,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.5757575757575758,
+              0.4090909090909091,
+              0.015151515151515152
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.14285714285714285,
+              0.5714285714285714,
+              0.0,
+              0.2857142857142857
+            ]
+          ]
+        }
+      },
+      "contradictions": {
+        "conclusive_predictions": 150,
+        "conclusive_without_evidence": 109,
+        "conclusive_without_evidence_rate": 0.7266666666666667,
+        "flag_counts": {
+          "eligible_with_negated_evidence": 15,
+          "not excluded_without_evidence": 106,
+          "not included_without_evidence": 3
+        },
+        "flagged": [
+          {
+            "annotation_id": 165,
+            "criterion": "Pregnancy",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not applicable",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 167,
+            "criterion": "Previous history of upper limb deep vein thrombosis",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 168,
+            "criterion": "Patients on glibenclamide or nicorandil (these medications may interfere with RIPC)",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 170,
+            "criterion": "Patients with a known history of myocarditis, pericarditis or amyloidosis",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 171,
+            "criterion": "Patients with severe hepatic disease defined as an international normalised ratio >2 in the absence of systemic anticoagulation",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 172,
+            "criterion": "Patients with severe respiratory disease (for the trial, defined as patients requiring home oxygen therapy)",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 174,
+            "criterion": "Patients with previous axillary surgery",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not enough information",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 180,
+            "criterion": "Can not use heparin.",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 182,
+            "criterion": "Advanced cancer patients.",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 183,
+            "criterion": "With or will take arteriovenous fistula surgery in right arm.",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-201410",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          }
+        ]
+      },
+      "errors": {
+        "confusion_pairs": [
+          {
+            "count": 27,
+            "examples": [
+              {
+                "annotation_id": 174,
+                "criterion": "Patients with previous axillary surgery",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "not enough information",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 193,
+                "criterion": "Patients were moribund.",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "not enough information",
+                "note": "0. A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.\n1. She denies trauma.\n2. On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.\n3. Her body temperature is normal and her blood pressure is 80/60.\n4. Her right arm has no discoloration or movement limitation.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201411",
+                "predicted_evidence_ids": [
+                  3
+                ],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+                  "1": "She denies trauma.",
+                  "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+                  "3": "Her body temperature is normal and her blood pressure is 80/60.",
+                  "4": "Her right arm has no discoloration or movement limitation.",
+                  "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not enough information",
+            "predicted": "not excluded"
+          },
+          {
+            "count": 10,
+            "examples": [
+              {
+                "annotation_id": 165,
+                "criterion": "Pregnancy",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "not applicable",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 750,
+                "criterion": "pregnancy",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "not applicable",
+                "note": "0. A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.\n1. He is toxic-appearing, and leans forward while sitting on his mother's lap.\n2. He is drooling and speaks with a muffled \"hot potato\" voice.\n3. The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201513",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+                  "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+                  "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+                  "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+                  "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not applicable",
+            "predicted": "not excluded"
+          },
+          {
+            "count": 8,
+            "examples": [
+              {
+                "annotation_id": 176,
+                "criterion": "No medical history of central vena catheterization.",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "included",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [
+                  0
+                ],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 185,
+                "criterion": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "included",
+                "note": "0. A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.\n1. She denies trauma.\n2. On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.\n3. Her body temperature is normal and her blood pressure is 80/60.\n4. Her right arm has no discoloration or movement limitation.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201411",
+                "predicted_evidence_ids": [
+                  2,
+                  3
+                ],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+                  "1": "She denies trauma.",
+                  "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+                  "3": "Her body temperature is normal and her blood pressure is 80/60.",
+                  "4": "Her right arm has no discoloration or movement limitation.",
+                  "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "included",
+            "predicted": "not enough information"
+          },
+          {
+            "count": 4,
+            "examples": [
+              {
+                "annotation_id": 163,
+                "criterion": "Patients undergoing endovascular abdominal aneurysm repair",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "not included",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [
+                  0
+                ],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 164,
+                "criterion": "Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "not included",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [
+                  0
+                ],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not included",
+            "predicted": "not enough information"
+          },
+          {
+            "count": 1,
+            "examples": [
+              {
+                "annotation_id": 161,
+                "criterion": "Patients undergoing elective carotid endarterectomy",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "not included",
+                "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201410",
+                "predicted_evidence_ids": [
+                  0
+                ],
+                "predicted_label": "not applicable",
+                "sentences": {
+                  "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+                  "1": "She is now complaining of a cool right foot.",
+                  "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+                  "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not included",
+            "predicted": "not applicable"
+          }
+        ],
+        "missing_information": {
+          "gold_nei_mispredicted": [
+            {
+              "annotation_id": 174,
+              "criterion": "Patients with previous axillary surgery",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201410",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 175,
+              "criterion": "Chronic renal failure requiring hemodialysis.",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201410",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not included",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 193,
+              "criterion": "Patients were moribund.",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201411",
+              "predicted_evidence_ids": [
+                3
+              ],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 315,
+              "criterion": "BMI> 40 kg/m2.",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201417",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 389,
+              "criterion": "Severe renal impairment (estimated or measured GFR <50%)",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-201421",
+              "predicted_evidence_ids": [
+                3
+              ],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            }
+          ],
+          "gold_nei_mispredicted_count": 28,
+          "gold_nei_total": 66,
+          "predicted_nei_when_not_gold": [
+            {
+              "annotation_id": 163,
+              "criterion": "Patients undergoing endovascular abdominal aneurysm repair",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "not included",
+              "note": "",
+              "patient_id": "sigir-201410",
+              "predicted_evidence_ids": [
+                0
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 164,
+              "criterion": "Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "not included",
+              "note": "",
+              "patient_id": "sigir-201410",
+              "predicted_evidence_ids": [
+                0
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 176,
+              "criterion": "No medical history of central vena catheterization.",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "included",
+              "note": "",
+              "patient_id": "sigir-201410",
+              "predicted_evidence_ids": [
+                0
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 185,
+              "criterion": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "included",
+              "note": "",
+              "patient_id": "sigir-201411",
+              "predicted_evidence_ids": [
+                2,
+                3
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 187,
+              "criterion": "A respiratory rate of at least 20/min or a PaCO2 of 32mmHg or lower or the use of mechanical ventilation;",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "included",
+              "note": "",
+              "patient_id": "sigir-201411",
+              "predicted_evidence_ids": [
+                2
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            }
+          ],
+          "predicted_nei_when_not_gold_count": 13
+        },
+        "not_applicable": {
+          "gold_na_total": 15,
+          "mispredicted": [
+            {
+              "annotation_id": 165,
+              "criterion": "Pregnancy",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201410",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 683,
+              "criterion": "Previous tonsillectomy, including partial tonsillectomy",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-20158",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 693,
+              "criterion": "Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome)",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-20158",
+              "predicted_evidence_ids": [
+                0
+              ],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 750,
+              "criterion": "pregnancy",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201513",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 751,
+              "criterion": "breast-feeding",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201513",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            }
+          ],
+          "mispredicted_count": 11
+        }
+      },
+      "evidence": {
+        "gold_present": {
+          "exact_match_rate": 0.6065573770491803,
+          "f1": 0.7368421052631579,
+          "n_records": 61,
+          "precision": 0.7291666666666666,
+          "recall": 0.7446808510638298
+        },
+        "no_gold_evidence": {
+          "cited_without_gold_rate": 0.2,
+          "empty_prediction_rate": 0.8,
+          "n_records": 145
+        },
+        "per_record": {
+          "macro_f1": 0.7481714096468195,
+          "n_records": 61
+        },
+        "policy": "Evidence is scored in three views. (1) Pooled: micro-aggregated true/false-positive/negative counts over every parsed record, identical to the headline metric in eval/metrics.py. Records with no annotated gold evidence cannot add recall and any cited sentence on such a record counts as a false positive. (2) Gold-present: the same scoring restricted to records whose gold evidence set is non-empty; the primary comparable retrieval number. (3) Per-record: every gold-present record contributes one P/R/F1 triple and the macro average is reported. Records with empty gold evidence are reported separately as a consistency rate (predicted evidence also empty); they never earn credit toward evidence quality. Empty predicted evidence is always measured, never treated as proof of eligibility or ineligibility, by the analysis or the report.",
+        "pooled": {
+          "exact_match_rate": 0.7427184466019418,
+          "f1": 0.5957446808510639,
+          "n_records": 206,
+          "precision": 0.49645390070921985,
+          "recall": 0.7446808510638298
+        }
+      },
+      "n_examples": 206,
+      "n_parsed": 206,
+      "parse_success_rate": 1.0
+    },
+    "finetuned/validation": {
+      "classification": {
+        "exclusion": {
+          "accuracy": 0.7428571428571429,
+          "accuracy_parsed": 0.7428571428571429,
+          "counts": [
+            [
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              3,
+              0,
+              8
+            ],
+            [
+              0,
+              0,
+              0,
+              26
+            ],
+            [
+              0,
+              0,
+              0,
+              101
+            ]
+          ],
+          "labels": [
+            "excluded",
+            "not applicable",
+            "not enough information",
+            "not excluded"
+          ],
+          "macro_f1": 0.319327731092437,
+          "macro_f1_observed": 0.319327731092437,
+          "n_records": 140,
+          "n_unparsed": 0,
+          "per_class": {
+            "excluded": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "not applicable": {
+              "f1": 0.42857142857142855,
+              "precision": 1.0,
+              "predicted": 3,
+              "recall": 0.2727272727272727,
+              "support": 11
+            },
+            "not enough information": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 26
+            },
+            "not excluded": {
+              "f1": 0.8487394957983194,
+              "precision": 0.7372262773722628,
+              "predicted": 137,
+              "recall": 1.0,
+              "support": 101
+            }
+          },
+          "row_normalized": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.2727272727272727,
+              0.0,
+              0.7272727272727273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "inclusion": {
+          "accuracy": 0.7121212121212122,
+          "accuracy_parsed": 0.7121212121212122,
+          "counts": [
+            [
+              21,
+              0,
+              14,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              26,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ]
+          ],
+          "labels": [
+            "included",
+            "not applicable",
+            "not enough information",
+            "not included"
+          ],
+          "macro_f1": 0.36730911786508524,
+          "macro_f1_observed": 0.36730911786508524,
+          "n_records": 66,
+          "n_unparsed": 0,
+          "per_class": {
+            "included": {
+              "f1": 0.7368421052631579,
+              "precision": 0.9545454545454546,
+              "predicted": 22,
+              "recall": 0.6,
+              "support": 35
+            },
+            "not applicable": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "not enough information": {
+              "f1": 0.732394366197183,
+              "precision": 0.5909090909090909,
+              "predicted": 44,
+              "recall": 0.9629629629629629,
+              "support": 27
+            },
+            "not included": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 3
+            }
+          },
+          "row_normalized": [
+            [
+              0.6,
+              0.0,
+              0.4,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.037037037037037035,
+              0.0,
+              0.9629629629629629,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ]
+          ]
+        },
+        "overall": {
+          "accuracy": 0.7330097087378641,
+          "accuracy_parsed": 0.7330097087378641,
+          "counts": [
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              21,
+              0,
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              1,
+              8,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              26,
+              26,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              101,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3,
+              0,
+              0
+            ]
+          ],
+          "labels": [
+            "excluded",
+            "included",
+            "not applicable",
+            "not enough information",
+            "not excluded",
+            "not included"
+          ],
+          "macro_f1": 0.4202773458813802,
+          "macro_f1_observed": 0.4202773458813802,
+          "n_records": 206,
+          "n_unparsed": 0,
+          "per_class": {
+            "excluded": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "included": {
+              "f1": 0.7368421052631579,
+              "precision": 0.9545454545454546,
+              "predicted": 22,
+              "recall": 0.6,
+              "support": 35
+            },
+            "not applicable": {
+              "f1": 0.4,
+              "precision": 1.0,
+              "predicted": 3,
+              "recall": 0.25,
+              "support": 12
+            },
+            "not enough information": {
+              "f1": 0.5360824742268041,
+              "precision": 0.5909090909090909,
+              "predicted": 44,
+              "recall": 0.49056603773584906,
+              "support": 53
+            },
+            "not excluded": {
+              "f1": 0.8487394957983194,
+              "precision": 0.7372262773722628,
+              "predicted": 137,
+              "recall": 1.0,
+              "support": 101
+            },
+            "not included": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 3
+            }
+          },
+          "row_normalized": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.6,
+              0.0,
+              0.4,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.25,
+              0.08333333333333333,
+              0.6666666666666666,
+              0.0
+            ],
+            [
+              0.0,
+              0.018867924528301886,
+              0.0,
+              0.49056603773584906,
+              0.49056603773584906,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          ]
+        }
+      },
+      "contradictions": {
+        "conclusive_predictions": 159,
+        "conclusive_without_evidence": 88,
+        "conclusive_without_evidence_rate": 0.5534591194968553,
+        "flag_counts": {
+          "eligible_with_negated_evidence": 32,
+          "not excluded_without_evidence": 88
+        },
+        "flagged": [
+          {
+            "annotation_id": 6,
+            "criterion": "Valvular heart disease and cardiomyopathy",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 7,
+            "criterion": "Myocardial infarction in < 6 months",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 9,
+            "criterion": "Congestive cardiac failure",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 10,
+            "criterion": "Severe anemia (Hb 7G/dl)",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 11,
+            "criterion": "Cardiac arrhythmias or II or III degree AV block",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 12,
+            "criterion": "Significant liver or renal dysfunction",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 14,
+            "criterion": "Systolic blood pressure < 100 mm Hg",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 15,
+            "criterion": "Pregnant and nursing women",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not enough information",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 18,
+            "criterion": "Patients not eligible for Tc 99m SPECT",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not enough information",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          },
+          {
+            "annotation_id": 20,
+            "criterion": "Geographical inaccessibility for treatment or follow-up evaluations",
+            "criterion_type": "exclusion",
+            "detail": "Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way.",
+            "explanation": "",
+            "flag": "not excluded_without_evidence",
+            "gold_label": "not excluded",
+            "patient_id": "sigir-20141",
+            "predicted_evidence_ids": [],
+            "predicted_label": "not excluded",
+            "severity": 3
+          }
+        ]
+      },
+      "errors": {
+        "confusion_pairs": [
+          {
+            "count": 26,
+            "examples": [
+              {
+                "annotation_id": 8,
+                "criterion": "Unstable angina",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "not enough information",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [
+                  0,
+                  1
+                ],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 15,
+                "criterion": "Pregnant and nursing women",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "not enough information",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not enough information",
+            "predicted": "not excluded"
+          },
+          {
+            "count": 14,
+            "examples": [
+              {
+                "annotation_id": 22,
+                "criterion": "Clinical diagnosis of one or more risk factors, such as diabetes, smoking habit, lipid metabolism abnormality, history of ischemic heart disease (IHD) or cerebrovascular disease, obesity (BMI>25), chronic heart failure (NYHA II-III), and electrocardiogram (ECG) abnormality (LVH)",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "included",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [
+                  3
+                ],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 366,
+                "criterion": "Has experienced abdominal trauma, blunt or penetrating, requiring open abdominal laparotomy with primary closure",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "included",
+                "note": "0. A 32-year-old woman is admitted to the ER following a car accident.\n1. She has sustained multiple injuries including upper and lower extremity fractures.\n2. She is fully awake and alert, and she reports that she was not wearing a seat belt.\n3. Her blood pressure is 134/74 mm Hg, and her pulse is 87/min.\n4. Physical examination reveals a tender abdomen with guarding and rebound in all four quadrants.\n5. She has no bowel sounds.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201420",
+                "predicted_evidence_ids": [
+                  4
+                ],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A 32-year-old woman is admitted to the ER following a car accident.",
+                  "1": "She has sustained multiple injuries including upper and lower extremity fractures.",
+                  "2": "She is fully awake and alert, and she reports that she was not wearing a seat belt.",
+                  "3": "Her blood pressure is 134/74 mm Hg, and her pulse is 87/min.",
+                  "4": "Physical examination reveals a tender abdomen with guarding and rebound in all four quadrants.",
+                  "5": "She has no bowel sounds.",
+                  "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "included",
+            "predicted": "not enough information"
+          },
+          {
+            "count": 8,
+            "examples": [
+              {
+                "annotation_id": 24,
+                "criterion": "Patients with IHD within 6 months after percutaneous coronary intervention(PCI), and who are stable but are going to implement PCI or coronary artery bypass grafting(CABG)",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "not applicable",
+                "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20141",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.",
+                  "1": "The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.",
+                  "2": "The latest episode of pain ended half an hour prior to her arrival.",
+                  "3": "She is known to have hypertension and obesity.",
+                  "4": "She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.",
+                  "5": "She currently takes no medications.",
+                  "6": "Physical examination is normal.",
+                  "7": "The EKG shows nonspecific changes.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 551,
+                "criterion": "Pregnancy",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "not applicable",
+                "note": "0. A 72-year-old man complains of increasing calf pain when walking uphill.\n1. The symptoms have gradually increased over the past 3 months.\n2. The patient had an uncomplicated myocardial infarction 2 years earlier and a transient ischemic attack 6 months ago.\n3. Over the past month, his blood pressure has worsened despite previous control with diltiazem, hydrochlorothiazide, and propranolol.\n4. His is currently taking isosorbide dinitrate, hydrochlorothiazide, and aspirin.\n5. On physical examination, his blood pressure is 151/91 mm Hg, and his pulse is 67/min.\n6. There is a right carotid bruit.\n7. His lower extremities are slightly cool to the touch and have diminished pulses at the dorsalis pedis.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201430",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A 72-year-old man complains of increasing calf pain when walking uphill.",
+                  "1": "The symptoms have gradually increased over the past 3 months.",
+                  "2": "The patient had an uncomplicated myocardial infarction 2 years earlier and a transient ischemic attack 6 months ago.",
+                  "3": "Over the past month, his blood pressure has worsened despite previous control with diltiazem, hydrochlorothiazide, and propranolol.",
+                  "4": "His is currently taking isosorbide dinitrate, hydrochlorothiazide, and aspirin.",
+                  "5": "On physical examination, his blood pressure is 151/91 mm Hg, and his pulse is 67/min.",
+                  "6": "There is a right carotid bruit.",
+                  "7": "His lower extremities are slightly cool to the touch and have diminished pulses at the dorsalis pedis.",
+                  "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not applicable",
+            "predicted": "not excluded"
+          },
+          {
+            "count": 3,
+            "examples": [
+              {
+                "annotation_id": 31,
+                "criterion": "patients have fever more than one week",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "not included",
+                "note": "0. An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days.\n1. He has just returned from a 5 day vacation in Colorado.\n2. Parents report that prior to the onset of fever and cough, he had loose stools.\n3. He denies upper respiratory tract symptoms.\n4. On examination he is in respiratory distress and has bronchial respiratory sounds on the left.\n5. A chest x-ray shows bilateral lung infiltrates.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20142",
+                "predicted_evidence_ids": [
+                  0
+                ],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days.",
+                  "1": "He has just returned from a 5 day vacation in Colorado.",
+                  "2": "Parents report that prior to the onset of fever and cough, he had loose stools.",
+                  "3": "He denies upper respiratory tract symptoms.",
+                  "4": "On examination he is in respiratory distress and has bronchial respiratory sounds on the left.",
+                  "5": "A chest x-ray shows bilateral lung infiltrates.",
+                  "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 934,
+                "criterion": "Taking anti-tuberculosis medicines (or NTM meds at NIH CC) during the time sputa are provided",
+                "criterion_type": "inclusion",
+                "explanation": "",
+                "gold_label": "not included",
+                "note": "0. A 65-year-old male with a history of tuberculosis has started to complain of productive cough with tinges of blood.\n1. Chest X-ray reveals a round opaque mass within a cavity in his left upper lobe.\n2. The spherical mass moved in the cavity during supine and prone CT imaging.\n3. Culture of the sputum revealed an organism with septated, low-angle branching hyphae that had straight, parallel walls.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201522",
+                "predicted_evidence_ids": [],
+                "predicted_label": "not enough information",
+                "sentences": {
+                  "0": "A 65-year-old male with a history of tuberculosis has started to complain of productive cough with tinges of blood.",
+                  "1": "Chest X-ray reveals a round opaque mass within a cavity in his left upper lobe.",
+                  "2": "The spherical mass moved in the cavity during supine and prone CT imaging.",
+                  "3": "Culture of the sputum revealed an organism with septated, low-angle branching hyphae that had straight, parallel walls.",
+                  "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "not included",
+            "predicted": "not enough information"
+          },
+          {
+            "count": 2,
+            "examples": [
+              {
+                "annotation_id": 263,
+                "criterion": "13. Evidence of uterine pathology other than leiomyoma",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "excluded",
+                "note": "0. A 36-year-old woman presents to the emergency department with 12 weeks of amenorrhea, vaginal spotting that has increased since yesterday, lower abdominal tenderness, nausea and vomiting.\n1. The physical exam reveals overall tender abdomen, 18-week sized uterus, and cervical dilation of 2 cm.\n2. The complete blood count and biochemical profile are normal.\n3. Point of care pregnancy test with cut-off sensitivity of 25 mIU/ml Beta-HCG is negative.\n4. The ultrasound reports enlarged uterus (12 cm x 9 cm x 7 cms) with multiple cystic areas in the interior.\n5. The differential diagnosis includes vesicular mole vs fibroid degeneration.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-201415",
+                "predicted_evidence_ids": [
+                  4
+                ],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "A 36-year-old woman presents to the emergency department with 12 weeks of amenorrhea, vaginal spotting that has increased since yesterday, lower abdominal tenderness, nausea and vomiting.",
+                  "1": "The physical exam reveals overall tender abdomen, 18-week sized uterus, and cervical dilation of 2 cm.",
+                  "2": "The complete blood count and biochemical profile are normal.",
+                  "3": "Point of care pregnancy test with cut-off sensitivity of 25 mIU/ml Beta-HCG is negative.",
+                  "4": "The ultrasound reports enlarged uterus (12 cm x 9 cm x 7 cms) with multiple cystic areas in the interior.",
+                  "5": "The differential diagnosis includes vesicular mole vs fibroid degeneration.",
+                  "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              },
+              {
+                "annotation_id": 41,
+                "criterion": "Respiratory distress",
+                "criterion_type": "exclusion",
+                "explanation": "",
+                "gold_label": "excluded",
+                "note": "0. An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days.\n1. He has just returned from a 5 day vacation in Colorado.\n2. Parents report that prior to the onset of fever and cough, he had loose stools.\n3. He denies upper respiratory tract symptoms.\n4. On examination he is in respiratory distress and has bronchial respiratory sounds on the left.\n5. A chest x-ray shows bilateral lung infiltrates.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+                "patient_id": "sigir-20142",
+                "predicted_evidence_ids": [
+                  4
+                ],
+                "predicted_label": "not excluded",
+                "sentences": {
+                  "0": "An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days.",
+                  "1": "He has just returned from a 5 day vacation in Colorado.",
+                  "2": "Parents report that prior to the onset of fever and cough, he had loose stools.",
+                  "3": "He denies upper respiratory tract symptoms.",
+                  "4": "On examination he is in respiratory distress and has bronchial respiratory sounds on the left.",
+                  "5": "A chest x-ray shows bilateral lung infiltrates.",
+                  "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+                }
+              }
+            ],
+            "gold": "excluded",
+            "predicted": "not excluded"
+          }
+        ],
+        "missing_information": {
+          "gold_nei_mispredicted": [
+            {
+              "annotation_id": 8,
+              "criterion": "Unstable angina",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [
+                0,
+                1
+              ],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 15,
+              "criterion": "Pregnant and nursing women",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 18,
+              "criterion": "Patients not eligible for Tc 99m SPECT",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 19,
+              "criterion": "Patients in whom beta blockers are contraindicated",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [
+                5
+              ],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 26,
+              "criterion": "Pregnant women and women of childbearing potential",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not enough information",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            }
+          ],
+          "gold_nei_mispredicted_count": 27,
+          "gold_nei_total": 53,
+          "predicted_nei_when_not_gold": [
+            {
+              "annotation_id": 22,
+              "criterion": "Clinical diagnosis of one or more risk factors, such as diabetes, smoking habit, lipid metabolism abnormality, history of ischemic heart disease (IHD) or cerebrovascular disease, obesity (BMI>25), chronic heart failure (NYHA II-III), and electrocardiogram (ECG) abnormality (LVH)",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "included",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [
+                3
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 31,
+              "criterion": "patients have fever more than one week",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "not included",
+              "note": "",
+              "patient_id": "sigir-20142",
+              "predicted_evidence_ids": [
+                0
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 33,
+              "criterion": "full of physical examination and laboratory examination have been carried out after one week\uff0cbut still cannot make a definite diagnosis",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-20142",
+              "predicted_evidence_ids": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 366,
+              "criterion": "Has experienced abdominal trauma, blunt or penetrating, requiring open abdominal laparotomy with primary closure",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "included",
+              "note": "",
+              "patient_id": "sigir-201420",
+              "predicted_evidence_ids": [
+                4
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 367,
+              "criterion": "Has experienced acute surgical abdomen requiring open abdominal laparotomy with primary closure",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "included",
+              "note": "",
+              "patient_id": "sigir-201420",
+              "predicted_evidence_ids": [
+                4
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            }
+          ],
+          "predicted_nei_when_not_gold_count": 18
+        },
+        "not_applicable": {
+          "gold_na_total": 12,
+          "mispredicted": [
+            {
+              "annotation_id": 24,
+              "criterion": "Patients with IHD within 6 months after percutaneous coronary intervention(PCI), and who are stable but are going to implement PCI or coronary artery bypass grafting(CABG)",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-20141",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 33,
+              "criterion": "full of physical examination and laboratory examination have been carried out after one week\uff0cbut still cannot make a definite diagnosis",
+              "criterion_type": "inclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-20142",
+              "predicted_evidence_ids": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "predicted_label": "not enough information",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 551,
+              "criterion": "Pregnancy",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201430",
+              "predicted_evidence_ids": [],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 558,
+              "criterion": "Inability to provide informed consent.",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201430",
+              "predicted_evidence_ids": [
+                8
+              ],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            },
+            {
+              "annotation_id": 801,
+              "criterion": "Definite small-vessel etiology by history or imaging",
+              "criterion_type": "exclusion",
+              "explanation": "",
+              "gold_label": "not applicable",
+              "note": "",
+              "patient_id": "sigir-201515",
+              "predicted_evidence_ids": [
+                0,
+                1
+              ],
+              "predicted_label": "not excluded",
+              "sentences": {}
+            }
+          ],
+          "mispredicted_count": 9
+        }
+      },
+      "evidence": {
+        "gold_present": {
+          "exact_match_rate": 0.6,
+          "f1": 0.72636815920398,
+          "n_records": 90,
+          "precision": 0.8488372093023255,
+          "recall": 0.6347826086956522
+        },
+        "no_gold_evidence": {
+          "cited_without_gold_rate": 0.2413793103448276,
+          "empty_prediction_rate": 0.7586206896551724,
+          "n_records": 116
+        },
+        "per_record": {
+          "macro_f1": 0.7107936507936506,
+          "n_records": 90
+        },
+        "policy": "Evidence is scored in three views. (1) Pooled: micro-aggregated true/false-positive/negative counts over every parsed record, identical to the headline metric in eval/metrics.py. Records with no annotated gold evidence cannot add recall and any cited sentence on such a record counts as a false positive. (2) Gold-present: the same scoring restricted to records whose gold evidence set is non-empty; the primary comparable retrieval number. (3) Per-record: every gold-present record contributes one P/R/F1 triple and the macro average is reported. Records with empty gold evidence are reported separately as a consistency rate (predicted evidence also empty); they never earn credit toward evidence quality. Empty predicted evidence is always measured, never treated as proof of eligibility or ineligibility, by the analysis or the report.",
+        "pooled": {
+          "exact_match_rate": 0.6893203883495146,
+          "f1": 0.6134453781512604,
+          "n_records": 206,
+          "precision": 0.5934959349593496,
+          "recall": 0.6347826086956522
+        }
+      },
+      "n_examples": 206,
+      "n_parsed": 206,
+      "parse_success_rate": 1.0
+    }
+  },
+  "created_at": "2026-11-08T15:15:58.417464+00:00",
+  "models": [
+    "baseline",
+    "finetuned"
+  ],
+  "run_name": "final_a100"
+}

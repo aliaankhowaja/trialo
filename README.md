@@ -109,7 +109,9 @@ validation loss to Weights & Biases when `wandb.enabled` is true in the config.
 Tests:
 
 ```bash
-python -m unittest tests.test_splits tests.test_parsing -v
+```bash
+python -m unittest tests.test_splits tests.test_parsing tests.test_analysis -v
+```
 ```
 
 ## A100 / Colab run
@@ -148,6 +150,49 @@ python -m trailo.scripts.generate_report \
 `evaluate_test.py` writes `results/final_a100/TEST_EVALUATED.json` and refuses a
 second run. Use `--force` only to repair a corrupted test artifact; never use it
 to try another model or setting.
+
+## Task 2: criterion-level eligibility and evidence analysis
+
+Task 2 is pure analysis of the saved prediction files; no model is loaded and
+no inference is run, so it never touches the locked test split.
+
+```bash
+PYTHONPATH=src
+python -m trailo.scripts.generate_task2_report \
+  --config src/trailo/configs/final_a100.yaml
+python -m unittest tests.test_analysis -v
+```
+
+Outputs under `src/trailo/results/final_a100/task2/`:
+
+- `task2_analysis.json` — full numbers per model (`baseline`, `finetuned`) and
+  split (`validation`, `test`).
+- `report.md` — the human-readable report.
+- `evidence_<model>_<split>.jsonl` — every prediction in the Task 2 schema:
+  criterion, criterion type, predicted category, cited sentence IDs, resolved
+  evidence text, and the model explanation.
+
+Design rules implemented by the analysis:
+
+- The four-way label set is preserved per criterion type
+  (`included`/`not applicable`/`not enough information`/`not included` for
+  inclusion, `excluded`/... for exclusion); nothing is collapsed to binary.
+- Confusion matrices (counts and row-normalized) are reported overall and
+  separately for inclusion and exclusion criteria, with per-class
+  precision/recall/F1.
+- Two macro-F1 conventions are reported: **declared** (full label universe,
+  so a never-predicted class penalizes the score) and **observed** (gold or
+  predicted labels only, matching `eval/metrics.py` headline numbers).
+- Evidence retrieval is scored in three views: pooled, gold-present records
+  only (the primary number), and per-record macro F1. 116/206 validation and
+  145/206 test records have no gold evidence; those are reported separately as
+  an empty-prediction consistency rate and never earn retrieval credit.
+- Empty predicted evidence is always measured, never treated as proof of
+  eligibility or ineligibility.
+- Contradiction cases and error galleries (top confusion pairs with extracted
+  criterion and cited-sentence text, missing-information failures, and
+  not-applicable mishandling) are selected by deterministic severity-ranked
+  heuristics, so the report is reproducible.
 
 ## Outputs
 
