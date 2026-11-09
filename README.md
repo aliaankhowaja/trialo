@@ -1,5 +1,10 @@
 # Trial eligibility fine-tuning
 
+## 📺 Demo Video
+
+Watch the 5-minute project demonstration and application walk-through here:
+https://youtu.be/wrY73_GmqK4
+
 LoRA fine-tuning for the TrialGPT criterion-annotation task. Each example maps a
 patient note and one inclusion/exclusion criterion to a strict JSON object:
 
