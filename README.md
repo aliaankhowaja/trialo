@@ -239,6 +239,86 @@ documents empirically):
   layers grow linearly; both facts are verified against the measured cache
   sizes in the report.
 
+## Task 5: greedy speculative decoding (E4B target, E2B draft)
+
+Task 5 implements greedy speculative decoding from scratch. The target is the
+finetuned E4B (the LoRA adapter merged into the base, with a merged-vs-attached
+greedy check before merging so the merged model is proven to reproduce the
+adapter eval model); the draft is `google/gemma-3n-E2B-it`, which shares the
+262k Gemma-3n tokenizer (compatibility is verified per-prompt in the script,
+not assumed). `src/trailo/eval/speculative.py` contains the custom loop:
+
+- both models prefill the prompt once and keep one persistent KV cache;
+- per round the draft proposes up to `gamma` tokens with its own cache, one
+  target forward verifies the whole block (`logits_to_keep=1+gamma`), tokens
+  are accepted left-to-right while the target greedy argmax matches, the
+  first mismatch is replaced by the target argmax, and nothing is emitted
+  past an accepted eos;
+- after verification both caches roll back per-layer with `crop(-removal)` to
+  `prompt + len(outputs) - 1`; sliding-window cache layers need
+  `activate_past_recording()` once per cache for rollback to reconstruct the
+  attention window (documented gotcha of the transformers version in use);
+- the loop is therefore the exact target greedy sequence by construction;
+  bf16 near-tie flips, if any, get margin forensics as in Task 3.
+
+**Measured correctness result (A100, bf16).** `tests/test_speculative.py`
+(8 CPU tests on a tiny same-vocab Gemma3 pair, including forced rollback,
+forced eos, and replacement rounds) proves stream-exactness. On the real
+E4B/E2B pair, the final agreement run emitted the **exact** target-only
+greedy stream in 16/24 (prompt, gamma) runs - 4 prompts and the
+1024-token synthetic prompt, which crosses the sliding-window boundary,
+are token-exact at every gamma in {2, 3, 4, 6}. The remaining 8 runs (the
+two prompts with a tie, all gammas) all diverge at one bf16
+**knife-edge rounding tie**, not a bug: the baseline's own next-token row
+at the flip slot carries a top-2 margin of exactly **0.0** (bitwise tie,
+raw logits 28.5 vs 28.5 for tokens 236764/84123), while the batched
+verification row differs by one bf16 ULP. fp32 probes (all three query
+shapes, candidate-independent) put the true gap at 0.0199 = 0.07% of the
+logit magnitude - below one bf16 ULP, so bf16 provably cannot resolve the
+pair; the verification row lands on the fp32-accurate token. Critically,
+**HF's own assisted generation (the same batched-verify paradigm) emits the
+same stream as the custom loop** (`spec == HF-assisted` holds on the cases
+where the library's tie resolution matches; at the exact-tie slot of prompt
+0 the library's own resolution also varies run-to-run). See
+`src/trailo/scripts/forensic_knife_edge.py` and
+`results/final_a100/task5/knife_edge_forensics.{json,md}`.
+
+**Measured performance result.** On this checkpoint pair speculative
+decoding is (correctly) a measured slowdown: the E2B draft step costs ~88%
+of the E4B target step because Gemma-3n as implemented here recomputes the
+KV states of its KV-shared layers over the whole sequence on every forward,
+charging every draft step with O(sequence length) work. A round of γ drafts
+plus one verify-equivalent forward emits γα+1 tokens against
+γ·0.885+1 target-step units, so the loop only wins when the acceptance rate
+α exceeds the draft share (0.885); the measured α tops out at 0.69 (γ=2)
+and falls to 0.41 (γ=6) as the finetuned target drifts from the base draft,
+so the sweep records 0.33-0.59x across all cells. The report carries the
+full gamma sweep, acceptance histograms, the phase split, and the cost
+model.
+
+Benchmark + report:
+
+```bash
+HF_HUB_CACHE=/dev/shm/hf_hub hf download google/gemma-3n-E2B-it   # once
+PYTHONPATH=src python -m trailo.scripts.benchmark_speculative \
+  --config src/trailo/configs/final_a100.yaml \
+  --draft-cache-dir /dev/shm/hf_hub
+PYTHONPATH=src python -m trailo.scripts.forensic_knife_edge \
+  --config src/trailo/configs/final_a100.yaml \
+  --draft-cache-dir /dev/shm/hf_hub
+PYTHONPATH=src python -m unittest tests.test_speculative tests.test_decoding -v
+```
+
+(A100 required: both bf16 checkpoints plus caches. `--draft-cache-dir /dev/shm/hf_hub`
+keeps the 10.9 GB draft checkpoint in tmpfs when the system disk is full;
+re-download it after a reboot.)
+
+Outputs under `src/trailo/results/<run_name>/task5/`:
+`speculative_benchmark.json` (compat check, per-round acceptance records,
+timings, memory) and `report.md` (equality evidence, acceptance statistics,
+gamma sweep latency table, step-time ratio cost model, memory accounting,
+and the measured explanation of when speculative decoding slows down).
+
 ## Outputs
 
 - Prepared data: `data/processed/<run>/`.
