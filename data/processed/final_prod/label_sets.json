@@ -1,0 +1,14 @@
+{
+  "exclusion": [
+    "excluded",
+    "not applicable",
+    "not enough information",
+    "not excluded"
+  ],
+  "inclusion": [
+    "included",
+    "not applicable",
+    "not enough information",
+    "not included"
+  ]
+}

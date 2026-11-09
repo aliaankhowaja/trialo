@@ -1,0 +1,164 @@
+{
+  "adapter": "/home/ali/trialo/src/trailo/checkpoints/final_prod_seed42/best",
+  "created_at": "2026-11-09T05:06:24.448958+00:00",
+  "decoding": {
+    "decoding_impl": "generate",
+    "do_sample": false,
+    "max_new_tokens": 128,
+    "num_beams": 1
+  },
+  "evidence": {
+    "exact_match_rate": 0.5776699029126213,
+    "f1": 0.2805429864253393,
+    "precision": 0.29245283018867924,
+    "recall": 0.26956521739130435,
+    "support": 115
+  },
+  "is_smoke": false,
+  "label_accuracy": 0.7087378640776699,
+  "label_accuracy_parsed": 0.7087378640776699,
+  "label_universe": [
+    "excluded",
+    "included",
+    "not applicable",
+    "not enough information",
+    "not excluded",
+    "not included"
+  ],
+  "macro_f1": 0.34013825911715695,
+  "model_id": "google/gemma-3-270m-it",
+  "model_revision": "ac82b4e820549b854eebf28ce6dedaf9fdfa17b3",
+  "n_examples": 206,
+  "n_parsed": 206,
+  "output_path": "/home/ali/trialo/src/trailo/results/final_prod/finetuned_validation_predictions.jsonl",
+  "parse_failures": 0,
+  "parse_success_rate": 1.0,
+  "per_criterion": {
+    "exclusion": {
+      "labels": [
+        "excluded",
+        "not applicable",
+        "not enough information",
+        "not excluded"
+      ],
+      "macro_f1": 0.2289351851851852,
+      "micro_support": 140,
+      "per_label": {
+        "excluded": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 2
+        },
+        "not applicable": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 11
+        },
+        "not enough information": {
+          "f1": 0.07407407407407407,
+          "precision": 1.0,
+          "predicted": 1,
+          "recall": 0.038461538461538464,
+          "support": 26
+        },
+        "not excluded": {
+          "f1": 0.8416666666666668,
+          "precision": 0.7266187050359713,
+          "predicted": 139,
+          "recall": 1.0,
+          "support": 101
+        }
+      }
+    },
+    "inclusion": {
+      "labels": [
+        "included",
+        "not applicable",
+        "not enough information",
+        "not included"
+      ],
+      "macro_f1": 0.34377293858575975,
+      "micro_support": 66,
+      "per_label": {
+        "included": {
+          "f1": 0.6885245901639345,
+          "precision": 0.8076923076923077,
+          "predicted": 26,
+          "recall": 0.6,
+          "support": 35
+        },
+        "not applicable": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 1
+        },
+        "not enough information": {
+          "f1": 0.6865671641791045,
+          "precision": 0.575,
+          "predicted": 40,
+          "recall": 0.8518518518518519,
+          "support": 27
+        },
+        "not included": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 3
+        }
+      }
+    }
+  },
+  "per_label": {
+    "excluded": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "included": {
+      "f1": 0.6885245901639345,
+      "precision": 0.8076923076923077,
+      "predicted": 26,
+      "recall": 0.6,
+      "support": 35
+    },
+    "not applicable": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "support": 12
+    },
+    "not enough information": {
+      "f1": 0.5106382978723404,
+      "precision": 0.5853658536585366,
+      "predicted": 41,
+      "recall": 0.4528301886792453,
+      "support": 53
+    },
+    "not excluded": {
+      "f1": 0.8416666666666668,
+      "precision": 0.7266187050359713,
+      "predicted": 139,
+      "recall": 1.0,
+      "support": 101
+    },
+    "not included": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "support": 3
+    }
+  },
+  "run_name": "final_prod",
+  "split": "validation"
+}

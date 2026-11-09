@@ -1,0 +1,179 @@
+{
+  "chat_template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+  "created_at": "2026-11-09T04:56:33.902113+00:00",
+  "label_sets": {
+    "exclusion": [
+      "excluded",
+      "not applicable",
+      "not enough information",
+      "not excluded"
+    ],
+    "inclusion": [
+      "included",
+      "not applicable",
+      "not enough information",
+      "not included"
+    ]
+  },
+  "leakage_checks": {
+    "excluded_columns": [
+      "gpt4_explanation",
+      "explanation_correctness",
+      "gpt4_sentences",
+      "gpt4_eligibility",
+      "training"
+    ],
+    "explanations_from_expert_annotations": false,
+    "gpt4_fields_absent": true,
+    "target_explanation_policy": "empty string; no expert explanation field exists"
+  },
+  "max_length": 1024,
+  "model_id": "google/gemma-3-270m-it",
+  "model_revision": "ac82b4e820549b854eebf28ce6dedaf9fdfa17b3",
+  "source_dataset": "ncbi/TrialGPT-Criterion-Annotations",
+  "source_revision": "1cfcafde94a1560a33b4addc1638664fe28fc059",
+  "splits": {
+    "test": {
+      "criteria": {
+        "exclusion": 131,
+        "inclusion": 75
+      },
+      "full_tokens": {
+        "max": 478,
+        "mean": 302.81553398058253,
+        "min": 245,
+        "p50": 295.5,
+        "p90": 350.5,
+        "p95": 367.5,
+        "p99": 402.6499999999999
+      },
+      "labels": {
+        "included": 27,
+        "not applicable": 15,
+        "not enough information": 66,
+        "not excluded": 91,
+        "not included": 7
+      },
+      "max_sentence_id": 8,
+      "n_dropped": 0,
+      "n_examples": 206,
+      "n_unsafe_evidence": 0,
+      "n_unsafe_target": 0,
+      "nonempty_gold_evidence": 61,
+      "prompt_tokens": {
+        "max": 459,
+        "mean": 285.00970873786406,
+        "min": 228,
+        "p50": 278.0,
+        "p90": 333.0,
+        "p95": 348.75,
+        "p99": 383.6499999999999
+      },
+      "target_tokens": {
+        "max": 27,
+        "mean": 17.805825242718445,
+        "min": 17,
+        "p50": 17.0,
+        "p90": 19.0,
+        "p95": 19.75,
+        "p99": 24.0
+      }
+    },
+    "train": {
+      "criteria": {
+        "exclusion": 388,
+        "inclusion": 215
+      },
+      "full_tokens": {
+        "max": 585,
+        "mean": 320.49419568822555,
+        "min": 234,
+        "p50": 299.0,
+        "p90": 393.80000000000007,
+        "p95": 495.0,
+        "p99": 522.0
+      },
+      "labels": {
+        "excluded": 8,
+        "included": 88,
+        "not applicable": 28,
+        "not enough information": 174,
+        "not excluded": 292,
+        "not included": 13
+      },
+      "max_sentence_id": 13,
+      "n_dropped": 0,
+      "n_examples": 603,
+      "n_unsafe_evidence": 0,
+      "n_unsafe_target": 0,
+      "nonempty_gold_evidence": 254,
+      "prompt_tokens": {
+        "max": 560,
+        "mean": 302.38640132669985,
+        "min": 216,
+        "p50": 281.0,
+        "p90": 375.80000000000007,
+        "p95": 478.0,
+        "p99": 503.98
+      },
+      "target_tokens": {
+        "max": 33,
+        "mean": 18.107794361525706,
+        "min": 16,
+        "p50": 17.0,
+        "p90": 20.0,
+        "p95": 22.0,
+        "p99": 27.0
+      }
+    },
+    "validation": {
+      "criteria": {
+        "exclusion": 140,
+        "inclusion": 66
+      },
+      "full_tokens": {
+        "max": 454,
+        "mean": 335.3980582524272,
+        "min": 278,
+        "p50": 340.5,
+        "p90": 364.5,
+        "p95": 377.25,
+        "p99": 420.89999999999975
+      },
+      "labels": {
+        "excluded": 2,
+        "included": 35,
+        "not applicable": 12,
+        "not enough information": 53,
+        "not excluded": 101,
+        "not included": 3
+      },
+      "max_sentence_id": 8,
+      "n_dropped": 0,
+      "n_examples": 206,
+      "n_unsafe_evidence": 0,
+      "n_unsafe_target": 0,
+      "nonempty_gold_evidence": 90,
+      "prompt_tokens": {
+        "max": 431,
+        "mean": 317.6407766990291,
+        "min": 261,
+        "p50": 323.0,
+        "p90": 346.0,
+        "p95": 360.0,
+        "p99": 402.94999999999976
+      },
+      "target_tokens": {
+        "max": 25,
+        "mean": 17.75728155339806,
+        "min": 16,
+        "p50": 17.0,
+        "p90": 19.0,
+        "p95": 20.0,
+        "p99": 23.0
+      }
+    }
+  },
+  "tokenizer_class": "GemmaTokenizer",
+  "tokenizer_is_fast": true
+}
