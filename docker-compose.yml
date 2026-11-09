@@ -1,0 +1,45 @@
+# TrialO eligibility screening prototype (educational, NOT a clinical tool).
+#
+# Starts both services:
+#   backend  — FastAPI + the fine-tuned Transformer (default: final_prod 270m preset)
+#   frontend — nginx serving the built React app, proxying /api to the backend
+#
+# Usage: docker compose up --build
+# Open:  http://localhost:3000
+
+services:
+  backend:
+    build: ./app/backend
+    environment:
+      TRIALO_MODEL_CONFIG: ${TRIALO_MODEL_CONFIG:-final_prod}
+      TRIALO_DEVICE: ${TRIALO_DEVICE:-auto}
+      TRIALO_MAX_NEW_TOKENS: ${TRIALO_MAX_NEW_TOKENS:-128}
+      # Override these two to serve a newly fine-tuned adapter without code
+      # changes, e.g. TRIALO_CHECKPOINT_DIR=src/trailo/checkpoints/<run>/best
+      TRIALO_BASE_MODEL_ID: ${TRIALO_BASE_MODEL_ID:-}
+      TRIALO_CHECKPOINT_DIR: ${TRIALO_CHECKPOINT_DIR:-}
+      HF_HOME: /workspace/hf
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      # Gemma checkpoints are gated on the Hugging Face Hub; pass a token for
+      # the one-time base-model download (or pre-cache into the volume).
+      HF_TOKEN: ${HF_TOKEN:-}
+    volumes:
+      # The app drives the repository's own validated evaluation code.
+      - ./src:/workspace/src:ro
+      - ./data:/workspace/data:ro
+      # One-time Hugging Face base-model download persists here.
+      - trailo_hf_cache:/workspace/hf
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build: ./app/frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+
+volumes:
+  trailo_hf_cache:

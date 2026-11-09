@@ -1,0 +1,15 @@
+torch>=2.4
+transformers==5.20.2
+accelerate==1.15.0
+peft==0.21.2
+safetensors>=0.4
+huggingface_hub>=0.23
+sentencepiece>=0.2.0
+numpy>=1.26
+psutil>=5.9
+
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+markdown>=3.5
+weasyprint>=61

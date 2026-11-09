@@ -3,3 +3,7 @@ __pycache__
 logs
 smoke_cpu/
 .venv/
+
+# screening app
+app/frontend/node_modules/
+app/frontend/dist/

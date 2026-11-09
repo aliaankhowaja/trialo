@@ -1,0 +1,1482 @@
+{
+ "source": "ncbi/TrialGPT-Criterion-Annotations @ 1cfcafde (test split, via data/processed/smoke_cpu)",
+ "label_sets": {
+  "inclusion": [
+   "included",
+   "not applicable",
+   "not enough information",
+   "not included"
+  ],
+  "exclusion": [
+   "excluded",
+   "not applicable",
+   "not enough information",
+   "not excluded"
+  ]
+ },
+ "trials": [
+  {
+   "id": "sigir-201410",
+   "title": "Trial 01 (record sigir-201410)",
+   "n_criteria": 26,
+   "n_note_sentences": 4,
+   "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+   "criteria": [
+    {
+     "criterion_type": "inclusion",
+     "text": "Age greater than 18 years",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patient willing to give full informed consent for participation",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      3
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients undergoing elective carotid endarterectomy",
+     "gold_label": "not included",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients undergoing open abdominal aortic aneurysm repair",
+     "gold_label": "not included",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients undergoing endovascular abdominal aneurysm repair",
+     "gold_label": "not included",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)",
+     "gold_label": "not included",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Pregnancy",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Significant upper limb peripheral arterial disease",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Previous history of upper limb deep vein thrombosis",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients on glibenclamide or nicorandil (these medications may interfere with RIPC)",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients with an estimated pre-operative glomerular filtration rate < 30mls/min/1.73m2",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients with a known history of myocarditis, pericarditis or amyloidosis",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients with severe hepatic disease defined as an international normalised ratio >2 in the absence of systemic anticoagulation",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients with severe respiratory disease (for the trial, defined as patients requiring home oxygen therapy)",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients previously enrolled in the trial representing for a further procedure",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients with previous axillary surgery",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Chronic renal failure requiring hemodialysis.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "No medical history of central vena catheterization.",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Maintenance hemodialysis after central vena catheterization.",
+     "gold_label": "not included",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Signed informed consent.",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      3
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Had been performed central venous puncture or catheterization before.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Can not use heparin.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Refused to sign the informed consent.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      3
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Advanced cancer patients.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "With or will take arteriovenous fistula surgery in right arm.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Other inappropriate situation",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    }
+   ]
+  },
+  {
+   "id": "sigir-201411",
+   "title": "Trial 02 (record sigir-201411)",
+   "n_criteria": 15,
+   "n_note_sentences": 6,
+   "note": "0. A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.\n1. She denies trauma.\n2. On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.\n3. Her body temperature is normal and her blood pressure is 80/60.\n4. Her right arm has no discoloration or movement limitation.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+   "criteria": [
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      2,
+      3
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Heart rate of at least 90/min;",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      2
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "A respiratory rate of at least 20/min or a PaCO2 of 32mmHg or lower or the use of mechanical ventilation;",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      2
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "The use of vasopressors to maintain a systolic blood pressure of at least 90mmHg despite fluid resuscitation, low dose of dopamine (\u2264 5 \u03bcg/kg per minute), or dobutamine;",
+     "gold_label": "not included",
+     "gold_evidence_ids": [
+      3
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "at least 1 of 3 signs of hypoperfusion (urine output < 0.5mL/kg of body weight per hour for 1 hour or more; neurologic dysfunction defined by confusion, psychosis, or a Glasgow coma scale score of \u2264 6; plasma lactate higher than the upper limit of the normal value).",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "the presence of acute decrease in PaO2/FIO2 to 200mmHg or lower,",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "bilateral pulmonary infiltrates or a chest radiograph consistent with edema;",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "no clinical evidence of left atrial hypertension; and requirement for positive pressure ventilation.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients were moribund.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "signed do-not-resuscitation odor.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Reported pain greater than or equal to 3 out of 10",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Less than 18 years of age",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Decreased level of consciousness",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      0,
+      5
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Inability to answer questions",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      5
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Prisoner",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    }
+   ]
+  },
+  {
+   "id": "sigir-201417",
+   "title": "Trial 03 (record sigir-201417)",
+   "n_criteria": 23,
+   "n_note_sentences": 6,
+   "note": "0. A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.\n1. The physical examination is remarkable for tenderness and positive Murphy sign.\n2. Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.\n3. Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.\n4. After surgery, the patient is taken to the ICU.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+   "criteria": [
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients of both sexes aged \u2265 18 years.",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Standard analytical parameters, defined by: Leukocytes \u2265 3000 Neutrophils \u2265 1500 Platelets \u2265 100,000 Aspartate aminotransferase (AST) / Alanine aminotransferase (ALT) \u2264 1.5 standard range institution creatinine \u2264 1.5 mg / dl",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients with liver space occupying lesion (LOE) that require extended hepatic resection.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      3
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patient selection should be cautious, covering basically 5 types of liver damage which must be submitted prior to liver volumetry: Metastatic Disease subsidiary right hepatectomy extended to segment IV Metastatic Disease subsidiary right hepatectomy with suspected diseased liver (neoadjuvant chemotherapy) (in cases of doubt may be used liver function test indocyanine green) Bilobar liver metastases with multiple nodules in the right lobe and more than 3 nodules greater than 30 mm in the left hepatic lobe (LHI) will perform lumpectomies the LHI + right portal branch ligation (or postoperative percutaneous embolization) in order to make right hepatectomy 4-6 weeks (two stage surgery) Subsidiary Hepatocarcinoma extended right hepatectomy Liver Injury benign / malignant (Hemangiomas, hydatid cysts or liver tumors / primary bile hepatoblastoma), which by extension threatens the viability of the remaining liver tissue.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      3
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients give their written informed consent for participation in the study and provide sufficient guarantees adherence to protocol according to the opinion of the investigator in charge of the patient care.",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      5
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Different tumor records current disease or any disease hematologic.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients with uncontrolled hypertension.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Severe heart failure (NYHA IV).",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients with malignant ventricular arrhythmias or unstable angina.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Diagnosis of deep vein thrombosis in the previous 3 months.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Adjunctive therapy including hyperbaric oxygen, vasoactive substances, agents or angiogenesis inhibitors against Cox-II.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "BMI> 40 kg/m2.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients with alcoholic with active alcoholism.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Proliferative retinopathy.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Concomitant disease that reduces life expectancy to less than a year.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Difficulty in monitoring.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      5
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Heart failure or ejection fraction (EF) <30%.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Stroke or myocardial infarction within the last 3 months.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Pregnant women or women of childbearing age who do not have adequate contraception.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Immune Deficiency and early BMF in childhood",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Common Variable Immunodeficiency (CVID)",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Genetic patients",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Refusal to consent.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sigir-201421",
+   "title": "Trial 04 (record sigir-201421)",
+   "n_criteria": 34,
+   "n_note_sentences": 5,
+   "note": "0. A 21-year-old female is evaluated for progressive arthralgias and malaise.\n1. On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.\n2. Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.\n3. Her urine is positive for protein and RBC casts.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+   "criteria": [
+    {
+     "criterion_type": "inclusion",
+     "text": "Age > 18 years at the time of signing the informed consent form",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Fulfil at least 4 criteria for SLE as defined by the American College of Rheumatology (ACR)",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Present with active SLE disease with at least one of the following symptoms: i) Arthritis - > 2 joints with pain and signs of inflammation (i.e. tenderness, swelling, or effusion) ii) Inflammatory-type skin rash iii) Oral ulcers",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0,
+      1
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Laboratory values as follows Hemoglobin \u2265 100 g/L Absolute neutrophil count \u2265 1.0 x 109/L Total bilirubin \u2264 1.5 x upper limit of normal (ULN) AST (SGOT) / ALT (SGPT) \u2264 2.5 x ULN",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Ability to take and retain oral medication",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      4
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Ability to sign and date a written informed consent prior to entering the study",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      4
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Willingness and ability to comply with the protocol for the duration of the study",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      4
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Active severe SLE flare with central nervous system (CNS) manifestations, active renal lupus, systemic vasculitis, active pericarditis, active pleuritis, active peritonitis or other SLE manifestations requiring treatment not allowed by the study protocol.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Severe renal impairment (estimated or measured GFR <50%)",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Oral treatment with corticosteroids (>15 mg/day prednisolone or equivalent) or changes in corticosteroid dosing within 30 days prior to the first dose of study medication. This also includes intraarticular steroid injections or topical treatment for SLE symptoms. Inhaled or topical steroids may be given for reasons other than SLE disease activity (such as asthma, contact dermatitis) as clinically indicated.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Intravenous corticosteroids within 3 months prior to the first dose of study medication.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Intravenous cyclophosphamide within 6 months prior to the first dose of study medication.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Treatment with anti-rheumatic/immunosuppressive drugs within 3 months prior to first dose of study medication, other than the following medications at stable doses: methotrexate (\u226425 mg/week), azathioprine (\u22642.5 mg/kg/day), hydroxychloroquine and mycophenolate mofetil (\u22643000 mg/day).",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "B-cell depletion therapy (such as treatment with Rituximab) within 12 months prior to the first dose of study medication.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Potent inhibitors or inducers of CYP3A4 intravenously or orally within 14 days prior to first dose of study medication.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "History of myocardial infarction or current uncontrolled angina, severe uncontrolled ventricular arrhythmias, symptomatic congestive heart failure, unstable angina pectoris, or electrocardiographic evidence of acute ischemia.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Marked baseline prolongation of QT/QTc interval (eg, repeated demonstration of a QTc interval >450 milliseconds",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "History of additional risk factors for torsade de pointes (eg, heart failure, hypokalemia, family history of long QT syndrome)",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Treatment with concomitant medications that prolong the QT interval.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "History of, or current, ischemic CNS disease.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Current malignancy. A 5-year cancer-free period is required with the exception of skin basal or squamous cell carcinoma or cervical cancer in situ that has been excised.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Current severe infection",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Positive result on screening for hepatitis B surface antigen, hepatitis C antibodies or human immunodeficiency virus (HIV) antibodies.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Drug abuse.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Major surgery within 3 weeks prior to study entry.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Known or suspected hypersensitivity to ABR-215757 or excipients.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Female subject of child-bearing potential who is not using a medically accepted safe method of contraception. All female subjects of child-bearing potential must have a negative urine pregnancy test at the Screening and Baseline Visits. As interaction studies between ABR-215757 and oral contraceptives have not yet been performed, women using the contraceptive pill must also use a complementary contraceptive device, i.e. barrier method, during the treatment period and for at least 1 month thereafter.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Female subject of child-bearing potential who is pregnant or lactating.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Simultaneous participation or participation within 4 months or 5 half lives (whichever is longer) prior to study entry in any other study involving investigational drugs or other experimental therapy.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Other significant, unstable medical disease not related to SLE that in the investigator's opinion would confound the study result or put the patient at risk.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients likely to receive oral or intravenous steroids or immunosuppressant for other non-SLE condition during the study duration, as this will confound the study result.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Vaccination within 4 weeks prior to the first dose of study medication.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Patients with systemic Lupus erythematosus",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Patients without systemic Lupus erythematosus",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sigir-201422",
+   "title": "Trial 05 (record sigir-201422)",
+   "n_criteria": 16,
+   "n_note_sentences": 7,
+   "note": "0. A 15-year-old girl presents to the ER with abdominal pain.\n1. The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.\n2. She has had no appetite since yesterday but denies diarrhea.\n3. She has had no sexual partners and her menses are regular.\n4. On examination, she has localized rebound tenderness over the right lower quadrant.\n5. On an abdominal ultrasound, a markedly edematous appendix is seen.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+   "criteria": [
+    {
+     "criterion_type": "inclusion",
+     "text": "Age 8-18 years",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "referred from emergency department for suspected appendicitis",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0,
+      5
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "receiving either CT scan or ultrasound of the abdomen for diagnosis",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      5
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Failure to pass MRI metal screening",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Claustrophobia or need for sedation due to inability to hold still",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Two or more symptoms of acute appendicitis for at least 24 hours or radiologic evidence of complicated appendicitis",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0,
+      1,
+      2,
+      5
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Able to take medicine orally after recovering from surgery",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "If female, using birth control",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": [
+      3
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "History of allergy to any study medication",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Life expectancy < 72 hours",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "APACHE II (health) score > 25",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Neutropenic (low white blood cell count)",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "HIV positive with current or past CD4 count < 200/mm^3",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Low platelet count (bleeds easily)",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Malnourished with low albumin",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Condition requiring use of major tranquilizers",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    }
+   ]
+  },
+  {
+   "id": "sigir-201513",
+   "title": "Trial 06 (record sigir-201513)",
+   "n_criteria": 42,
+   "n_note_sentences": 5,
+   "note": "0. A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.\n1. He is toxic-appearing, and leans forward while sitting on his mother's lap.\n2. He is drooling and speaks with a muffled \"hot potato\" voice.\n3. The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+   "criteria": [
+    {
+     "criterion_type": "inclusion",
+     "text": "referring doctor suspects peritonsillar abscess",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "patient is voluntary",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      4
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "patient has daily access to his/her e-mail",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      4
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "patient speaks and understands Finnish or Swedish",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "female patients have adequate birth-control method",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "patient has peritonsillar abscess",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "allergy to penicillin",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "allergy to metronidazole",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "use of metronidazole in preceding one month",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "pregnancy",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "breast-feeding",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "renal insufficiency",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "liver insufficiency",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "alcoholism (drunk at least once a week)",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "participant in another clinical trial at the moment",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "treatment of peritonsillar abscess requires in-patient care",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "tonsillectomy during the next 30 days",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "army recruit",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Age 6 months to less than 13 years of age (<13)",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Clinical diagnosis of acute tonsillitis/pharyngitis caused by Streptococcus pyogenes based on:",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "A positive result from a rapid detection throat swab test for Group A streptococcal antigen and submission of a throat swab specimen for bacterial culture, identification, and antibiotic-susceptibility testing; and",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "A sore and scratchy throat and/or pain on swallowing (odynophagia) together with at least 2 of the following clinical signs:",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Tonsil and/or pharyngeal erythema and/or exudate;",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Cervical adenopathy;",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Uvular edema;",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Fever",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Symptoms that collectively suggest nonstreptococcal T/P (eg, laryngitis, coryza, conjunctivitis, diarrhea, cough)",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "History of positive throat culture for Streptococcus pyogenes in the absence of clinical signs and symptoms of T/P",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Infection of the deep tissues of the upper respiratory tract (eg, epiglottitis, retropharyngeal or buccal cellulitis, or abscess of the retropharynx, tonsil, or peritonsillar area) or of the suprapharyngeal respiratory tract and its connecting structures (eg, sinusitis, otitis media, or orbital/periorbital cellulitis)",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "History of rheumatic heart disease",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Females of childbearing potential (ie, have reached menarche)",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Known congenital prolonged QT syndrome",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Known or suspected uncorrected hypokalemia (\u22643 mmol/L [mEq/L]), or hypomagnesemia or bradycardia (<50 bpm)",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Myasthenia gravis",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Known impaired renal function, as shown by creatinine clearance \u226425 mL/min",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Is being treated with drugs not permitted by the study protocol ie, cisapride, pimozide, astemizole, terfenadine, ergotamine, dihydroergotamine, Class IA (eg, quinidine and procainamide) or Class III (eg, dofetilide) antiarrhythmic agents, simvastatin, lovastatin and atorvastatin",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Is currently being treated with systemic antibacterials or has been treated with systemic antibacterials within 14 days prior to enrollment",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Has been treated with any investigational medication within the last 30 days",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Has been treated with rifampicin, phenytoin, carbamazepine, or St. John's wort within the last 2 weeks",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "History of hypersensitivity or intolerance to macrolides, penicillins, or cephalosporins",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Previous enrollment in this study or previous treatment with telithromycin",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Children of the investigator or subinvestigator, research assistant, pharmacist, study coordinator, other staff, or relative thereof directly involved in the conduct of the protocol",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    }
+   ]
+  },
+  {
+   "id": "sigir-201516",
+   "title": "Trial 07 (record sigir-201516)",
+   "n_criteria": 28,
+   "n_note_sentences": 9,
+   "note": "0. A 4 year old boy presents to the emergency room with wheezing.\n1. He has had a history of allergic rhinitis, but no history of wheezing.\n2. His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.\n3. The coughing lasted only moments, but he has been audibly wheezing since.\n4. Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.\n5. On exam, the child is playful and well appearing.\n6. Wheezing is heard in the mid-right chest area.\n7. O2 sats are 100% on room air.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+   "criteria": [
+    {
+     "criterion_type": "inclusion",
+     "text": "Clinical diagnosis of bronchial asthma",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0,
+      1,
+      2,
+      3,
+      6
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Must be able to swallow tablets",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Steroid inhalation or ingestion",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Normal lung function, defined as (Knudson 1976/1984 predicted set): FVC of > 80 % of that predicted for gender, ethnicity, age and height FEV1 of > 80 % of that predicted for gender, ethnicity, age and height FEV1/FVC ratio of > .75",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Oxygen saturation of > 94 % and normal blood pressure (Systolic between 150 - 90, Diastolic between 90-60 mm Hg)",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      7
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Symptom Score no greater than 6 (out of a possible 24) for total symptom score with a value no greater than 2 for any one score.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Negative methacholine inhalation challenge as performed in the screening protocol. (Less than a 20% decrease in FEV1 at a maximum methacholine concentration of 10 mg/ml)",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "--Negative pregnancy test for females",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Negative allergy skin test (AST)",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "History of episodic wheezing, chest tightness, or shortness of breath after age of 6 years consistent with asthma, or physician diagnosed asthma after age of 6 years.",
+     "gold_label": "not included",
+     "gold_evidence_ids": [
+      0,
+      1
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Positive methacholine test.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "FEV1 of at least 80% of predicted and FEV1/FVC ratio of at least .70 (without use of bronchodilating medications for 12 hours)",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Allergic sensitization to at least one of the following allergen preparations: (House Dust Mite f, House dust mite p, Cockroach, Tree mix, Grass Mix, Weed Mix, Mold Mix 1, Mold Mix 2, Rat, Mouse, Guinea Pig, Rabbit, Cat or Dog) confirmed by positive AST.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      1
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Negative allergy skin test as performed in the screening protocol.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Any chronic medical condition considered by the PI as a contraindication to the exposure study including significant cardiovascular disease, diabetes requiring medication, chronic renal disease, or chronic thyroid disease.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Physician directed emergency treatment for an asthma exacerbation within the preceding 12 months.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Use of systemic steroid therapy within the preceding 12 months for an asthma exacerbation. All use of systemic steroids in the last year will be reviewed by a study physician.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Use of inhaled steroids, cromolyn or leukotriene inhibitors (montelukast or zafirlukast) except for use of cromolyn exclusively prior to exercise.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Use of daily theophylline within the past month.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Use of tricyclics and MAO inhibitors",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Pregnancy or nursing a baby.",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Cigarette smoking > 1 pack per month.",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Nighttime symptoms of cough or wheeze greater than 1x/week at baseline (not during a clearly recognized viral induced asthma exacerbation) which would be characteristic of a person of moderate or severe persistent asthma as outlined in the current NHLBI guidelines for diagnosis and management of asthma.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0,
+      3,
+      6
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Exacerbation of asthma more than 2x/week which would be characteristic of a person of moderate or severe persistent asthma as outlined in the current NHLBI guidelines for diagnosis and management of asthma.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      0,
+      1,
+      3,
+      6
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Daily requirement for albuterol due to asthma symptoms (cough, wheeze, chest tightness) which would be characteristic of a person of moderate or severe persistent asthma as outlined in the current NHLBI guidelines for diagnosis and management of asthma. (Not to include prophylactic use of albuterol prior to exercise).",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Viral upper respiratory tract infection within 2 weeks of challenge.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Any acute infection requiring antibiotics within 2 weeks of challenge",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Receipt of LAIV (Live Attenuated Influenza Vaccine), also know as FluMist\u00ae, within the prior 14 days",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    }
+   ]
+  },
+  {
+   "id": "sigir-20158",
+   "title": "Trial 08 (record sigir-20158)",
+   "n_criteria": 22,
+   "n_note_sentences": 4,
+   "note": "0. A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.\n1. No history of headache or night terrors.\n2. The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+   "criteria": [
+    {
+     "criterion_type": "inclusion",
+     "text": "Diagnosis of mild sleep-disordered breathing (MSDB) defined as meeting all of the following criteria: Caregiver report of habitual snoring that occurs most of the night on at least three nights per week, and has been present for at least three months (on average occurring > 3 nights per week or more half of sleep time)",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Centrally-scored polysomnogram (PSG) confirming an obstructive apnea index (OAI) <1/hour and apnea-hypopnea index (AHI) \u22643/hour and no oxygen saturation (SpO2) desaturation < 90% in conjunction with obstructive events, confirmed on PSG.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Tonsillar hypertrophy \u22652 based on a standardized scale of 0-4.",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Deemed to be a candidate for AT by otolaryngologist (ENT) evaluation (i.e., no technical issues that would be a contraindication for surgery such as submucous cleft palate.)",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Primary indication for AT is nocturnal obstructive symptoms (i.e., not recurrent infections or other indications).",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Previous tonsillectomy, including partial tonsillectomy",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Recurrent tonsillitis that merits prompt adenotonsillectomy (AT) per the American Academy of Otolaryngology-Head and Neck Surgery Clinical Practice Guidelines (i.e., \u22657 episodes/yr in the past year; \u22655 episodes/year over the past 2 years or \u22653 episodes/yr over the past 3 years.)",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Severe obesity (body mass index (BMI) z-score \u22653).",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Failure to thrive, defined as either height or weight being below the 5th percentile for age and gender.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Severe chronic health conditions that might hamper participation or confound key variables under study, including but not limited to: Severe cardiopulmonary disorders such as cystic fibrosis, and congenital heart disease. Bleeding disorders Sickle Cell Disease Epilepsy requiring medication Significant cardiac arrhythmia noted on PSG including: non-sustained ventricular tachycardia, atrial fibrillation, second degree atrioventricular block, sustained bradycardia, or sustained tachycardia. Other severe chronic health problems such as diabetes, narcolepsy, and poorly controlled asthma. Known genetic, craniofacial, neurological or psychiatric conditions likely to affect the airway, cognition or behavior; Current use of psychotropic medication (other than medications for attention deficit hyperactivity disorder, hypnotics, antihypertensives, hypoglycemic agents including insulin, anticonvulsants, anticoagulants, or growth hormone. Diagnosis of autism spectrum disorder. Intellectual deficit or assigned to a self-contained classroom for all academic subjects. History of severe developmental disability or Adaptive Behavior Assessment System (ABAS-3) score \u226460.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Children/caregivers planning to move out of the area within the year.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Children in foster care.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Children/caregivers who do not speak English or Spanish well enough to complete the neurobehavioral measures.",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Experiences symptoms of OSA, including snoring and sleepiness",
+     "gold_label": "included",
+     "gold_evidence_ids": [
+      0,
+      2
+     ]
+    },
+    {
+     "criterion_type": "inclusion",
+     "text": "Stable medical history with no change in medications that could affect sleepiness",
+     "gold_label": "not enough information",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome)",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Medically unstable health conditions (e.g., heart attack, congestive heart failure)",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Use of psychotropic medications that cause sedation in the 3 months prior to study entry",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Recent or confirmed history of recreational drug use or alcohol abuse",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Pregnant",
+     "gold_label": "not applicable",
+     "gold_evidence_ids": []
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Inability to communicate verbally, write, or read",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": [
+      3
+     ]
+    },
+    {
+     "criterion_type": "exclusion",
+     "text": "Visual, hearing, or cognitive impairment",
+     "gold_label": "not excluded",
+     "gold_evidence_ids": []
+    }
+   ]
+  }
+ ]
+}
