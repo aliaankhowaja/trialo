@@ -72,7 +72,7 @@ export default function BenchmarkView({ patient, trial, benchmark, setBenchmark 
           paths implemented in this project: the HF <code>generate</code> path, an
           explicit prefill + incremental <code>KV-cache</code> loop, and a no-cache{' '}
           <code>recompute</code> loop that re-forwards the whole sequence each step.
-          Token-stream agreement between paths is verified per criterion — the
+          Token-stream agreement between paths is verified per criterion - the
           paths are designed to emit identical greedy streams; a divergence would
           indicate a bug (or a numerical knife-edge tie).
         </p>
@@ -103,7 +103,7 @@ export default function BenchmarkView({ patient, trial, benchmark, setBenchmark 
         </div>
         {!patient.note?.trim() && (
           <p className="hint" style={{ color: 'var(--warn)' }}>
-            No patient note loaded yet — switch to step 1 first. The benchmark reuses the current patient + criteria context.
+            No patient note loaded yet - switch to step 1 first. The benchmark reuses the current patient + criteria context.
           </p>
         )}
         {error && <div className="error-box">{error}</div>}
@@ -133,7 +133,7 @@ export default function BenchmarkView({ patient, trial, benchmark, setBenchmark 
                   <td className="n">{row.tokens_per_second}</td>
                   <td className="n">
                     {row.peak_memory_delta_bytes == null
-                      ? '—'
+                      ? '-'
                       : (row.peak_memory_delta_bytes / 1048576).toFixed(1)}
                   </td>
                   <td>{row.per_criterion_seconds.join(', ')}</td>
@@ -176,7 +176,7 @@ export default function BenchmarkView({ patient, trial, benchmark, setBenchmark 
                   <td>
                     {entry.first_divergence &&
                       Object.entries(entry.first_divergence)
-                        .map(([impl, pos]) => `${impl}: ${pos ?? '—'}`)
+                        .map(([impl, pos]) => `${impl}: ${pos ?? '-'}`)
                         .join(', ')}
                   </td>
                   <td>{entry.labels_equal ? 'same' : entry.labels.generate + ' vs ' + entry.labels.cache}</td>
@@ -189,8 +189,8 @@ export default function BenchmarkView({ patient, trial, benchmark, setBenchmark 
 
       <div className="panel">
         <h2>
-          Speculative decoding (greedy, draft E2B → target E4B)
-          {spec && <span className="recorded-tag">recorded A100 run — not live</span>}
+          Speculative decoding (greedy, draft E2B -> target E4B)
+          {spec && <span className="recorded-tag">recorded A100 run - not live</span>}
         </h2>
         <p className="hint">
           The project also implements greedy speculative decoding with KV caches
@@ -230,7 +230,7 @@ export default function BenchmarkView({ patient, trial, benchmark, setBenchmark 
                     <td className="n">
                       {row.speedup_vs_baseline
                         ? `${row.speedup_vs_baseline}× ${row.speedup_vs_baseline < 1 ? '(slowdown)' : '(faster)'}`
-                        : '—'}
+                        : '-'}
                     </td>
                   </tr>
                 ))}
@@ -240,7 +240,7 @@ export default function BenchmarkView({ patient, trial, benchmark, setBenchmark 
               Cost model from the recorded run: one draft step costs ≈
               {spec.step_time_summary.draft_share_percent
                 ? `${spec.step_time_summary.draft_share_percent?.toFixed(1)}% of a target step`
-                : '—'}
+                : '-'}
               , so speculative decoding only wins when α exceeds the draft share;
               here it never does (α tops out ≈0.69 at γ=2). 0.33–0.59× across cells,
               a correctly-measured slowdown for this checkpoint pair.

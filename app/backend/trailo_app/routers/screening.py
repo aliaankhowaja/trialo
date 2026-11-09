@@ -75,9 +75,21 @@ def _screen_common(payload: ScreenRequest) -> tuple[str, list[str]]:
     return note, sentences
 
 
-def _screen_sync(payload: ScreenRequest) -> ScreenResponse:
+def _load_engine_or_503():
     engine = get_engine()
+    try:
+        engine.ensure_loaded()
+    except Exception as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=f"model unavailable: {engine.load_error or exc}",
+        ) from exc
+    return engine
+
+
+def _screen_sync(payload: ScreenRequest) -> ScreenResponse:
     note, sentences = _screen_common(payload)
+    engine = _load_engine_or_503()
     results = []
     for criterion in payload.criteria:
         screened = engine.screen_criterion(
@@ -113,19 +125,23 @@ def screen(payload: ScreenRequest) -> ScreenResponse:
 def screen_stream(payload: ScreenRequest) -> StreamingResponse:
     """SSE stream: meta event, one event per criterion, then a done event."""
 
+    # Validate and load before the response starts so bad input / an
+    # unavailable model still produces a proper 422/503 instead of a broken
+    # 200 stream.
+    note, sentences = _screen_common(payload)
+    engine = _load_engine_or_503()
+    meta = ScreeningMeta(
+        model_preset=engine.settings.model_config_name,
+        base_model_id=engine.settings.base_model_id,
+        checkpoint_dir=engine.settings.checkpoint_dir,
+        device=engine.settings.device_name,
+        decoding_impl=payload.decoding_impl,
+        n_sentences=len(sentences),
+        note=note,
+        disclaimer=DISCLAIMER,
+    )
+
     def generate():
-        engine = get_engine()
-        note, sentences = _screen_common(payload)
-        meta = ScreeningMeta(
-            model_preset=engine.settings.model_config_name,
-            base_model_id=engine.settings.base_model_id,
-            checkpoint_dir=engine.settings.checkpoint_dir,
-            device=engine.settings.device_name,
-            decoding_impl=payload.decoding_impl,
-            n_sentences=len(sentences),
-            note=note,
-            disclaimer=DISCLAIMER,
-        )
         yield f"data: {json.dumps({'type': 'meta', 'meta': meta.model_dump()})}\n\n"
 
         results: list[CriterionResult] = []

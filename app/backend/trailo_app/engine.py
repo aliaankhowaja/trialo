@@ -3,7 +3,7 @@
 The heavy lifting (greedy decoding path selection, strict JSON parsing, timing)
 is delegated to the project's own evaluation code (`trailo.eval.inference`,
 `trailo.eval.decoding`, `trailo.eval.parsing`) so the app serves exactly the
-machinery the research repo validated — no parallel implementation.
+machinery the research repo validated - no parallel implementation.
 """
 
 from __future__ import annotations
@@ -95,6 +95,7 @@ class Engine:
         self._model: Any | None = None
         self._tokenizer: Any | None = None
         self._load_error: str | None = None
+        self._effective_dtype_name: str | None = None
         self._lock = threading.Lock()
         self._infer_lock = threading.Lock()  # serialize model forward passes
 
@@ -161,6 +162,7 @@ class Engine:
             model.to(device)
             self._model = model
             self._tokenizer = tokenizer
+            self._effective_dtype_name = str(dtype).replace("torch.", "")
         except Exception as exc:  # surface the load error via the API
             self._load_error = f"{type(exc).__name__}: {exc}"
             raise
@@ -180,7 +182,7 @@ class Engine:
             "loaded": self._model is not None,
             "load_error": self._load_error,
             "device": self.settings.device_name,
-            "dtype": self.settings.dtype_name,
+            "dtype": self._effective_dtype_name or self.settings.dtype_name,
             "max_new_tokens_default": self.settings.max_new_tokens,
             "max_length": self.settings.max_length,
         }

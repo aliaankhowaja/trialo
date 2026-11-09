@@ -119,16 +119,22 @@ def decode_benchmark(payload: BenchmarkRequest) -> dict:
     except NoteFormatError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
-    result = run_decode_benchmark(
-        engine,
-        note=note,
-        sentences=sentences,
-        criteria=[
-            {"criterion_type": c.criterion_type, "text": c.text} for c in payload.criteria
-        ],
-        max_new_tokens=payload.max_new_tokens,
-        criteria_limit=payload.criteria_limit,
-    )
+    try:
+        result = run_decode_benchmark(
+            engine,
+            note=note,
+            sentences=sentences,
+            criteria=[
+                {"criterion_type": c.criterion_type, "text": c.text} for c in payload.criteria
+            ],
+            max_new_tokens=payload.max_new_tokens,
+            criteria_limit=payload.criteria_limit,
+        )
+    except Exception as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=f"model unavailable: {engine.load_error or exc}",
+        ) from exc
     result["disclaimer"] = DISCLAIMER
     return result
 

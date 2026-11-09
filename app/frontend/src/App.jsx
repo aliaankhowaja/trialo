@@ -61,7 +61,7 @@ export default function App() {
         }}
       />
       <header className="main-header">
-        <h1>TrialO — Eligibility Screening</h1>
+        <h1>TrialO - Eligibility Screening</h1>
         <span className="engine-tag">
           Model: {engineTag} · Educational prototype, not a clinical enrollment decision.
         </span>
@@ -87,6 +87,7 @@ export default function App() {
           library={library}
           patient={patient}
           setPatient={setPatient}
+          trial={trial}
           notePreview={notePreview}
           setNotePreview={setNotePreview}
           setTrial={setTrial}

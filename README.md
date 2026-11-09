@@ -164,10 +164,10 @@ python -m unittest tests.test_analysis -v
 ```
 Outputs under `src/trailo/results/final_a100/task2/`:
 
-- `task2_analysis.json` — full numbers per model (`baseline`, `finetuned`) and
+- `task2_analysis.json` - full numbers per model (`baseline`, `finetuned`) and
   split (`validation`, `test`).
-- `report.md` — the human-readable report.
-- `evidence_<model>_<split>.jsonl` — every prediction in the Task 2 schema:
+- `report.md` - the human-readable report.
+- `evidence_<model>_<split>.jsonl` - every prediction in the Task 2 schema:
   criterion, criterion type, predicted category, cited sentence IDs, resolved
   evidence text, and the model explanation.
 
@@ -201,7 +201,7 @@ on a library switch. `src/trailo/eval/decoding.py` contains the custom paths:
 - `greedy_generate_cached`: one full-prompt prefill forward with
   `use_cache=True`, then a loop that forwards only the newest token each step
   and reuses/updates the `DynamicCache`;
-- `greedy_generate_recompute`: the reference path with no cache reuse — every
+- `greedy_generate_recompute`: the reference path with no cache reuse - every
   step re-forwards the entire sequence so far with `use_cache=False`.
 
 Both manage `position_ids` and the attention mask explicitly and reproduce

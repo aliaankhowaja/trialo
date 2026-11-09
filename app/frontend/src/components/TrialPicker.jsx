@@ -143,7 +143,7 @@ export default function TrialPicker({ library, trial, setTrial, results, setResu
             disabled={!trial.criteria.length || trial.criteria.some((c) => !c.text.trim())}
             onClick={onNext}
           >
-            Next: run screening →
+            Next: run screening ->
           </button>
         </div>
       </div>

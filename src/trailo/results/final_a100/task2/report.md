@@ -25,7 +25,7 @@ Evidence is scored in three views. (1) Pooled: micro-aggregated true/false-posit
 
 ## 2. Confusion matrices
 
-### baseline — test — overall
+### baseline - test - overall
 
 `accuracy=0.335` `macro-F1 (declared)=0.310` `macro-F1 (observed)=0.310` `n=206`
 
@@ -49,7 +49,7 @@ Per-class precision/recall/F1:
 | not excluded | 91 | 1 | 0.000 | 0.000 | 0.000 |
 | not included | 7 | 11 | 0.273 | 0.429 | 0.333 |
 
-### baseline — test — inclusion criteria
+### baseline - test - inclusion criteria
 
 `accuracy=0.693` `macro-F1 (declared)=0.577` `macro-F1 (observed)=0.577` `n=75`
 
@@ -69,7 +69,7 @@ Per-class precision/recall/F1:
 | not enough information | 38 | 25 | 0.880 | 0.579 | 0.698 |
 | not included | 7 | 11 | 0.273 | 0.429 | 0.333 |
 
-### baseline — test — exclusion criteria
+### baseline - test - exclusion criteria
 
 `accuracy=0.130` `macro-F1 (declared)=0.108` `macro-F1 (observed)=0.108` `n=131`
 
@@ -89,17 +89,17 @@ Per-class precision/recall/F1:
 | not enough information | 28 | 31 | 0.226 | 0.250 | 0.237 |
 | not excluded | 91 | 1 | 0.000 | 0.000 | 0.000 |
 
-##### baseline — test — evidence retrieval
+##### baseline - test - evidence retrieval
 
 | view | n | precision | recall | F1 | exact match |
 |---|---:|---:|---:|---:|---:|
 | pooled | 206 | 0.476 | 0.415 | 0.443 | 0.714 |
 | gold_present | 61 | 0.696 | 0.415 | 0.520 | 0.377 |
-| no-gold consistency | 145 | — | — | — | empty-pred rate 0.855 |
-| per-record macro F1 (gold-present) | 61 | — | — | 0.469 | — |
+| no-gold consistency | 145 | - | - | - | empty-pred rate 0.855 |
+| per-record macro F1 (gold-present) | 61 | - | - | 0.469 | - |
 
 
-### baseline — validation — overall
+### baseline - validation - overall
 
 `accuracy=0.325` `macro-F1 (declared)=0.294` `macro-F1 (observed)=0.294` `n=206`
 
@@ -123,7 +123,7 @@ Per-class precision/recall/F1:
 | not excluded | 101 | 10 | 0.800 | 0.079 | 0.144 |
 | not included | 3 | 11 | 0.091 | 0.333 | 0.143 |
 
-### baseline — validation — inclusion criteria
+### baseline - validation - inclusion criteria
 
 `accuracy=0.545` `macro-F1 (declared)=0.322` `macro-F1 (observed)=0.322` `n=66`
 
@@ -143,7 +143,7 @@ Per-class precision/recall/F1:
 | not enough information | 27 | 13 | 0.692 | 0.333 | 0.450 |
 | not included | 3 | 11 | 0.091 | 0.333 | 0.143 |
 
-### baseline — validation — exclusion criteria
+### baseline - validation - exclusion criteria
 
 `accuracy=0.221` `macro-F1 (declared)=0.229` `macro-F1 (observed)=0.229` `n=140`
 
@@ -163,17 +163,17 @@ Per-class precision/recall/F1:
 | not enough information | 26 | 41 | 0.317 | 0.500 | 0.388 |
 | not excluded | 101 | 10 | 0.800 | 0.079 | 0.144 |
 
-##### baseline — validation — evidence retrieval
+##### baseline - validation - evidence retrieval
 
 | view | n | precision | recall | F1 | exact match |
 |---|---:|---:|---:|---:|---:|
 | pooled | 206 | 0.369 | 0.417 | 0.392 | 0.558 |
 | gold_present | 90 | 0.585 | 0.417 | 0.487 | 0.367 |
-| no-gold consistency | 116 | — | — | — | empty-pred rate 0.707 |
-| per-record macro F1 (gold-present) | 90 | — | — | 0.465 | — |
+| no-gold consistency | 116 | - | - | - | empty-pred rate 0.707 |
+| per-record macro F1 (gold-present) | 90 | - | - | 0.465 | - |
 
 
-### finetuned — test — overall
+### finetuned - test - overall
 
 `accuracy=0.748` `macro-F1 (declared)=0.518` `macro-F1 (observed)=0.621` `n=206`
 
@@ -197,7 +197,7 @@ Per-class precision/recall/F1:
 | not excluded | 91 | 128 | 0.711 | 1.000 | 0.831 |
 | not included | 7 | 3 | 0.667 | 0.286 | 0.400 |
 
-### finetuned — test — inclusion criteria
+### finetuned - test - inclusion criteria
 
 `accuracy=0.800` `macro-F1 (declared)=0.683` `macro-F1 (observed)=0.683` `n=75`
 
@@ -217,7 +217,7 @@ Per-class precision/recall/F1:
 | not enough information | 38 | 50 | 0.740 | 0.974 | 0.841 |
 | not included | 7 | 3 | 0.667 | 0.286 | 0.400 |
 
-### finetuned — test — exclusion criteria
+### finetuned - test - exclusion criteria
 
 `accuracy=0.718` `macro-F1 (declared)=0.296` `macro-F1 (observed)=0.395` `n=131`
 
@@ -237,17 +237,17 @@ Per-class precision/recall/F1:
 | not enough information | 28 | 1 | 1.000 | 0.036 | 0.069 |
 | not excluded | 91 | 128 | 0.711 | 1.000 | 0.831 |
 
-##### finetuned — test — evidence retrieval
+##### finetuned - test - evidence retrieval
 
 | view | n | precision | recall | F1 | exact match |
 |---|---:|---:|---:|---:|---:|
 | pooled | 206 | 0.496 | 0.745 | 0.596 | 0.743 |
 | gold_present | 61 | 0.729 | 0.745 | 0.737 | 0.607 |
-| no-gold consistency | 145 | — | — | — | empty-pred rate 0.800 |
-| per-record macro F1 (gold-present) | 61 | — | — | 0.748 | — |
+| no-gold consistency | 145 | - | - | - | empty-pred rate 0.800 |
+| per-record macro F1 (gold-present) | 61 | - | - | 0.748 | - |
 
 
-### finetuned — validation — overall
+### finetuned - validation - overall
 
 `accuracy=0.733` `macro-F1 (declared)=0.420` `macro-F1 (observed)=0.420` `n=206`
 
@@ -271,7 +271,7 @@ Per-class precision/recall/F1:
 | not excluded | 101 | 137 | 0.737 | 1.000 | 0.849 |
 | not included | 3 | 0 | 0.000 | 0.000 | 0.000 |
 
-### finetuned — validation — inclusion criteria
+### finetuned - validation - inclusion criteria
 
 `accuracy=0.712` `macro-F1 (declared)=0.367` `macro-F1 (observed)=0.367` `n=66`
 
@@ -291,7 +291,7 @@ Per-class precision/recall/F1:
 | not enough information | 27 | 44 | 0.591 | 0.963 | 0.732 |
 | not included | 3 | 0 | 0.000 | 0.000 | 0.000 |
 
-### finetuned — validation — exclusion criteria
+### finetuned - validation - exclusion criteria
 
 `accuracy=0.743` `macro-F1 (declared)=0.319` `macro-F1 (observed)=0.319` `n=140`
 
@@ -311,14 +311,14 @@ Per-class precision/recall/F1:
 | not enough information | 26 | 0 | 0.000 | 0.000 | 0.000 |
 | not excluded | 101 | 137 | 0.737 | 1.000 | 0.849 |
 
-##### finetuned — validation — evidence retrieval
+##### finetuned - validation - evidence retrieval
 
 | view | n | precision | recall | F1 | exact match |
 |---|---:|---:|---:|---:|---:|
 | pooled | 206 | 0.593 | 0.635 | 0.613 | 0.689 |
 | gold_present | 90 | 0.849 | 0.635 | 0.726 | 0.600 |
-| no-gold consistency | 116 | — | — | — | empty-pred rate 0.759 |
-| per-record macro F1 (gold-present) | 90 | — | — | 0.711 | — |
+| no-gold consistency | 116 | - | - | - | empty-pred rate 0.759 |
+| per-record macro F1 (gold-present) | 90 | - | - | 0.711 | - |
 
 
 ## 3. Evidence retrieval
@@ -329,26 +329,26 @@ Pooled = all parsed records; gold-present = records with non-empty gold evidence
 |---|---|---|---:|---:|---:|---:|---:|
 | baseline | test | pooled | 206 | 0.476 | 0.415 | 0.443 | 0.714 |
 | baseline | test | gold-present | 61 | 0.696 | 0.415 | 0.520 | 0.377 |
-| baseline | test | per-record macro | 61 | — | — | 0.469 | — |
-| baseline | test | no-gold consistency | 145 | — | — | — | empty-pred rate 0.855 |
+| baseline | test | per-record macro | 61 | - | - | 0.469 | - |
+| baseline | test | no-gold consistency | 145 | - | - | - | empty-pred rate 0.855 |
 | baseline | validation | pooled | 206 | 0.369 | 0.417 | 0.392 | 0.558 |
 | baseline | validation | gold-present | 90 | 0.585 | 0.417 | 0.487 | 0.367 |
-| baseline | validation | per-record macro | 90 | — | — | 0.465 | — |
-| baseline | validation | no-gold consistency | 116 | — | — | — | empty-pred rate 0.707 |
+| baseline | validation | per-record macro | 90 | - | - | 0.465 | - |
+| baseline | validation | no-gold consistency | 116 | - | - | - | empty-pred rate 0.707 |
 | finetuned | test | pooled | 206 | 0.496 | 0.745 | 0.596 | 0.743 |
 | finetuned | test | gold-present | 61 | 0.729 | 0.745 | 0.737 | 0.607 |
-| finetuned | test | per-record macro | 61 | — | — | 0.748 | — |
-| finetuned | test | no-gold consistency | 145 | — | — | — | empty-pred rate 0.800 |
+| finetuned | test | per-record macro | 61 | - | - | 0.748 | - |
+| finetuned | test | no-gold consistency | 145 | - | - | - | empty-pred rate 0.800 |
 | finetuned | validation | pooled | 206 | 0.593 | 0.635 | 0.613 | 0.689 |
 | finetuned | validation | gold-present | 90 | 0.849 | 0.635 | 0.726 | 0.600 |
-| finetuned | validation | per-record macro | 90 | — | — | 0.711 | — |
-| finetuned | validation | no-gold consistency | 116 | — | — | — | empty-pred rate 0.759 |
+| finetuned | validation | per-record macro | 90 | - | - | 0.711 | - |
+| finetuned | validation | no-gold consistency | 116 | - | - | - | empty-pred rate 0.759 |
 
 ## 4. Contradiction cases
 
 Heuristic review flags, ranked by severity. Flagged lists show the most severe cases for manual inspection.
 
-### baseline — test
+### baseline - test
 
 | flag | count |
 |---|---:|
@@ -363,18 +363,18 @@ Most severe flagged cases:
 
 | flag | patient | ann | gold | predicted | cited ids | detail |
 |---|---|---|---|---|---|---|
-| not excluded_without_evidence | sigir-201421 | 390 | not enough information | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201421 | 390 | not enough information | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 | eligible_with_negated_evidence | sigir-201410 | 160 | included | included | 3 | Eligibility predicted while cited sentences contain negation cues. |
 | eligible_with_negated_evidence | sigir-201410 | 178 | included | included | 3 | Eligibility predicted while cited sentences contain negation cues. |
-| not included_without_evidence | sigir-201411 | 191 | not enough information | not included | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not included_without_evidence | sigir-201411 | 191 | not enough information | not included | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 | eligible_with_negated_evidence | sigir-201411 | 195 | included | included | 0 | Eligibility predicted while cited sentences contain negation cues. |
-| not included_without_evidence | sigir-201417 | 305 | not enough information | not included | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not included_without_evidence | sigir-201417 | 305 | not enough information | not included | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 | eligible_with_negated_evidence | sigir-201417 | 308 | included | included | 5 | Eligibility predicted while cited sentences contain negation cues. |
 | eligible_with_negated_evidence | sigir-201421 | 381 | included | included | 4 | Eligibility predicted while cited sentences contain negation cues. |
 | eligible_with_negated_evidence | sigir-201421 | 382 | included | included | 2, 3, 4 | Eligibility predicted while cited sentences contain negation cues. |
 | eligible_with_negated_evidence | sigir-201421 | 386 | included | included | 4 | Eligibility predicted while cited sentences contain negation cues. |
 
-### baseline — validation
+### baseline - validation
 
 | flag | count |
 |---|---:|
@@ -388,18 +388,18 @@ Most severe flagged cases:
 
 | flag | patient | ann | gold | predicted | cited ids | detail |
 |---|---|---|---|---|---|---|
-| included_without_evidence | sigir-201522 | 944 | included | included | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| included_without_evidence | sigir-201522 | 944 | included | included | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 | eligible_with_negated_evidence | sigir-20141 | 1 | included | included | 1 | Eligibility predicted while cited sentences contain negation cues. |
 | eligible_with_negated_evidence | sigir-20141 | 3 | included | included | 8 | Eligibility predicted while cited sentences contain negation cues. |
 | eligible_with_negated_evidence | sigir-20141 | 4 | included | included | 8 | Eligibility predicted while cited sentences contain negation cues. |
-| not included_without_evidence | sigir-201415 | 235 | not enough information | not included | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not included_without_evidence | sigir-201415 | 235 | not enough information | not included | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 | eligible_with_negated_evidence | sigir-201415 | 246 | included | included | 6 | Eligibility predicted while cited sentences contain negation cues. |
-| not included_without_evidence | sigir-201415 | 249 | not enough information | not included | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not included_without_evidence | sigir-201415 | 249 | not enough information | not included | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 | eligible_with_negated_evidence | sigir-201415 | 251 | not excluded | not excluded | 3 | Eligibility predicted while cited sentences contain negation cues. |
-| not included_without_evidence | sigir-20142 | 31 | not included | not included | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not included_without_evidence | sigir-20142 | 31 | not included | not included | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 | eligible_with_negated_evidence | sigir-20142 | 37 | included | included | 6 | Eligibility predicted while cited sentences contain negation cues. |
 
-### finetuned — test
+### finetuned - test
 
 | flag | count |
 |---|---:|
@@ -413,18 +413,18 @@ Most severe flagged cases:
 
 | flag | patient | ann | gold | predicted | cited ids | detail |
 |---|---|---|---|---|---|---|
-| not excluded_without_evidence | sigir-201410 | 165 | not applicable | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 167 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 168 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 170 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 171 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 172 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 174 | not enough information | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 180 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 182 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-201410 | 183 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 165 | not applicable | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 167 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 168 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 170 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 171 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 172 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 174 | not enough information | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 180 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 182 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-201410 | 183 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 
-### finetuned — validation
+### finetuned - validation
 
 | flag | count |
 |---|---:|
@@ -437,40 +437,40 @@ Most severe flagged cases:
 
 | flag | patient | ann | gold | predicted | cited ids | detail |
 |---|---|---|---|---|---|---|
-| not excluded_without_evidence | sigir-20141 | 6 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 7 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 9 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 10 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 11 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 12 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 14 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 15 | not enough information | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 18 | not enough information | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
-| not excluded_without_evidence | sigir-20141 | 20 | not excluded | not excluded | — | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 6 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 7 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 9 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 10 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 11 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 12 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 14 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 15 | not enough information | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 18 | not enough information | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
+| not excluded_without_evidence | sigir-20141 | 20 | not excluded | not excluded | - | Conclusive eligibility prediction with no cited evidence; absent evidence is not proof either way. |
 
 ## 5. Representative errors
 
-### baseline — test
+### baseline - test
 * gold `not excluded` predicted `not applicable` (62 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 167 | not excluded | not applicable | — | Previous history of upper limb deep vein thrombosis | The note mentions a history of cardiac catheterization via the right femoral artery, but no mention of deep vein thrombosis in either limb. |
-| sigir-201410 | 168 | not excluded | not applicable | — | Patients on glibenclamide or nicorandil (these medications may interfere with RIPC) | The patient note does not mention whether the patient is taking glibenclamide or nicorandil. |
+| sigir-201410 | 167 | not excluded | not applicable | - | Previous history of upper limb deep vein thrombosis | The note mentions a history of cardiac catheterization via the right femoral artery, but no mention of deep vein thrombosis in either limb. |
+| sigir-201410 | 168 | not excluded | not applicable | - | Patients on glibenclamide or nicorandil (these medications may interfere with RIPC) | The patient note does not mention whether the patient is taking glibenclamide or nicorandil. |
 
 * gold `not excluded` predicted `not enough information` (22 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
 | sigir-201421 | 388 | not excluded | not enough information | 2, 3 | Active severe SLE flare with central nervous system (CNS) manifestations, active renal lupus, systemic vasculitis, active pericarditis, active pleuritis, active<br>**cited text:** Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA. Her urine is positive for protein and RBC casts. | The patient has thrombocytopenia, positive ANA and anti-dsDNA, proteinuria and RBC casts, which are suggestive of lupus nephritis, but the note does not explicitly state active renal lupus or other se |
-| sigir-201421 | 402 | not excluded | not enough information | — | Current severe infection | The patient note does not mention any current infection. |
+| sigir-201421 | 402 | not excluded | not enough information | - | Current severe infection | The patient note does not mention any current infection. |
 
 * gold `not enough information` predicted `not applicable` (20 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 174 | not enough information | not applicable | — | Patients with previous axillary surgery | The patient note does not mention any previous axillary surgery. |
-| sigir-201417 | 315 | not enough information | not applicable | — | BMI> 40 kg/m2. | The patient's BMI is not mentioned in the provided clinical note. |
+| sigir-201410 | 174 | not enough information | not applicable | - | Patients with previous axillary surgery | The patient note does not mention any previous axillary surgery. |
+| sigir-201417 | 315 | not enough information | not applicable | - | BMI> 40 kg/m2. | The patient's BMI is not mentioned in the provided clinical note. |
 
 * gold `not excluded` predicted `excluded` (7 times):
 
@@ -484,7 +484,7 @@ Most severe flagged cases:
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
 | sigir-201410 | 175 | not enough information | not included | 2 | Chronic renal failure requiring hemodialysis.<br>**cited text:** Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered. | The patient's presentation is consistent with a potential vascular complication following femoral artery catheterization, but there is no mention of chronic renal failure or hemodialysis. |
-| sigir-201411 | 191 | not enough information | not included | — | bilateral pulmonary infiltrates or a chest radiograph consistent with edema; | The patient's chest status is not mentioned in the provided note. There is no information about pulmonary infiltrates or edema. |
+| sigir-201411 | 191 | not enough information | not included | - | bilateral pulmonary infiltrates or a chest radiograph consistent with edema; | The patient's chest status is not mentioned in the provided note. There is no information about pulmonary infiltrates or edema. |
 
 Missing information (`not enough information`) handling:
 
@@ -492,10 +492,10 @@ gold `not enough information`: 37/66 gold records were mispredicted (`over` rows
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 174 | not enough information | not applicable | — | Patients with previous axillary surgery | The patient note does not mention any previous axillary surgery. |
+| sigir-201410 | 174 | not enough information | not applicable | - | Patients with previous axillary surgery | The patient note does not mention any previous axillary surgery. |
 | sigir-201410 | 175 | not enough information | not included | 2 | Chronic renal failure requiring hemodialysis. | The patient's presentation is consistent with a potential vascular complication following femoral artery catheterization, but there is no mention of chronic renal failure or hemodialysis. |
 | sigir-201411 | 189 | not enough information | included | 3 | at least 1 of 3 signs of hypoperfusion (urine output < 0.5mL/kg of body weight per hour for 1 hour or more; neurologic dysfunction defined by confusion, psychos | The patient's blood pressure is 80/60, which is low and suggests hypoperfusion. |
-| sigir-201411 | 185 | included | not enough information | — | Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both. | The note mentions the patient is tachypneic and tachycardic with a low blood pressure (80/60), which could indicate shock. However, there is no definitive diagnosis of shock or ARDS stated in the note |
+| sigir-201411 | 185 | included | not enough information | - | Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both. | The note mentions the patient is tachypneic and tachycardic with a low blood pressure (80/60), which could indicate shock. However, there is no definitive diagnosis of shock or ARDS stated in the note |
 | sigir-201411 | 188 | not included | not enough information | 3 | The use of vasopressors to maintain a systolic blood pressure of at least 90mmHg despite fluid resuscitation, low dose of dopamine (≤ 5 μg/kg per minute), or do | The patient's blood pressure is 80/60, which is below the required 90mmHg systolic blood pressure for vasopressor use. However, the note does not state whether vasopressors have been used or if fluid  |
 
 Not-applicable handling:
@@ -504,24 +504,24 @@ gold `not applicable`: 3/15 mispredicted.
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20158 | 693 | not applicable | not enough information | — | Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome) | The note mentions nighttime snoring, pauses in breathing, and restlessness, which are suggestive of OSA, but does not explicitly state a suspected diagnosis of another sleep disorder. Therefore, it's  |
-| sigir-201513 | 745 | not applicable | not included | — | female patients have adequate birth-control method | The patient is a 5-year-old boy, not a female, so the inclusion criterion regarding female patients and birth control is not applicable. |
-| sigir-201513 | 767 | not applicable | not enough information | — | Symptoms that collectively suggest nonstreptococcal T/P (eg, laryngitis, coryza, conjunctivitis, diarrhea, cough) | The note mentions dysphagia, drooling, fever, and vocal changes, but does not provide enough information to determine if these symptoms collectively suggest nonstreptococcal T/P. |
+| sigir-20158 | 693 | not applicable | not enough information | - | Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome) | The note mentions nighttime snoring, pauses in breathing, and restlessness, which are suggestive of OSA, but does not explicitly state a suspected diagnosis of another sleep disorder. Therefore, it's  |
+| sigir-201513 | 745 | not applicable | not included | - | female patients have adequate birth-control method | The patient is a 5-year-old boy, not a female, so the inclusion criterion regarding female patients and birth control is not applicable. |
+| sigir-201513 | 767 | not applicable | not enough information | - | Symptoms that collectively suggest nonstreptococcal T/P (eg, laryngitis, coryza, conjunctivitis, diarrhea, cough) | The note mentions dysphagia, drooling, fever, and vocal changes, but does not provide enough information to determine if these symptoms collectively suggest nonstreptococcal T/P. |
 
-### baseline — validation
+### baseline - validation
 * gold `not excluded` predicted `not applicable` (53 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20141 | 13 | not excluded | not applicable | — | IDDM (Type-1 diabetes mellitus) | The patient denies a family history of heart disease, diabetes, or hypercholesterolemia, but the note does not explicitly state whether or not she has IDDM. |
-| sigir-20141 | 16 | not excluded | not applicable | — | Known hypersensitivity to nicorandil | The patient note does not mention any known hypersensitivity to nicorandil. |
+| sigir-20141 | 13 | not excluded | not applicable | - | IDDM (Type-1 diabetes mellitus) | The patient denies a family history of heart disease, diabetes, or hypercholesterolemia, but the note does not explicitly state whether or not she has IDDM. |
+| sigir-20141 | 16 | not excluded | not applicable | - | Known hypersensitivity to nicorandil | The patient note does not mention any known hypersensitivity to nicorandil. |
 
 * gold `not excluded` predicted `not enough information` (28 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20141 | 6 | not excluded | not enough information | — | Valvular heart disease and cardiomyopathy | The note does not mention any valvular heart disease or cardiomyopathy, but it also does not explicitly exclude these conditions. Therefore, there is not enough information to determine if the patient |
-| sigir-20141 | 7 | not excluded | not enough information | — | Myocardial infarction in < 6 months | The note does not state whether the patient has had a myocardial infarction in the past 6 months. |
+| sigir-20141 | 6 | not excluded | not enough information | - | Valvular heart disease and cardiomyopathy | The note does not mention any valvular heart disease or cardiomyopathy, but it also does not explicitly exclude these conditions. Therefore, there is not enough information to determine if the patient |
+| sigir-20141 | 7 | not excluded | not enough information | - | Myocardial infarction in < 6 months | The note does not state whether the patient has had a myocardial infarction in the past 6 months. |
 
 * gold `not excluded` predicted `excluded` (12 times):
 
@@ -541,8 +541,8 @@ gold `not applicable`: 3/15 mispredicted.
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20141 | 15 | not enough information | not applicable | — | Pregnant and nursing women | The patient's pregnancy status is not mentioned in the provided clinical note. |
-| sigir-20141 | 19 | not enough information | not applicable | — | Patients in whom beta blockers are contraindicated | The patient is currently taking no medications, so beta blockers are not a factor. |
+| sigir-20141 | 15 | not enough information | not applicable | - | Pregnant and nursing women | The patient's pregnancy status is not mentioned in the provided clinical note. |
+| sigir-20141 | 19 | not enough information | not applicable | - | Patients in whom beta blockers are contraindicated | The patient is currently taking no medications, so beta blockers are not a factor. |
 
 Missing information (`not enough information`) handling:
 
@@ -551,10 +551,10 @@ gold `not enough information`: 31/53 gold records were mispredicted (`over` rows
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
 | sigir-20141 | 8 | not enough information | excluded | 8 | Unstable angina | The patient presents with acute chest pain, which is a concern for unstable angina, and is being evaluated in the ER. Therefore, she is excluded from the trial. |
-| sigir-20141 | 15 | not enough information | not applicable | — | Pregnant and nursing women | The patient's pregnancy status is not mentioned in the provided clinical note. |
-| sigir-20141 | 19 | not enough information | not applicable | — | Patients in whom beta blockers are contraindicated | The patient is currently taking no medications, so beta blockers are not a factor. |
-| sigir-20141 | 6 | not excluded | not enough information | — | Valvular heart disease and cardiomyopathy | The note does not mention any valvular heart disease or cardiomyopathy, but it also does not explicitly exclude these conditions. Therefore, there is not enough information to determine if the patient |
-| sigir-20141 | 7 | not excluded | not enough information | — | Myocardial infarction in < 6 months | The note does not state whether the patient has had a myocardial infarction in the past 6 months. |
+| sigir-20141 | 15 | not enough information | not applicable | - | Pregnant and nursing women | The patient's pregnancy status is not mentioned in the provided clinical note. |
+| sigir-20141 | 19 | not enough information | not applicable | - | Patients in whom beta blockers are contraindicated | The patient is currently taking no medications, so beta blockers are not a factor. |
+| sigir-20141 | 6 | not excluded | not enough information | - | Valvular heart disease and cardiomyopathy | The note does not mention any valvular heart disease or cardiomyopathy, but it also does not explicitly exclude these conditions. Therefore, there is not enough information to determine if the patient |
+| sigir-20141 | 7 | not excluded | not enough information | - | Myocardial infarction in < 6 months | The note does not state whether the patient has had a myocardial infarction in the past 6 months. |
 
 Not-applicable handling:
 
@@ -562,44 +562,44 @@ gold `not applicable`: 4/12 mispredicted.
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20142 | 33 | not applicable | not enough information | — | full of physical examination and laboratory examination have been carried out after one week，but still cannot make a definite diagnosis | The note mentions a chest x-ray and physical examination, but doesn't state that a full week has passed or that a definite diagnosis hasn't been made. Therefore, the inclusion criterion is not met. |
+| sigir-20142 | 33 | not applicable | not enough information | - | full of physical examination and laboratory examination have been carried out after one week，but still cannot make a definite diagnosis | The note mentions a chest x-ray and physical examination, but doesn't state that a full week has passed or that a definite diagnosis hasn't been made. Therefore, the inclusion criterion is not met. |
 | sigir-201430 | 558 | not applicable | not excluded | 8 | Inability to provide informed consent. | The note states the patient 'will provide informed consent.' |
 | sigir-201515 | 801 | not applicable | excluded | 2 | Definite small-vessel etiology by history or imaging | The transesophageal echocardiogram and magnetic resonance angiogram of brain and great vessels found no evidence of abnormalities, suggesting a definite small-vessel etiology is not present. |
 
-### finetuned — test
+### finetuned - test
 * gold `not enough information` predicted `not excluded` (27 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 174 | not enough information | not excluded | — | Patients with previous axillary surgery | — |
-| sigir-201411 | 193 | not enough information | not excluded | 3 | Patients were moribund.<br>**cited text:** Her body temperature is normal and her blood pressure is 80/60. | — |
+| sigir-201410 | 174 | not enough information | not excluded | - | Patients with previous axillary surgery | - |
+| sigir-201411 | 193 | not enough information | not excluded | 3 | Patients were moribund.<br>**cited text:** Her body temperature is normal and her blood pressure is 80/60. | - |
 
 * gold `not applicable` predicted `not excluded` (10 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 165 | not applicable | not excluded | — | Pregnancy | — |
-| sigir-201513 | 750 | not applicable | not excluded | — | pregnancy | — |
+| sigir-201410 | 165 | not applicable | not excluded | - | Pregnancy | - |
+| sigir-201513 | 750 | not applicable | not excluded | - | pregnancy | - |
 
 * gold `included` predicted `not enough information` (8 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 176 | included | not enough information | 0 | No medical history of central vena catheterization.<br>**cited text:** A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. | — |
-| sigir-201411 | 185 | included | not enough information | 2, 3 | Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.<br>**cited text:** On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic. Her body temperature is normal and her blood pressure is 80/60. | — |
+| sigir-201410 | 176 | included | not enough information | 0 | No medical history of central vena catheterization.<br>**cited text:** A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. | - |
+| sigir-201411 | 185 | included | not enough information | 2, 3 | Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.<br>**cited text:** On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic. Her body temperature is normal and her blood pressure is 80/60. | - |
 
 * gold `not included` predicted `not enough information` (4 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 163 | not included | not enough information | 0 | Patients undergoing endovascular abdominal aneurysm repair<br>**cited text:** A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. | — |
-| sigir-201410 | 164 | not included | not enough information | 0 | Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)<br>**cited text:** A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. | — |
+| sigir-201410 | 163 | not included | not enough information | 0 | Patients undergoing endovascular abdominal aneurysm repair<br>**cited text:** A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. | - |
+| sigir-201410 | 164 | not included | not enough information | 0 | Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)<br>**cited text:** A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. | - |
 
 * gold `not included` predicted `not applicable` (1 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 161 | not included | not applicable | 0 | Patients undergoing elective carotid endarterectomy<br>**cited text:** A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. | — |
+| sigir-201410 | 161 | not included | not applicable | 0 | Patients undergoing elective carotid endarterectomy<br>**cited text:** A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. | - |
 
 Missing information (`not enough information`) handling:
 
@@ -607,11 +607,11 @@ gold `not enough information`: 28/66 gold records were mispredicted (`over` rows
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 174 | not enough information | not excluded | — | Patients with previous axillary surgery | — |
-| sigir-201410 | 175 | not enough information | not included | — | Chronic renal failure requiring hemodialysis. | — |
-| sigir-201411 | 193 | not enough information | not excluded | 3 | Patients were moribund. | — |
-| sigir-201410 | 163 | not included | not enough information | 0 | Patients undergoing endovascular abdominal aneurysm repair | — |
-| sigir-201410 | 164 | not included | not enough information | 0 | Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal) | — |
+| sigir-201410 | 174 | not enough information | not excluded | - | Patients with previous axillary surgery | - |
+| sigir-201410 | 175 | not enough information | not included | - | Chronic renal failure requiring hemodialysis. | - |
+| sigir-201411 | 193 | not enough information | not excluded | 3 | Patients were moribund. | - |
+| sigir-201410 | 163 | not included | not enough information | 0 | Patients undergoing endovascular abdominal aneurysm repair | - |
+| sigir-201410 | 164 | not included | not enough information | 0 | Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal) | - |
 
 Not-applicable handling:
 
@@ -619,45 +619,45 @@ gold `not applicable`: 11/15 mispredicted.
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201410 | 165 | not applicable | not excluded | — | Pregnancy | — |
-| sigir-20158 | 683 | not applicable | not excluded | — | Previous tonsillectomy, including partial tonsillectomy | — |
-| sigir-20158 | 693 | not applicable | not excluded | 0 | Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome) | — |
+| sigir-201410 | 165 | not applicable | not excluded | - | Pregnancy | - |
+| sigir-20158 | 683 | not applicable | not excluded | - | Previous tonsillectomy, including partial tonsillectomy | - |
+| sigir-20158 | 693 | not applicable | not excluded | 0 | Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome) | - |
 
-### finetuned — validation
+### finetuned - validation
 * gold `not enough information` predicted `not excluded` (26 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20141 | 8 | not enough information | not excluded | 0, 1 | Unstable angina<br>**cited text:** A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not  | — |
-| sigir-20141 | 15 | not enough information | not excluded | — | Pregnant and nursing women | — |
+| sigir-20141 | 8 | not enough information | not excluded | 0, 1 | Unstable angina<br>**cited text:** A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not  | - |
+| sigir-20141 | 15 | not enough information | not excluded | - | Pregnant and nursing women | - |
 
 * gold `included` predicted `not enough information` (14 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20141 | 22 | included | not enough information | 3 | Clinical diagnosis of one or more risk factors, such as diabetes, smoking habit, lipid metabolism abnormality, history of ischemic heart disease (IHD) or cerebr<br>**cited text:** She is known to have hypertension and obesity. | — |
-| sigir-201420 | 366 | included | not enough information | 4 | Has experienced abdominal trauma, blunt or penetrating, requiring open abdominal laparotomy with primary closure<br>**cited text:** Physical examination reveals a tender abdomen with guarding and rebound in all four quadrants. | — |
+| sigir-20141 | 22 | included | not enough information | 3 | Clinical diagnosis of one or more risk factors, such as diabetes, smoking habit, lipid metabolism abnormality, history of ischemic heart disease (IHD) or cerebr<br>**cited text:** She is known to have hypertension and obesity. | - |
+| sigir-201420 | 366 | included | not enough information | 4 | Has experienced abdominal trauma, blunt or penetrating, requiring open abdominal laparotomy with primary closure<br>**cited text:** Physical examination reveals a tender abdomen with guarding and rebound in all four quadrants. | - |
 
 * gold `not applicable` predicted `not excluded` (8 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20141 | 24 | not applicable | not excluded | — | Patients with IHD within 6 months after percutaneous coronary intervention(PCI), and who are stable but are going to implement PCI or coronary artery bypass gra | — |
-| sigir-201430 | 551 | not applicable | not excluded | — | Pregnancy | — |
+| sigir-20141 | 24 | not applicable | not excluded | - | Patients with IHD within 6 months after percutaneous coronary intervention(PCI), and who are stable but are going to implement PCI or coronary artery bypass gra | - |
+| sigir-201430 | 551 | not applicable | not excluded | - | Pregnancy | - |
 
 * gold `not included` predicted `not enough information` (3 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20142 | 31 | not included | not enough information | 0 | patients have fever more than one week<br>**cited text:** An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days. | — |
-| sigir-201522 | 934 | not included | not enough information | — | Taking anti-tuberculosis medicines (or NTM meds at NIH CC) during the time sputa are provided | — |
+| sigir-20142 | 31 | not included | not enough information | 0 | patients have fever more than one week<br>**cited text:** An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days. | - |
+| sigir-201522 | 934 | not included | not enough information | - | Taking anti-tuberculosis medicines (or NTM meds at NIH CC) during the time sputa are provided | - |
 
 * gold `excluded` predicted `not excluded` (2 times):
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-201415 | 263 | excluded | not excluded | 4 | 13. Evidence of uterine pathology other than leiomyoma<br>**cited text:** The ultrasound reports enlarged uterus (12 cm x 9 cm x 7 cms) with multiple cystic areas in the interior. | — |
-| sigir-20142 | 41 | excluded | not excluded | 4 | Respiratory distress<br>**cited text:** On examination he is in respiratory distress and has bronchial respiratory sounds on the left. | — |
+| sigir-201415 | 263 | excluded | not excluded | 4 | 13. Evidence of uterine pathology other than leiomyoma<br>**cited text:** The ultrasound reports enlarged uterus (12 cm x 9 cm x 7 cms) with multiple cystic areas in the interior. | - |
+| sigir-20142 | 41 | excluded | not excluded | 4 | Respiratory distress<br>**cited text:** On examination he is in respiratory distress and has bronchial respiratory sounds on the left. | - |
 
 Missing information (`not enough information`) handling:
 
@@ -665,11 +665,11 @@ gold `not enough information`: 27/53 gold records were mispredicted (`over` rows
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20141 | 8 | not enough information | not excluded | 0, 1 | Unstable angina | — |
-| sigir-20141 | 15 | not enough information | not excluded | — | Pregnant and nursing women | — |
-| sigir-20141 | 18 | not enough information | not excluded | — | Patients not eligible for Tc 99m SPECT | — |
-| sigir-20141 | 22 | included | not enough information | 3 | Clinical diagnosis of one or more risk factors, such as diabetes, smoking habit, lipid metabolism abnormality, history of ischemic heart disease (IHD) or cerebr | — |
-| sigir-20142 | 31 | not included | not enough information | 0 | patients have fever more than one week | — |
+| sigir-20141 | 8 | not enough information | not excluded | 0, 1 | Unstable angina | - |
+| sigir-20141 | 15 | not enough information | not excluded | - | Pregnant and nursing women | - |
+| sigir-20141 | 18 | not enough information | not excluded | - | Patients not eligible for Tc 99m SPECT | - |
+| sigir-20141 | 22 | included | not enough information | 3 | Clinical diagnosis of one or more risk factors, such as diabetes, smoking habit, lipid metabolism abnormality, history of ischemic heart disease (IHD) or cerebr | - |
+| sigir-20142 | 31 | not included | not enough information | 0 | patients have fever more than one week | - |
 
 Not-applicable handling:
 
@@ -677,6 +677,6 @@ gold `not applicable`: 9/12 mispredicted.
 
 | patient | ann | gold | predicted | cited ids | criterion | explanation |
 |---|---|---|---|---|---|---|
-| sigir-20141 | 24 | not applicable | not excluded | — | Patients with IHD within 6 months after percutaneous coronary intervention(PCI), and who are stable but are going to implement PCI or coronary artery bypass gra | — |
-| sigir-20142 | 33 | not applicable | not enough information | 0, 1, 2, 3, 4, 5 | full of physical examination and laboratory examination have been carried out after one week，but still cannot make a definite diagnosis | — |
-| sigir-201430 | 551 | not applicable | not excluded | — | Pregnancy | — |
+| sigir-20141 | 24 | not applicable | not excluded | - | Patients with IHD within 6 months after percutaneous coronary intervention(PCI), and who are stable but are going to implement PCI or coronary artery bypass gra | - |
+| sigir-20142 | 33 | not applicable | not enough information | 0, 1, 2, 3, 4, 5 | full of physical examination and laboratory examination have been carried out after one week，but still cannot make a definite diagnosis | - |
+| sigir-201430 | 551 | not applicable | not excluded | - | Pregnancy | - |

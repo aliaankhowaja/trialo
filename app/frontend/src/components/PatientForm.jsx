@@ -7,6 +7,7 @@ export default function PatientForm({
   library,
   patient,
   setPatient,
+  trial,
   notePreview,
   setNotePreview,
   setTrial,
@@ -60,7 +61,7 @@ export default function PatientForm({
       <div className="panel">
         <h2>Patient record</h2>
         <p className="hint">
-          Paste a clinical note as free text — it will be split into sentences and
+          Paste a clinical note as free text - it will be split into sentences and
           auto-numbered (0, 1, 2…) exactly the way the model was trained. Sentences
           the model later cites are pointed at this numbering, so keep it stable.
         </p>
@@ -95,7 +96,7 @@ export default function PatientForm({
             {normalizing ? 'Normalizing…' : 'Normalize & preview sentences'}
           </button>
           <button className="primary" disabled={!notePreview} onClick={onNext}>
-            Next: trial criteria →
+            Next: trial criteria ->
           </button>
         </div>
       </div>

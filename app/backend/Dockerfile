@@ -13,7 +13,9 @@ ENV PYTHONUNBUFFERED=1 \
 # rendering needs at least one installed font family.
 RUN apt-get update && apt-get install -y --no-install-recommends \
         libpango-1.0-0 \
+        libpangoft2-1.0-0 \
         libpangocairo-1.0-0 \
+        libharfbuzz0b \
         libcairo2 \
         libgdk-pixbuf-2.0-0 \
         libffi-dev \
@@ -24,7 +26,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # CPU torch first so the rest of the requirements resolve against it
 # (comment out this line and the matching CUDA line when building for GPU).
-RUN pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.14.1"
+# The CPU index only hosts torch and its own mirrors; dependencies such as
+# typing-extensions/flit_core still have to come from PyPI, hence the extra
+# index (without it pip cannot resolve torch's build/runtime dependencies).
+RUN pip install \
+        --index-url https://download.pytorch.org/whl/cpu \
+        --extra-index-url https://pypi.org/simple \
+        "torch==2.14.1"
 # For a GPU build (CUDA 12.x): pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu126
 
 COPY requirements.txt /tmp/requirements.txt

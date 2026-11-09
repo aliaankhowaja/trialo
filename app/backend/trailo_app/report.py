@@ -40,7 +40,7 @@ def build_markdown(
     lines.append("")
     lines.append(f"- Patient record: `{patient_id or 'unnamed'}` ({meta['n_sentences']} sentences)")
     lines.append(f"- Trial: {trial_title}")
-    lines.append(f"- Model preset: `{meta['model_preset']}` — {meta['base_model_id']}")
+    lines.append(f"- Model preset: `{meta['model_preset']}` - {meta['base_model_id']}")
     lines.append(f"- Checkpoint (LoRA adapter): `{meta['checkpoint_dir']}`")
     lines.append(f"- Device / decoding: {meta['device']} / `{meta['decoding_impl']}`")
     lines.append(f"- Generated at: {now}")

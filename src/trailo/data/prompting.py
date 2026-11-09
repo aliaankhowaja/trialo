@@ -8,8 +8,6 @@ import re
 from dataclasses import dataclass
 from typing import Any
 
-from trailo.data.datasets import LEAK_COLUMNS
-
 SYSTEM_PROMPT = (
     "You are a clinical trial eligibility annotator. "
     "Return only one JSON object and no other text."
@@ -67,6 +65,10 @@ def parse_note_sentences(note: str) -> list[Sentence]:
 
 def assert_no_leakage_fields(item: dict[str, Any]) -> None:
     """Fail if any GPT-4 prediction/explanation column survived data loading."""
+    # Imported lazily so prompt construction (used by the serving app) does not
+    # drag in the heavy Hugging Face ``datasets`` dependency.
+    from trailo.data.datasets import LEAK_COLUMNS
+
     present = set(item) & set(LEAK_COLUMNS)
     if present:
         raise PromptFormatError(

@@ -61,7 +61,7 @@ export default function BackendStatus({ onReady }) {
         The UI is up, but the FastAPI backend is not reachable through the
         webserver's <code>/api</code> proxy. If you just started the stack, the
         backend image may still be installing its dependencies (torch ≈ several
-        GB) — that is normal for the first <code>docker compose up --build</code>.
+        GB) - that is normal for the first <code>docker compose up --build</code>.
         Check it with:
       </p>
       <pre className="note-preview">{`docker compose ps

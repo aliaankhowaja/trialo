@@ -1,6 +1,6 @@
 const DISCLAIMER =
   'This is an educational screening prototype. Outputs are model-generated ' +
-  'annotations for teaching and demonstration only — NOT a clinical enrollment ' +
+  'annotations for teaching and demonstration only - NOT a clinical enrollment ' +
   'decision, not medical advice, and not suitable for patient care or any ' +
   'regulatory purpose. Verify every result against expert judgment.'
 

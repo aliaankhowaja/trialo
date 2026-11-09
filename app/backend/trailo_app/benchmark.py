@@ -50,7 +50,7 @@ def run_decode_benchmark(
 
     impls = ["generate", "cache", "recompute"]
     limited = criteria[: max(0, int(criteria_limit))]
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device(engine.settings.device_name)
 
     rows: list[dict[str, Any]] = []
     streams: dict[int, dict[str, list[int]]] = {}

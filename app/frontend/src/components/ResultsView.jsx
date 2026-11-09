@@ -220,8 +220,8 @@ export default function ResultsView({
 
       {hasResults && (
         <div className="row">
-          <button className="primary" onClick={onExport}>Export report →</button>
-          <button className="secondary" onClick={onBenchmark}>Benchmark this run's decoding →</button>
+          <button className="primary" onClick={onExport}>Export report -></button>
+          <button className="secondary" onClick={onBenchmark}>Benchmark this run's decoding -></button>
         </div>
       )}
     </>

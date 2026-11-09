@@ -103,12 +103,12 @@ def evidence_table(all_analyses: dict[tuple[str, str], dict[str, Any]]) -> str:
         pr = evidence["per_record"]
         rows.append(
             f"| {model} | {split} | per-record macro | {pr['n_records']} "
-            f"| — | — | {fmt(pr['macro_f1'])} | — |"
+            f"| - | - | {fmt(pr['macro_f1'])} | - |"
         )
         ng = evidence["no_gold_evidence"]
         rows.append(
             f"| {model} | {split} | no-gold consistency | {ng['n_records']} "
-            f"| — | — | — "
+            f"| - | - | - "
             f"| empty-pred rate {fmt(ng['empty_prediction_rate'])} |"
         )
     return "\n".join([header, separator, *rows])
@@ -122,9 +122,9 @@ def example_rows(entries: list[dict[str, Any]], with_sentences: bool = False) ->
     rows = [header, separator]
     for entry in entries:
         criterion = (entry.get("criterion") or entry.get("criterion_text") or "")
-        cited = ", ".join(str(i) for i in entry.get("predicted_evidence_ids", [])) or "—"
-        explanation = (entry.get("explanation") or "").replace("|", "\\|")[:200] or "—"
-        excerpt = criterion.replace("|", "\\|")[:160] or "—"
+        cited = ", ".join(str(i) for i in entry.get("predicted_evidence_ids", [])) or "-"
+        explanation = (entry.get("explanation") or "").replace("|", "\\|")[:200] or "-"
+        excerpt = criterion.replace("|", "\\|")[:160] or "-"
         cited_text = ""
         if with_sentences and entry.get("sentences"):
             cited_text = " ".join(
@@ -195,7 +195,7 @@ def build_report(
             ("inclusion criteria", analysis["classification"]["inclusion"]),
             ("exclusion criteria", analysis["classification"]["exclusion"]),
         ):
-            parts.append(f"### {model} — {split} — {view_name}")
+            parts.append(f"### {model} - {split} - {view_name}")
             parts.append("")
             parts.append(
                 f"`accuracy={fmt(view['accuracy'])}` "
@@ -211,7 +211,7 @@ def build_report(
             parts.append(per_class_table(view))
             parts.append("")
         parts.append(
-            f"##### {model} — {split} — evidence retrieval"
+            f"##### {model} - {split} - evidence retrieval"
         )
         parts.append("")
         parts.append(evidence_rows(analysis))
@@ -236,7 +236,7 @@ def build_report(
     for key in sorted(analyses):
         model, split = key
         contradictions = analyses[key]["contradictions"]
-        parts.append(f"### {model} — {split}")
+        parts.append(f"### {model} - {split}")
         parts.append("")
         counts = contradictions["flag_counts"] or {}
         count_rows = "| flag | count |\n|---|---:|\n" + "\n".join(
@@ -265,7 +265,7 @@ def build_report(
     for key in sorted(analyses):
         model, split = key
         errors = analyses[key]["errors"]
-        parts.append(f"### {model} — {split}")
+        parts.append(f"### {model} - {split}")
         for gallery in errors["confusion_pairs"][:5]:
             parts.append(
                 f"* gold `{gallery['gold']}` predicted "
@@ -318,7 +318,7 @@ def flag_table(entries: list[dict[str, Any]]) -> str:
     separator = "|---|---|---|---|---|---|---|"
     rows = [header, separator]
     for entry in entries:
-        cited = ", ".join(str(i) for i in entry.get("predicted_evidence_ids", [])) or "—"
+        cited = ", ".join(str(i) for i in entry.get("predicted_evidence_ids", [])) or "-"
         detail = entry["detail"].replace("|", "\\|")
         rows.append(
             f"| {entry['flag']} | {entry['patient_id']} | {entry['annotation_id']} "
@@ -340,13 +340,13 @@ def evidence_rows(analysis: dict[str, Any]) -> str:
         )
     consistency = view["no_gold_evidence"]
     rows += (
-        f"| no-gold consistency | {consistency['n_records']} | — | — | — "
+        f"| no-gold consistency | {consistency['n_records']} | - | - | - "
         f"| empty-pred rate {fmt(consistency['empty_prediction_rate'])} |\n"
     )
     per_record = view["per_record"]
     rows += (
         f"| per-record macro F1 (gold-present) | {per_record['n_records']} "
-        f"| — | — | {fmt(per_record['macro_f1'])} | — |\n"
+        f"| - | - | {fmt(per_record['macro_f1'])} | - |\n"
     )
     return rows
 

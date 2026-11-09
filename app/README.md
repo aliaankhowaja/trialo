@@ -1,4 +1,4 @@
-# TrialO — Trial Eligibility Screening Prototype
+# TrialO - Trial Eligibility Screening Prototype
 
 An educational screening application. A user supplies a patient record,
 selects or enters a trial's eligibility criteria, runs the fine-tuned
@@ -8,7 +8,7 @@ eligibility screening report. A benchmark view compares the implemented greedy
 decoding mechanisms (`generate`, KV-`cache`, `recompute`) live, and shows the
 *recorded* GPU speculative-decoding results.
 
-> **⚠ This is an educational screening prototype — NOT a clinical enrollment
+> **⚠ This is an educational screening prototype - NOT a clinical enrollment
 > decision.** Outputs are model-generated annotations for teaching and
 > demonstration only. It must never be used for actual patient enrollment,
 > clinical care, or regulatory decisions.
@@ -32,9 +32,9 @@ app/
     Dockerfile, nginx.conf
 ```
 
-The backend imports the repository's own validated research code —
+The backend imports the repository's own validated research code -
 `trailo.eval.inference`, `trailo.eval.decoding` (custom KV-cache and recompute
-greedy loops), `trailo.eval.parsing` (strict JSON validation) — mounted
+greedy loops), `trailo.eval.parsing` (strict JSON validation) - mounted
 read-only into the container, so the app serves exactly the machinery the
 reference evaluation validated. The frontend is a plain React (no UI framework)
 app that talks to the API through the nginx `/api` proxy or directly through
@@ -47,7 +47,7 @@ The served Transformer is configuration-driven (`TRIALO_MODEL_CONFIG`):
 | Value | Base model | LoRA adapter | Precision | Hardware |
 |---|---|---|---|---|
 | `final_prod` (default) | `google/gemma-3-270m-it` | `checkpoints/final_prod_seed42/best` (full 4-epoch finetune) | bf16 (fp32 on CPU) | CPU or GPU |
-| `smoke_cpu` | `google/gemma-3-270m-it` | `checkpoints/smoke_cpu_seed42/best` (3-step smoke run — pipeline proof only) | fp32 | CPU |
+| `smoke_cpu` | `google/gemma-3-270m-it` | `checkpoints/smoke_cpu_seed42/best` (3-step smoke run - pipeline proof only) | fp32 | CPU |
 | `final_a100` | `google/gemma-3n-E4B-it` | `checkpoints/final_a100_seed42/best` | bf16 | ≥40 GB GPU |
 
 Note: locally, the `smoke_cpu` adapter file is a pointer stub (weights only
@@ -63,7 +63,7 @@ export TRIALO_CHECKPOINT_DIR=src/trailo/checkpoints/<new_run_id>/best
 docker compose up --build
 ```
 
-(GPU requires rebuilding the backend image with the CUDA torch wheel — see the
+(GPU requires rebuilding the backend image with the CUDA torch wheel - see the
 comment in `app/backend/Dockerfile`.)
 
 ## Startup
@@ -79,7 +79,7 @@ docker compose up --build
 ```
 
 - Frontend (the user interface): **http://localhost:3000**
-- Backend API directly: http://localhost:8000 — interactive docs at
+- Backend API directly: http://localhost:8000 - interactive docs at
   http://localhost:8000/api/docs, health at http://localhost:8000/api/health
 
 Useful variants:
@@ -105,19 +105,19 @@ already cached (`HF_HOME` accepts an env value or the compose volume).
 
 ## Using the app
 
-1. **Patient record** — paste a free-text clinical note. The backend normalizes
+1. **Patient record** - paste a free-text clinical note. The backend normalizes
    it into the numbered `N. sentence` format the model was trained on (or load a
    bundled sample record, which also preselects its trial and carries expert
    reference annotations).
-2. **Trial criteria** — pick one of 8 bundled trials (206 criteria from the
+2. **Trial criteria** - pick one of 8 bundled trials (206 criteria from the
    TrialGPT-Criterion-Annotations test split), edit/delete/add criteria, or
    start a free-form criterion set typed as inclusion/exclusion.
-3. **Screening results** — the model scores each criterion independently
+3. **Screening results** - the model scores each criterion independently
    (strict greedy decoding, strict JSON parsing). Every criterion card shows the
    4-way verdict, the exact cited evidence sentences, the model explanation,
    parse validity, and the raw output; bundled samples additionally show the
    expert reference annotation for comparison.
-4. **Export report** — human-readable eligibility screening report (run summary,
+4. **Export report** - human-readable eligibility screening report (run summary,
    aggregate verdict table, criterion-by-criterion findings with quoted
    evidence) as downloadable Markdown, printable HTML, or server-rendered PDF.
    Every export carries the educational-disclaimer prominently.
@@ -126,14 +126,14 @@ already cached (`HF_HOME` accepts an env value or the compose volume).
 
 The *Decode benchmark* tab runs the current screening workload through the three
 implemented greedy mechanisms and reports wall time, tokens/second, peak-memory
-delta, and per-criterion **token-stream agreement** — the paths are engineered to
+delta, and per-criterion **token-stream agreement** - the paths are engineered to
 produce identical streams, so divergence is made visible rather than assumed.
 Because `recompute` is O(sequence²) per token, the workload is capped (defaults:
 4 criteria, 48 new tokens; both adjustable in the UI).
 
 The speculative-decoding panel shows the recorded A100 benchmark (E4B target +
 E2B draft): γ-sweep latency, acceptance rates, and the knife-edge-tie agreement
-forensics — clearly labeled as a pre-recorded GPU run, since the live E4B/E2B
+forensics - clearly labeled as a pre-recorded GPU run, since the live E4B/E2B
 loop needs a large GPU.
 
 ## API overview
@@ -142,7 +142,7 @@ loop needs a large GPU.
 |---|---|
 | `GET /api/health` | model status, device, loaded preset |
 | `GET /api/library` | bundled trials + sample notes + expert references |
-| `POST /api/normalize-note` | note → numbered-sentence preview |
+| `POST /api/normalize-note` | note -> numbered-sentence preview |
 | `POST /api/screen` | batch screening (all criteria, one response) |
 | `POST /api/screen/stream` | SSE streaming screening (result per criterion) |
 | `POST /api/benchmark/decode` | live generate/cache/recompute comparison |
@@ -154,7 +154,7 @@ loop needs a large GPU.
 ## Limitations (read before teaching with this)
 
 - The default `final_prod` model is the same 270m backbone used in the smoke
-  runs — a small model. Its labels are better than random but imperfect; always
+  runs - a small model. Its labels are better than random but imperfect; always
   study the quoted evidence and the expert-reference comparison before drawing
   conclusions.
 - The `smoke_cpu` preset is a 3-step-trained adapter from the CPU smoke run:
